@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="navigation.xsl"?>
+
+<navigation>
+  <item>
+        <name url="index.html">Home</name>
+    </item>
+     <item>
+        <name url="fronteers">fronteers</name>
+    </item>
+    <item>
+        <name url="blog">blog</name>
+    </item>
+</navigation>
