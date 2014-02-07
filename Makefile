@@ -7,7 +7,7 @@ all: $(objects)
 %.html: %.shtml base.xsl
 	xsltproc -o $(DEST)$@ --stringparam target $@ base.xsl $<
 
-sass:
-		sass --style compressed scss/base.scss $(DEST)css/base.min.css
+watch:
+		sass --watch scss/base.scss:$(DEST)css/base.min.css --style compressed
 
-.PHONY: sass all
+.PHONY: watch all

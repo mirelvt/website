@@ -17,20 +17,23 @@
       <xsl:call-template name="head-section" />
 
       <body>
-        <nav>
-          <ul>
-            <xsl:for-each select="document('navigation.xml')/navigation/item">
-              <li>
-                <xsl:if test="$target = name/@url">
-                  <xsl:attribute name="class">selected</xsl:attribute>
-                </xsl:if>
-                <a href="{name/@url}">
-                  <xsl:value-of select="name" />
-                </a>
-              </li>
-            </xsl:for-each>
-          </ul>
-        </nav>
+        <header class="header-menu">
+           <nav>
+            <ul>
+              <xsl:for-each select="document('navigation.xml')/navigation/item">
+                <li>
+                  <xsl:if test="$target = name/@url">
+                    <xsl:attribute name="class">selected</xsl:attribute>
+                  </xsl:if>
+                  <a href="{name/@url}">
+                    <xsl:value-of select="name" />
+                  </a>
+                </li>
+              </xsl:for-each>
+            </ul>
+          </nav>
+        </header>
+
         <xsl:copy-of select="/h:html/h:body/node()" />
       </body>
     </html>
@@ -38,6 +41,8 @@
 
   <xsl:template name="head-section">
     <head>
+       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width" />
       <title>
         <xsl:value-of select="/h:html/h:head/h:title" />
       </title>

@@ -1,3 +1,48 @@
+@import "variables";
+@import "mixins";
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// * 1. Computes to 10px by the browsers so we can use rem the nice way
+// * 2. Prevent iOS text size adjust after orientation change, without
+// * disabling user zoom.
+
+html {
+  font-size: 62.5%; // * 1 *
+  -ms-text-size-adjust: 100%; // * 2 *
+  -webkit-text-size-adjust: 100%; // * 2 *
+}
+
 body {
-    background-color: #ff0000;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  background-color: #fff;
+}
+
+header {
+  height: 50px;
+  background-color: $color-header;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-menu {
+  padding: 0 100px;
+  ul { @include reset-ul; }
+
+  li { display: inline-block; }
+
+  a {
+    display: inline-block;
+    padding: 14px 15px;
+    color: #fff;
+    background-color: $color-selected;
+  }
 }
