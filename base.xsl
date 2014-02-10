@@ -22,10 +22,10 @@
             <ul>
               <xsl:for-each select="document('navigation.xml')/navigation/item">
                 <li>
-                  <xsl:if test="$target = name/@url">
-                    <xsl:attribute name="class">selected</xsl:attribute>
-                  </xsl:if>
-                  <a href="{name/@url}">
+                  <a href="{name/@url}" class="header-menu-item">
+                     <xsl:if test="$target = name/@url">
+                        <xsl:attribute name="class">header-menu-item selected</xsl:attribute>
+                     </xsl:if>
                     <xsl:value-of select="name" />
                   </a>
                 </li>

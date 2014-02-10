@@ -24,25 +24,26 @@ body {
   background-color: #fff;
 }
 
-header {
-  height: 50px;
-  background-color: $color-header;
-}
-
-a {
-  text-decoration: none;
-}
+a { text-decoration: none; }
 
 .header-menu {
+  height: 50px;
   padding: 0 100px;
+  @include header-shadow;
+  background-color: $color-header;
+
+
   ul { @include reset-ul; }
-
   li { display: inline-block; }
+}
 
-  a {
-    display: inline-block;
-    padding: 14px 15px;
-    color: #fff;
+.header-menu-item {
+  display: inline-block;
+  padding: 14px 15px;
+  color: #fff;
+
+  &.selected {
+    @include header-shadow;
     background-color: $color-selected;
   }
 }
