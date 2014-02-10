@@ -32,7 +32,8 @@
               </xsl:for-each>
             </ul>
           </nav>
-        </header>
+           <span class="my-name">Mirella van Teulingen</span>
+         </header>
 
         <xsl:copy-of select="/h:html/h:body/node()" />
       </body>

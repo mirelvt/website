@@ -26,9 +26,13 @@ body {
 
 a { text-decoration: none; }
 
+// ===========
+// HEADER MENU
+// ===========
 .header-menu {
+  position: relative;
   height: 50px;
-  padding: 0 100px;
+  padding: 0 0 0 10%;
   @include header-shadow;
   background-color: $color-header;
 
@@ -40,6 +44,8 @@ a { text-decoration: none; }
 .header-menu-item {
   display: inline-block;
   padding: 14px 15px;
+  font-family: $font-header;
+  font-size: 1.8rem;
   color: #fff;
 
   &.selected {
@@ -47,3 +53,32 @@ a { text-decoration: none; }
     background-color: $color-selected;
   }
 }
+
+// =======
+// MY NAME
+// =======
+.my-name {
+  position: absolute;
+  right: 10%;
+  top: 12px;
+  font-family: $font-header;
+  font-size: 1.8rem;
+  color: #fff;
+
+  &:before,
+  &:after {
+     font-family: $font-header;
+     font-size: 2.4rem;
+  }
+
+  &:before {
+    content: "{";
+    padding-right: 2px;
+  }
+
+   &:after {
+    content: "}";
+    padding-left: 2px;
+  }
+}
+
