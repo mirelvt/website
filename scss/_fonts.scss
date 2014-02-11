@@ -1,14 +1,36 @@
-
+// Font droid sans for the menu and body text
 @font-face {
-  font-family: Header;
+  font-family: droidsans;
   src: url(../fonts/DroidSans.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Header-Bold;
+  font-family: droidsans;
   src: url(../fonts/DroidSans-Bold.ttf);
-  font-weight: Bold;
+  font-weight: bold;
   font-style: normal;
+}
+
+// Font league Gothic for the headers
+@font-face {
+  font-family: leaguegothic;
+  src: url(../fonts/LeagueGothic-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: leaguegothic;
+  src: url(../fonts/LeagueGothic-Regular.otf);
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: leaguegothic;
+  src: url(../fonts/LeagueGothic-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
 }
