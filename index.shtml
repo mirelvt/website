@@ -12,5 +12,21 @@
       <p>
         Currently I work as front end developer for
         <a href="http://www.dreamsolution.nl" class="external-link">Dreamsolution</a> in Delft.<br/> You can also find me on: <a href="http://www.twitter.com/mirelvt" class="external-link">Twitter</a> and <a href="http://www.linkedin.com/in/mirellavanteulingen" class="external-link">Linkedin</a>.</p>
+
+        <aside class="block-home">
+          <img src="img/fronteers-logo.png" alt="Fronteers - vakvereniging voor front-end developers" />
+          <h2>Fronteers</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+        </aside>
+        <aside class="block-home">
+          <span class="icon-blog"> </span>
+          <h2>Blog</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+        </aside>
+        <aside class="block-home">
+          <img src="img/portret-small.jpg" alt="zelfportret" />
+          <h2>About me</h2>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+        </aside>
   </body>
 </html>
