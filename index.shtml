@@ -4,29 +4,44 @@
     <title>Home</title>
    </head>
   <body>
-    <h1>Hi, I'm Mirella,</h1>
-    <p>
+    <article>
+      <h1>Hi, I'm Mirella,</h1>
+      <p>
         I'm a Dutch front end developer, with great interest in web design and web development. In my spare time I read articles and listen to podcasts that involves web design and development. And of course I like to play around with jquery, HTML5 and CSS. I'm also a member of <a href="http://www.fronteers.nl" class="external-link">Fronteers</a>, a Dutch non-profit trade organization of front end developers.
       </p>
 
       <p>
         Currently I work as front end developer for
-        <a href="http://www.dreamsolution.nl" class="external-link">Dreamsolution</a> in Delft.<br/> You can also find me on: <a href="http://www.twitter.com/mirelvt" class="external-link">Twitter</a> and <a href="http://www.linkedin.com/in/mirellavanteulingen" class="external-link">Linkedin</a>.</p>
+        <a href="http://www.dreamsolution.nl" class="external-link">Dreamsolution</a> in Delft.<br/> You can also find me on: <a href="http://www.twitter.com/mirelvt" class="external-link">Twitter</a> and <a href="http://www.linkedin.com/in/mirellavanteulingen" class="external-link">Linkedin</a>.
+      </p>
+    </article>
 
-        <aside class="block-home">
-          <img src="img/fronteers-logo.png" alt="Fronteers - vakvereniging voor front-end developers" />
-          <h2>Fronteers</h2>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
-        </aside>
-        <aside class="block-home">
+    <section class="flexible">
+      <div class="block-home">
+        <p class="block-home-visual">
+          <img src="img/fronteers-logo.png"
+              alt="Fronteers - vakvereniging voor front-end developers" />
+        </p>
+
+        <h2>Fronteers</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+      </div>
+
+      <div class="block-home">
+        <p class="block-home-visual">
           <span class="icon-blog"> </span>
-          <h2>Blog</h2>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
-        </aside>
-        <aside class="block-home">
-          <img src="img/portret-small.jpg" alt="zelfportret" />
-          <h2>About me</h2>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
-        </aside>
+        </p>
+        <h2>Blog</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+      </div>
+
+      <div class="block-home">
+        <p class="block-home-visual">
+          <img src="img/portret-small.jpg" alt="zelfportret" class="block-home-portrait" />
+        </p>
+        <h2>About me</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+      </div>
+    </section>
   </body>
 </html>

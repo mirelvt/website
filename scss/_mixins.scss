@@ -15,3 +15,17 @@
         rgba(32,99,108,1) 0%,
         rgba(32,99,108,0) 5px); /* W3C */
 }
+
+// Mixins for flexbox layout
+@mixin flexbox {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-justify-content($value) {
+  -ms-justify-content: $value;
+  -moz-justify-content: $value;
+  -webkit-justify-content: $value;
+  justify-content: $value;
+}
