@@ -6,9 +6,12 @@
         <name url="index.html">Home</name>
     </item>
      <item>
-        <name url="fronteers">Fronteers</name>
+        <name url="fronteers.html">Fronteers</name>
     </item>
     <item>
-        <name url="blog">Blog</name>
+        <name url="blog.html">Blog</name>
+    </item>
+     <item>
+        <name url="about-me.html">About me</name>
     </item>
 </navigation>

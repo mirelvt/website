@@ -120,7 +120,13 @@ p {
 }
 
 .block-home {
-  width: 28%;
+  @media screen and (max-width: 1279px) {
+    width: 28%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 18%;
+  }
+
 }
 
 .block-home-visual {
