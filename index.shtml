@@ -24,7 +24,10 @@
         </p>
 
         <h2>Fronteers</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+        </p>
+
       </div>
 
       <div class="block-home">
@@ -32,7 +35,9 @@
           <span class="icon-blog"> </span>
         </p>
         <h2>Blog</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+        <p>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+        </p>
       </div>
 
       <div class="block-home">
@@ -40,7 +45,9 @@
           <img src="img/portret-small.jpg" alt="zelfportret" class="block-home-portrait" />
         </p>
         <h2>About me</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, ut, alias, quasi sit voluptates dolorum quaerat dicta iusto commodi sint modi possimus sapiente nam architecto sed tempore similique error voluptatum.
+        </p>
       </div>
     </section>
   </body>
