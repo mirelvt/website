@@ -42,12 +42,25 @@
 
   <xsl:template name="head-section">
     <head>
-       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width" />
       <title>
         <xsl:value-of select="/h:html/h:head/h:title" />
       </title>
-      <link rel="stylesheet" href="css/base.min.css" />
+      <link rel="stylesheet" href="css/base.css" />
+      <xsl:text disable-output-escaping="yes">&#xA;&lt;!--[if lt IE 9]></xsl:text>
+        <script>
+          document.createElement("header");
+          document.createElement("footer");
+          document.createElement("section");
+          document.createElement("aside");
+          document.createElement("nav");
+          document.createElement("article");
+          document.createElement("main");
+        </script>
+        <link rel="stylesheet" href="css/ie8.css"/>
+      <xsl:text disable-output-escaping="yes">&lt;![endif]-->&#xA;</xsl:text>
+
     </head>
   </xsl:template>
 

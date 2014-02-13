@@ -5,9 +5,9 @@
    </head>
   <body>
     <section class="flexible">
-      <div class="block-home">
-        <p class="block-home-visual">
-          <img src="img/portret-small.jpg" alt="zelfportret" class="block-home-portrait" />
+      <div class="block__home">
+        <p class="block__home_visual">
+          <img src="img/portret-small.jpg" alt="zelfportret" class="block__home_portrait" />
         </p>
         <h2>About me</h2>
         <p>
@@ -17,8 +17,8 @@
         </p>
       </div>
 
-      <div class="block-home">
-        <p class="block-home-visual">
+      <div class="block__home">
+        <p class="block__home_visual">
           <span class="icon-blog"> </span>
         </p>
         <h2>Blog</h2>
@@ -27,8 +27,8 @@
         </p>
       </div>
 
-      <div class="block-home">
-        <p class="block-home-visual">
+      <div class="block__home">
+        <p class="block__home_visual">
           <img src="img/fronteers-logo.png"
               alt="Fronteers - vakvereniging voor front-end developers" />
         </p>
