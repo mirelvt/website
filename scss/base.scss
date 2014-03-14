@@ -26,6 +26,10 @@ body {
   font-size: 1.6rem;
   line-height: 2.1rem;
   background-color: #fff;
+
+  @media (orientation:portrait) {
+    font-size: 1.7rem;
+  }
 }
 
 h1,

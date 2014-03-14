@@ -89,8 +89,14 @@ body {
   line-height: 2.1rem;
   background-color: #fff;
 }
+@media (orientation: portrait) {
+  /* line 22, ../../scss/base.scss */
+  body {
+    font-size: 1.7rem;
+  }
+}
 
-/* line 36, ../../scss/base.scss */
+/* line 40, ../../scss/base.scss */
 h1,
 h2,
 h3,
@@ -100,21 +106,21 @@ h6 {
   font-family: "leaguegothic", arial, sans-serif;
 }
 
-/* line 40, ../../scss/base.scss */
+/* line 44, ../../scss/base.scss */
 h1 {
   font-size: 3.5rem;
   margin-top: 28px;
   margin-bottom: 0;
 }
 
-/* line 45, ../../scss/base.scss */
+/* line 49, ../../scss/base.scss */
 h2 {
   font-size: 3rem;
   margin-top: 21px;
   margin-bottom: 0;
 }
 
-/* line 54, ../../scss/base.scss */
+/* line 58, ../../scss/base.scss */
 h3,
 h4,
 h5,
@@ -122,18 +128,18 @@ h6 {
   font-size: 2.75rem;
 }
 
-/* line 56, ../../scss/base.scss */
+/* line 60, ../../scss/base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 58, ../../scss/base.scss */
+/* line 62, ../../scss/base.scss */
 p {
   margin-top: 18px;
   margin-bottom: 0;
 }
 
-/* line 65, ../../scss/base.scss */
+/* line 69, ../../scss/base.scss */
 .header-menu {
   position: relative;
   height: 50px;
@@ -146,18 +152,18 @@ p {
   /* W3C */
   background-color: #438992;
 }
-/* line 73, ../../scss/base.scss */
+/* line 77, ../../scss/base.scss */
 .header-menu ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 74, ../../scss/base.scss */
+/* line 78, ../../scss/base.scss */
 .header-menu li {
   display: inline-block;
 }
 
-/* line 77, ../../scss/base.scss */
+/* line 81, ../../scss/base.scss */
 .header-menu-item {
   display: inline-block;
   padding: 14px 15px;
@@ -165,7 +171,7 @@ p {
   font-size: 1.8rem;
   color: #fff;
 }
-/* line 84, ../../scss/base.scss */
+/* line 88, ../../scss/base.scss */
 .header-menu-item.selected {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #20636c), color-stop(5px, rgba(32, 99, 108, 0)));
   /* Chrome,Safari4+ */
@@ -176,7 +182,7 @@ p {
   background-color: #34737b;
 }
 
-/* line 93, ../../scss/base.scss */
+/* line 97, ../../scss/base.scss */
 .my-name {
   position: absolute;
   right: 10%;
@@ -185,23 +191,23 @@ p {
   font-size: 1.8rem;
   color: #fff;
 }
-/* line 102, ../../scss/base.scss */
+/* line 106, ../../scss/base.scss */
 .my-name:before, .my-name:after {
   font-family: "droidsans", arial, sans-serif;
   font-size: 2.4rem;
 }
-/* line 107, ../../scss/base.scss */
+/* line 111, ../../scss/base.scss */
 .my-name:before {
   content: "{";
   padding-right: 2px;
 }
-/* line 112, ../../scss/base.scss */
+/* line 116, ../../scss/base.scss */
 .my-name:after {
   content: "}";
   padding-left: 2px;
 }
 
-/* line 119, ../../scss/base.scss */
+/* line 123, ../../scss/base.scss */
 .flexible {
   display: -ms-flex;
   display: -webkit-flex;
@@ -214,23 +220,23 @@ p {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 125, ../../scss/base.scss */
+  /* line 129, ../../scss/base.scss */
   .block-home {
     width: 28%;
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 125, ../../scss/base.scss */
+  /* line 129, ../../scss/base.scss */
   .block-home {
     width: 18%;
   }
 }
-/* line 133, ../../scss/base.scss */
+/* line 137, ../../scss/base.scss */
 .block-home .visual {
   height: 120px;
   text-align: center;
 }
-/* line 138, ../../scss/base.scss */
+/* line 142, ../../scss/base.scss */
 .block-home .visual .icon-blog {
   display: block;
   margin: 0 auto;
@@ -241,19 +247,19 @@ p {
   background-color: #438992;
   border-radius: 100px;
 }
-/* line 149, ../../scss/base.scss */
+/* line 153, ../../scss/base.scss */
 .block-home .visual .icon-blog:before {
   color: #fff;
   font-size: 6.5rem;
 }
-/* line 155, ../../scss/base.scss */
+/* line 159, ../../scss/base.scss */
 .block-home.portrait {
   width: 100px;
   height: 100px;
   border-radius: 100px;
 }
 
-/* line 165, ../../scss/base.scss */
+/* line 169, ../../scss/base.scss */
 .intro {
   max-width: 746px;
   margin: 0 auto;
