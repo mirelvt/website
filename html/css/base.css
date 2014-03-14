@@ -46,7 +46,7 @@
   font-style: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/_fonts\.scss}line{font-family:\0000375}}
+/* line 75, ../../scss/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'mvt-icons';
   speak: none;
@@ -60,25 +60,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/_fonts\.scss}line{font-family:\0000389}}
+/* line 89, ../../scss/_fonts.scss */
 .icon-blog:before {
   content: "\e600";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\000035}}
+/* line 5, ../../scss/base.scss */
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000314}}
+/* line 14, ../../scss/base.scss */
 html {
   font-size: 62.5%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000320}}
+/* line 22, ../../scss/base.scss */
 body {
   margin: 0;
   padding: 0;
@@ -88,7 +90,7 @@ body {
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000334}}
+/* line 36, ../../scss/base.scss */
 h1,
 h2,
 h3,
@@ -98,21 +100,21 @@ h6 {
   font-family: "leaguegothic", arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000338}}
+/* line 40, ../../scss/base.scss */
 h1 {
   font-size: 3.5rem;
   margin-top: 28px;
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000343}}
+/* line 45, ../../scss/base.scss */
 h2 {
   font-size: 3rem;
   margin-top: 21px;
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000352}}
+/* line 54, ../../scss/base.scss */
 h3,
 h4,
 h5,
@@ -120,18 +122,18 @@ h6 {
   font-size: 2.75rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000354}}
+/* line 56, ../../scss/base.scss */
 a {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000356}}
+/* line 58, ../../scss/base.scss */
 p {
   margin-top: 18px;
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000363}}
+/* line 65, ../../scss/base.scss */
 .header-menu {
   position: relative;
   height: 50px;
@@ -144,18 +146,18 @@ p {
   /* W3C */
   background-color: #438992;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000371}}
+/* line 73, ../../scss/base.scss */
 .header-menu ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000372}}
+/* line 74, ../../scss/base.scss */
 .header-menu li {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000375}}
+/* line 77, ../../scss/base.scss */
 .header-menu-item {
   display: inline-block;
   padding: 14px 15px;
@@ -163,7 +165,7 @@ p {
   font-size: 1.8rem;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000382}}
+/* line 84, ../../scss/base.scss */
 .header-menu-item.selected {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #20636c), color-stop(5px, rgba(32, 99, 108, 0)));
   /* Chrome,Safari4+ */
@@ -174,7 +176,7 @@ p {
   background-color: #34737b;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\0000391}}
+/* line 93, ../../scss/base.scss */
 .my-name {
   position: absolute;
   right: 10%;
@@ -183,23 +185,23 @@ p {
   font-size: 1.8rem;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\00003100}}
+/* line 102, ../../scss/base.scss */
 .my-name:before, .my-name:after {
   font-family: "droidsans", arial, sans-serif;
   font-size: 2.4rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\00003105}}
+/* line 107, ../../scss/base.scss */
 .my-name:before {
   content: "{";
   padding-right: 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\00003110}}
+/* line 112, ../../scss/base.scss */
 .my-name:after {
   content: "}";
   padding-left: 2px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\00003117}}
+/* line 119, ../../scss/base.scss */
 .flexible {
   display: -ms-flex;
   display: -webkit-flex;
@@ -212,25 +214,24 @@ p {
 }
 
 @media screen and (max-width: 1279px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\00003123}}
-  .block__home {
+  /* line 125, ../../scss/base.scss */
+  .block-home {
     width: 28%;
   }
 }
 @media screen and (min-width: 1280px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\00003123}}
-  .block__home {
+  /* line 125, ../../scss/base.scss */
+  .block-home {
     width: 18%;
   }
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\00003133}}
-.block__home_visual {
+/* line 133, ../../scss/base.scss */
+.block-home .visual {
   height: 120px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\00003138}}
-.block__home_visual .icon-blog {
+/* line 138, ../../scss/base.scss */
+.block-home .visual .icon-blog {
   display: block;
   margin: 0 auto;
   width: 100px;
@@ -240,15 +241,21 @@ p {
   background-color: #438992;
   border-radius: 100px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\00003149}}
-.block__home_visual .icon-blog:before {
+/* line 149, ../../scss/base.scss */
+.block-home .visual .icon-blog:before {
   color: #fff;
   font-size: 6.5rem;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/base\.scss}line{font-family:\00003155}}
-.block__home_portrait {
+/* line 155, ../../scss/base.scss */
+.block-home.portrait {
   width: 100px;
   height: 100px;
   border-radius: 100px;
+}
+
+/* line 165, ../../scss/base.scss */
+.intro {
+  max-width: 746px;
+  margin: 0 auto;
+  padding: 0 18px;
 }
