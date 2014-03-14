@@ -51,11 +51,11 @@
 
 @font-face {
   font-family: 'leaguegothic';
-  src: url('leaguegothic-italic-webfont.eot');
-    src: url('leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic-italic-webfont.woff') format('woff'),
-         url('leaguegothic-italic-webfont.ttf') format('truetype'),
-         url('leaguegothic-italic-webfont.svg#league_gothicitalic') format('svg');
+  src: url('../fonts/leaguegothic-italic-webfont.eot');
+    src: url('../fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-italic-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-italic-webfont.svg#league_gothicitalic') format('svg');
   font-weight: normal;
   font-style: italic;
 }

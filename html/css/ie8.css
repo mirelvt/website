@@ -1,1 +1,9 @@
-header,footer,section,aside,nav,main{display:block}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/mirella\/Documents\/REPOS\/website\/scss\/ie8\.scss}line{font-family:\000036}}
+header,
+footer,
+section,
+aside,
+nav,
+main {
+  display: block;
+}
