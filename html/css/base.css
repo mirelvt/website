@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'droidsans';
   src: url("../fonts/DroidSans-webfont.eot");
@@ -89,7 +90,7 @@ body {
   line-height: 2.1rem;
   background-color: #fff;
 }
-@media (orientation: portrait) {
+@media (max-width: 500px) {
   /* line 22, ../../scss/base.scss */
   body {
     font-size: 1.7rem;
@@ -260,8 +261,36 @@ p {
 }
 
 /* line 169, ../../scss/base.scss */
-.intro {
+main {
   max-width: 746px;
   margin: 0 auto;
   padding: 0 18px;
+}
+
+/* line 177, ../../scss/base.scss */
+.article_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 18px;
+}
+/* line 181, ../../scss/base.scss */
+.article_list .item {
+  margin-bottom: 20px;
+}
+/* line 185, ../../scss/base.scss */
+.article_list .title {
+  display: block;
+  margin-bottom: 8px;
+  padding-bottom: 2px;
+  font-family: "leaguegothic", arial, sans-serif;
+  font-size: 2.5rem;
+  color: #ebd778;
+  border-bottom: 1px solid #ebd778;
+}
+/* line 194, ../../scss/base.scss */
+.article_list .title:after {
+  display: inline-block;
+  margin-left: 5px;
+  content: "›";
 }

@@ -50,13 +50,10 @@
       <link rel="stylesheet" href="css/base.css" />
       <xsl:text disable-output-escaping="yes">&#xA;&lt;!--[if lt IE 9]></xsl:text>
         <script>
-          document.createElement("header");
-          document.createElement("footer");
-          document.createElement("section");
-          document.createElement("aside");
-          document.createElement("nav");
-          document.createElement("article");
-          document.createElement("main");
+          var elms = ['header', 'footer', 'section', 'aside', 'nav', 'article', 'main'];
+          for (var i = 0; i <xsl:text disable-output-escaping="yes">&lt;</xsl:text> elms.length; i++) {
+            document.createElement(elms[i]);
+          };
         </script>
         <link rel="stylesheet" href="css/ie8.css"/>
       <xsl:text disable-output-escaping="yes">&lt;![endif]-->&#xA;</xsl:text>
