@@ -87,6 +87,7 @@ body {
   padding: 0;
   font-family: "droidsans", arial, sans-serif;
   font-size: 1.6rem;
+  color: #2d2d2d;
   line-height: 2.1rem;
   background-color: #fff;
 }
@@ -97,7 +98,7 @@ body {
   }
 }
 
-/* line 40, ../../scss/base.scss */
+/* line 41, ../../scss/base.scss */
 h1,
 h2,
 h3,
@@ -107,21 +108,21 @@ h6 {
   font-family: "leaguegothic", arial, sans-serif;
 }
 
-/* line 44, ../../scss/base.scss */
+/* line 45, ../../scss/base.scss */
 h1 {
   font-size: 3.5rem;
   margin-top: 28px;
   margin-bottom: 0;
 }
 
-/* line 49, ../../scss/base.scss */
+/* line 50, ../../scss/base.scss */
 h2 {
   font-size: 3rem;
   margin-top: 21px;
   margin-bottom: 0;
 }
 
-/* line 58, ../../scss/base.scss */
+/* line 59, ../../scss/base.scss */
 h3,
 h4,
 h5,
@@ -129,20 +130,19 @@ h6 {
   font-size: 2.75rem;
 }
 
-/* line 60, ../../scss/base.scss */
+/* line 61, ../../scss/base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 62, ../../scss/base.scss */
+/* line 63, ../../scss/base.scss */
 p {
   margin-top: 18px;
   margin-bottom: 0;
 }
 
-/* line 69, ../../scss/base.scss */
+/* line 70, ../../scss/base.scss */
 .header-menu {
-  position: relative;
   height: 50px;
   padding: 0 0 0 10%;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #20636c), color-stop(5px, rgba(32, 99, 108, 0)));
@@ -153,20 +153,21 @@ p {
   /* W3C */
   background-color: #438992;
 }
-/* line 77, ../../scss/base.scss */
+/* line 76, ../../scss/base.scss */
 .header-menu ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 78, ../../scss/base.scss */
+/* line 77, ../../scss/base.scss */
 .header-menu li {
   display: inline-block;
 }
 
-/* line 81, ../../scss/base.scss */
+/* line 80, ../../scss/base.scss */
 .header-menu-item {
   display: inline-block;
+  height: 50px;
   padding: 14px 15px;
   font-family: "droidsans", arial, sans-serif;
   font-size: 1.8rem;

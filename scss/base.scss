@@ -24,6 +24,7 @@ body {
   padding: 0;
   font-family: $font-main;
   font-size: 1.6rem;
+  color: $color-text;
   line-height: 2.1rem;
   background-color: #fff;
 
@@ -67,12 +68,10 @@ p {
 // HEADER MENU
 // ===========
 .header-menu {
-  position: relative;
   height: 50px;
   padding: 0 0 0 10%;
   @include header-shadow;
   background-color: $color-header;
-
 
   ul { @include reset-ul; }
   li { display: inline-block; }
@@ -80,6 +79,7 @@ p {
 
 .header-menu-item {
   display: inline-block;
+  height: 50px;
   padding: 14px 15px;
   font-family: $font-main;
   font-size: 1.8rem;
