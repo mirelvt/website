@@ -32,8 +32,10 @@
 
       <div class="block-home">
         <p class="visual">
-          <img src="img/fronteers-logo.png"
+          <a href="fronteers.html">
+            <img src="img/fronteers-125x125.png"
               alt="Fronteers - vakvereniging voor front-end developers" />
+          </a>
         </p>
 
         <h2>Fronteers</h2>

@@ -113,16 +113,18 @@ h1 {
   font-size: 3.5rem;
   margin-top: 28px;
   margin-bottom: 0;
+  color: #f7a14d;
 }
 
-/* line 50, ../../scss/base.scss */
+/* line 52, ../../scss/base.scss */
 h2 {
   font-size: 3rem;
   margin-top: 21px;
   margin-bottom: 0;
+  color: #f7a14d;
 }
 
-/* line 59, ../../scss/base.scss */
+/* line 62, ../../scss/base.scss */
 h3,
 h4,
 h5,
@@ -130,41 +132,41 @@ h6 {
   font-size: 2.75rem;
 }
 
-/* line 61, ../../scss/base.scss */
+/* line 64, ../../scss/base.scss */
 a {
   text-decoration: none;
 }
 
-/* line 63, ../../scss/base.scss */
+/* line 66, ../../scss/base.scss */
 p {
   margin-top: 18px;
   margin-bottom: 0;
 }
 
-/* line 70, ../../scss/base.scss */
+/* line 73, ../../scss/base.scss */
 .header-menu {
   height: 50px;
   padding: 0 0 0 10%;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #20636c), color-stop(5px, rgba(32, 99, 108, 0)));
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #046978), color-stop(5px, rgba(4, 105, 120, 0)));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(bottom, #20636c 0%, rgba(32, 99, 108, 0) 5px);
+  background: -webkit-linear-gradient(bottom, #046978 0%, rgba(4, 105, 120, 0) 5px);
   /* Chrome10+,Safari5.1+ */
-  background: linear-gradient(to top, #20636c 0%, rgba(32, 99, 108, 0) 5px);
+  background: linear-gradient(to top, rgba(4, 105, 120, 0.7) 0%, rgba(4, 105, 120, 0) 5px);
   /* W3C */
-  background-color: #438992;
+  background-color: #00a4bc;
 }
-/* line 76, ../../scss/base.scss */
+/* line 79, ../../scss/base.scss */
 .header-menu ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-/* line 77, ../../scss/base.scss */
+/* line 80, ../../scss/base.scss */
 .header-menu li {
   display: inline-block;
 }
 
-/* line 80, ../../scss/base.scss */
+/* line 83, ../../scss/base.scss */
 .header-menu-item {
   display: inline-block;
   height: 50px;
@@ -173,18 +175,18 @@ p {
   font-size: 1.8rem;
   color: #fff;
 }
-/* line 88, ../../scss/base.scss */
+/* line 91, ../../scss/base.scss */
 .header-menu-item.selected {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #20636c), color-stop(5px, rgba(32, 99, 108, 0)));
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #046978), color-stop(5px, rgba(4, 105, 120, 0)));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(bottom, #20636c 0%, rgba(32, 99, 108, 0) 5px);
+  background: -webkit-linear-gradient(bottom, #046978 0%, rgba(4, 105, 120, 0) 5px);
   /* Chrome10+,Safari5.1+ */
-  background: linear-gradient(to top, #20636c 0%, rgba(32, 99, 108, 0) 5px);
+  background: linear-gradient(to top, rgba(4, 105, 120, 0.7) 0%, rgba(4, 105, 120, 0) 5px);
   /* W3C */
-  background-color: #34737b;
+  background-color: #057b8c;
 }
 
-/* line 97, ../../scss/base.scss */
+/* line 100, ../../scss/base.scss */
 .my-name {
   position: absolute;
   right: 10%;
@@ -193,23 +195,23 @@ p {
   font-size: 1.8rem;
   color: #fff;
 }
-/* line 106, ../../scss/base.scss */
+/* line 109, ../../scss/base.scss */
 .my-name:before, .my-name:after {
   font-family: "droidsans", arial, sans-serif;
   font-size: 2.4rem;
 }
-/* line 111, ../../scss/base.scss */
+/* line 114, ../../scss/base.scss */
 .my-name:before {
   content: "{";
   padding-right: 2px;
 }
-/* line 116, ../../scss/base.scss */
+/* line 119, ../../scss/base.scss */
 .my-name:after {
   content: "}";
   padding-left: 2px;
 }
 
-/* line 123, ../../scss/base.scss */
+/* line 126, ../../scss/base.scss */
 .flexible {
   display: -ms-flex;
   display: -webkit-flex;
@@ -222,74 +224,78 @@ p {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 129, ../../scss/base.scss */
+  /* line 132, ../../scss/base.scss */
   .block-home {
     width: 28%;
   }
 }
 @media screen and (min-width: 1280px) {
-  /* line 129, ../../scss/base.scss */
+  /* line 132, ../../scss/base.scss */
   .block-home {
     width: 18%;
   }
 }
-/* line 137, ../../scss/base.scss */
+/* line 140, ../../scss/base.scss */
 .block-home .visual {
   height: 120px;
   text-align: center;
 }
-/* line 142, ../../scss/base.scss */
+/* line 145, ../../scss/base.scss */
 .block-home .visual .icon-blog {
   display: block;
   margin: 0 auto;
-  width: 100px;
-  height: 100px;
-  padding-top: 12px;
-  padding-left: 20px;
-  background-color: #438992;
-  border-radius: 100px;
+  width: 121px;
+  height: 121px;
+  padding-top: 18px;
+  padding-left: 12px;
+  background-color: #00a4bc;
 }
-/* line 153, ../../scss/base.scss */
+/* line 155, ../../scss/base.scss */
 .block-home .visual .icon-blog:before {
   color: #fff;
-  font-size: 6.5rem;
+  font-size: 7.5rem;
 }
-/* line 159, ../../scss/base.scss */
+/* line 161, ../../scss/base.scss */
 .block-home.portrait {
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
+  width: 121px;
+  height: 121px;
 }
 
-/* line 169, ../../scss/base.scss */
+/* line 170, ../../scss/base.scss */
 main {
   max-width: 746px;
   margin: 0 auto;
   padding: 0 18px;
 }
 
-/* line 177, ../../scss/base.scss */
+/* line 175, ../../scss/base.scss */
+.subtitle {
+  font-size: 1.4rem;
+  color: #a9a9a9;
+}
+
+/* line 182, ../../scss/base.scss */
 .article_list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   margin-top: 18px;
 }
-/* line 181, ../../scss/base.scss */
+/* line 186, ../../scss/base.scss */
 .article_list .item {
   margin-bottom: 20px;
 }
-/* line 185, ../../scss/base.scss */
+/* line 190, ../../scss/base.scss */
 .article_list .title {
   display: block;
   margin-bottom: 8px;
   padding-bottom: 2px;
   font-family: "leaguegothic", arial, sans-serif;
   font-size: 2.5rem;
-  color: #ebd778;
-  border-bottom: 1px solid #ebd778;
+  color: #f7a14d;
+  border-bottom: 1px solid #f7a14d;
 }
-/* line 194, ../../scss/base.scss */
+/* line 199, ../../scss/base.scss */
 .article_list .title:after {
   display: inline-block;
   margin-left: 5px;
