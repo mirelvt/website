@@ -4,7 +4,7 @@
     <title>Mirella van Teulingen - There's a class for that</title>
    </head>
   <body>
-    <main>
+    <article>
       <h1>There's a class for that</h1>
       <p class="subtitle">Elaine Oliver Twitter: @skinkfu</p>
       <p>
@@ -65,6 +65,6 @@
       <p>
         Besides my personal remarks, I really liked the presentation and the experience Elaine had shared with us. It gave me food for thought and ideas how to make my CSS more object oriented. I do was impressed how flexible the framework is that Elaine created, and her unit tests as well. That had cost her an incredibly amount of time and efford.
       </p>
-    </main>
+    </article>
   </body>
 </html>

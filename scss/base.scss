@@ -61,7 +61,7 @@ h4,
 h5,
 h6 { font-size: 2.75rem; }
 
-a { text-decoration: none; }
+a { color: $color-selected; }
 
 p {
   margin-top: 18px;
@@ -78,6 +78,7 @@ p {
 
   ul { @include reset-ul; }
   li { display: inline-block; }
+  a { text-decoration: none; }
 }
 
 .header-menu-item {
@@ -167,10 +168,10 @@ p {
 // =======
 // CONTENT
 // =======
-main {
+main, article {
   max-width: 746px;
   margin: 0 auto;
-  padding: 0 18px;
+  padding: 0 18px 18px 0;
 }
 .subtitle {
   font-size: 1.4rem;
@@ -194,6 +195,7 @@ main {
     font-family: $font-headers;
     font-size: 2.5rem;
     color: $color-maintitle;
+    text-decoration: none;
     border-bottom: 1px solid $color-maintitle;
 
     &:after {
