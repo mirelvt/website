@@ -15,10 +15,10 @@ module.exports = function(grunt) {
     connect: {
       server: {
         options: {
-          port: 9001,
+          port: 9008,
           base: 'html',
           livereload: true,
-          open: true,
+          open: true
         },
       },
     },
@@ -27,9 +27,8 @@ module.exports = function(grunt) {
       options: {
         livereload: true,
       },
-      src: {
-        files: ['html/*.html'],
-        tasks: ['dev'],
+      html: {
+        files: ['**/*.html']
       },
     },
 
