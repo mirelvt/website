@@ -30,20 +30,23 @@ module.exports = function(grunt) {
       html: {
         files: ['**/*.html']
       },
+      css: {
+        files: ['scss/*.scss'],
+        tasks: ['compass'],
+      },
     },
 
-    // compass: {
-    //   dev: {
-    //     options: {
-    //       sassDir: 'scss',
-    //       cssDir: 'html/css',
-    //       environment: 'development',
-    //       outputStyle: 'expanded',
-    //       debugInfo: true,
-    //       watch: true
-    //     }
-    //   }
-    // }
+    compass: {
+      dev: {
+        options: {
+          sassDir: 'scss',
+          cssDir: 'html/css',
+          environment: 'development',
+          outputStyle: 'expanded',
+          debugInfo: true,
+        }
+      }
+    }
   });
 
 
