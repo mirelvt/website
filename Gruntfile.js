@@ -4,9 +4,11 @@ module.exports = function(grunt) {
   // connect: webserver
   // watch: watch file changes + livereload
   // compass
+  // xsltproc: for converting xsl to html
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-xsltproc');
 
   // Project configuration.
   grunt.initConfig({
@@ -28,12 +30,16 @@ module.exports = function(grunt) {
         livereload: true,
       },
       html: {
-        files: ['**/*.html']
+        files: ['html/*.html'],
       },
       css: {
         files: ['scss/*.scss'],
         tasks: ['compass'],
       },
+      shtml: {
+        files: ['**/*.shtml'],
+        tasks: ['xsltproc'],
+      }
     },
 
     compass: {
@@ -45,6 +51,21 @@ module.exports = function(grunt) {
           outputStyle: 'expanded',
           debugInfo: true,
         }
+      }
+    },
+
+    xsltproc: {
+      options: {
+        stylesheet: 'base.xsl'
+      },
+      compile: {
+        files: [{
+          expand: true,
+          cwd: '.',
+          src: '*.shtml',
+          dest: 'html',
+          ext: '.html'
+        }]
       }
     }
   });
