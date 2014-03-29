@@ -3,22 +3,33 @@ module.exports = function(grunt) {
   // Load the Npm tasks configured for this project:
   // connect: webserver
   // watch: watch file changes + livereload
-  // compass
+  // sass
   // xsltproc: for converting xsl to html
+  // clean
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-xsltproc');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
     connect: {
-      server: {
+      dev: {
         options: {
           port: 9008,
           base: 'html',
+          livereload: true,
+          open: true
+        },
+      },
+      prod: {
+        options: {
+          port: 9009,
+          base: 'html',
+          keepalive: true,
           livereload: true,
           open: true
         },
@@ -34,7 +45,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['scss/*.scss'],
-        tasks: ['compass'],
+        tasks: ['sass:dev'],
       },
       shtml: {
         files: ['**/*.shtml'],
@@ -42,15 +53,32 @@ module.exports = function(grunt) {
       }
     },
 
-    compass: {
+    sass: {
       dev: {
         options: {
-          sassDir: 'scss',
-          cssDir: 'html/css',
-          environment: 'development',
-          outputStyle: 'expanded',
-          debugInfo: true,
-        }
+          style: 'expanded',
+          sourcemap: true,
+          debugInfo: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'scss',
+          src: ['*.scss'],
+          dest: 'html/css',
+          ext: '.min.css'
+        }]
+      },
+      prod: {
+        options: {
+          style: 'compressed',
+        },
+        files: [{
+          expand: true,
+          cwd: 'scss',
+          src: ['*.scss'],
+          dest: 'html/css',
+          ext: '.min.css'
+        }]
       }
     },
 
@@ -67,12 +95,13 @@ module.exports = function(grunt) {
           ext: '.html'
         }]
       }
-    }
+    },
+
+    clean: ["html/css"]
   });
 
-
   // Default task(s).
-  grunt.registerTask('default', []);
-  grunt.registerTask('dev', ['connect', 'watch']);
+  grunt.registerTask('prod', ['clean', 'sass:prod', 'xsltproc', 'connect:prod']);
+  grunt.registerTask('dev', ['connect:dev', 'watch']);
 
 };

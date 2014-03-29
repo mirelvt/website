@@ -1,3 +1,4 @@
 # Ignore the following files:
+*.map
 .sass-cache
 node_modules

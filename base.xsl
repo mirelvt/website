@@ -47,7 +47,7 @@
       <title>
         <xsl:value-of select="/h:html/h:head/h:title" />
       </title>
-      <link rel="stylesheet" href="css/base.css" />
+      <link rel="stylesheet" href="css/base.min.css" />
       <xsl:text disable-output-escaping="yes">&#xA;&lt;!--[if lt IE 9]></xsl:text>
         <script>
           var elms = ['header', 'footer', 'section', 'aside', 'nav', 'article', 'main'];
@@ -55,7 +55,7 @@
             document.createElement(elms[i]);
           };
         </script>
-        <link rel="stylesheet" href="css/ie8.css"/>
+        <link rel="stylesheet" href="css/ie8.min.css"/>
       <xsl:text disable-output-escaping="yes">&lt;![endif]-->&#xA;</xsl:text>
 
     </head>
