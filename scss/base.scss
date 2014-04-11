@@ -183,8 +183,13 @@ main, article {
   @include reset-ul;
   margin-top: 18px;
 
-  .item {
-    margin-bottom: 20px;
+  .item { margin-bottom: 20px; }
+
+  // Used as title of a listing
+  .list_title {
+    font-family: $font-headers;
+    font-size: 2.8rem;
+    margin: 25px 0 15px 0;
   }
 
   .title {
@@ -192,15 +197,22 @@ main, article {
     margin-bottom: 8px;
     padding-bottom: 2px;
     font-family: $font-headers;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     color: $color-maintitle;
     text-decoration: none;
     border-bottom: 1px solid $color-maintitle;
+    line-height: 2.5rem;
 
     &:after {
       display: inline-block;
       margin-left: 5px;
       content: "›";
+    }
+
+    .speaker {
+      font-family: $font-main;
+      font-size: 1.6rem;
+      color: $color-text;
     }
   }
 }

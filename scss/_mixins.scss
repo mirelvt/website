@@ -29,3 +29,8 @@
   -webkit-justify-content: $value;
   justify-content: $value;
 }
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

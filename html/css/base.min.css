@@ -283,22 +283,35 @@ main, article {
 .article_list .item {
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003189}}
+.article_list .list_title {
+  font-family: "leaguegothic", arial, sans-serif;
+  font-size: 2.8rem;
+  margin: 25px 0 15px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003195}}
 .article_list .title {
   display: block;
   margin-bottom: 8px;
   padding-bottom: 2px;
   font-family: "leaguegothic", arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   color: #f7a14d;
   text-decoration: none;
   border-bottom: 1px solid #f7a14d;
+  line-height: 2.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003200}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003206}}
 .article_list .title:after {
   display: inline-block;
   margin-left: 5px;
   content: "›";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003212}}
+.article_list .title .speaker {
+  font-family: "droidsans", arial, sans-serif;
+  font-size: 1.6rem;
+  color: #2d2d2d;
 }
 
 /*# sourceMappingURL=base.min.css.map */
