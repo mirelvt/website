@@ -4,7 +4,7 @@
     <title>Mirella van Teulingen - Fronteers Conference 2012</title>
    </head>
   <body>
-    <main>
+    <div role="main-content">
        <div class="intro">
          <h1>Fronteers Conference 2012</h1>
          <p>
@@ -98,6 +98,6 @@
             <a href="http://vimeo.com/53373706">http://vimeo.com/53373706</a>
           </li>
        </ul>
-    </main>
+    </div>
   </body>
 </html>

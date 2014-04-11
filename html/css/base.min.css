@@ -260,7 +260,7 @@ p {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003170}}
-main, article {
+[role="main-content"], article {
   max-width: 746px;
   margin: 0 auto;
   padding: 0 18px 18px 0;

@@ -3,8 +3,7 @@ header,
 footer,
 section,
 aside,
-nav,
-main {
+nav {
   display: block;
 }
 

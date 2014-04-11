@@ -4,7 +4,7 @@
     <title>Mirella van Teulingen - Fronteers</title>
    </head>
   <body>
-    <main>
+    <div role="main-content">
         <div class="intro">
             <h1>Fronteers</h1>
             <p>
@@ -40,6 +40,6 @@
             </li>
         </ul>
 
-    </main>
+    </div>
   </body>
 </html>

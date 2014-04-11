@@ -50,7 +50,7 @@
       <link rel="stylesheet" href="css/base.min.css" />
       <xsl:text disable-output-escaping="yes">&#xA;&lt;!--[if lt IE 9]></xsl:text>
         <script>
-          var elms = ['header', 'footer', 'section', 'aside', 'nav', 'article', 'main'];
+          var elms = ['header', 'footer', 'section', 'aside', 'nav', 'article'];
           for (var i = 0; i <xsl:text disable-output-escaping="yes">&lt;</xsl:text> elms.length; i++) {
             document.createElement(elms[i]);
           };
