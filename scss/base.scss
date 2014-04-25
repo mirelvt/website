@@ -178,7 +178,7 @@ p {
 }
 .subtitle {
   font-size: 1.4rem;
-  color: #a9a9a9;
+  color: $color-subtitle;
 }
 
 // Article list
@@ -187,7 +187,12 @@ p {
   @include reset-ul;
   margin-top: 18px;
 
-  .item { margin-bottom: 20px; }
+  .item {
+    margin-bottom: 20px;
+    color: darken($color-subtitle, 5%);
+
+    a:not(.title) { color: darken($color-subtitle, 5%); }
+  }
 
   // Used as title of a listing
   .list_title {

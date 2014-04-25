@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <head>
     <title>
       Mirella van Teulingen - Style guides are the new Photoshop
@@ -28,7 +29,7 @@
       <ul>
         <li>It is very practical for responsive design mockups</li>
         <li>Making mockups in web tech gives a realistic presentation. Which also helps to manage the clients expectations.</li>
-        <li>It is free and open: everyone has a browser <xsl:text disable-output-escaping="yes">&amp;</xsl:text> editor</li>
+        <li>It is free and open: everyone has a browser <xsl:text>&amp;</xsl:text> editor</li>
         <li>No negative surprises for the client</li>
         <li>Possible preperation for development</li>
         <li>And they can be responsive</li>
@@ -38,7 +39,7 @@
         <br />
         <strong>Audience:</strong> "It's not natural. No GUI!"
         <br />
-        <strong>Stephen:</strong>"Photoshop is pretty difficult too, for something like the LAB colorspace there are books of <xsl:text disable-output-escaping="yes">&gt;</xsl:text> 600 pages!"
+        <strong>Stephen:</strong>"Photoshop is pretty difficult too, for something like the LAB colorspace there are books of <xsl:text>&gt;</xsl:text> 600 pages!"
       </blockquote>
       <p>We need two things to replace Photoshop for mock ups. Number one, consider Photoshop not as a design tool for a
       complete mock up. Number two, use style guides.</p>
@@ -46,7 +47,7 @@
       <ul>
         <li>No measuring, with looking at Photoshop and doing math for width etc.</li>
         <li>State and breakpoint changes can be included.</li>
-        <li>Useful for future designers, developers <xsl:text disable-output-escaping="yes">&amp;</xsl:text> others.</li>
+        <li>Useful for future designers, developers <xsl:text>&amp;</xsl:text> others.</li>
         <li>Design consistency and maintainability.</li>
       </ul>
       <p>See for some examples of style guides written by
