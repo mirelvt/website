@@ -41,7 +41,7 @@
   font-weight: normal;
   font-style: normal;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/_fonts\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/_fonts\.scss}line{font-family:\0000375}}
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'mvt-icons';
   speak: none;
@@ -55,18 +55,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/_fonts\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/_fonts\.scss}line{font-family:\0000389}}
 .icon-blog:before {
   content: "\e600";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\000034}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\000034}}
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000313}}
 html {
   font-size: 62.5%;
   -ms-text-size-adjust: 100%;
@@ -75,7 +75,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000321}}
 body {
   margin: 0;
   padding: 0;
@@ -86,13 +86,13 @@ body {
   background-color: #fff;
 }
 @media (max-width: 500px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000321}}
   body {
     font-size: 1.7rem;
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000335}}
 h1,
 h2,
 h3,
@@ -102,7 +102,7 @@ h6 {
   font-family: "leaguegothic", arial, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000344}}
 h1 {
   font-size: 3.5rem;
   margin-top: 28px;
@@ -110,7 +110,7 @@ h1 {
   color: #f7a14d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000351}}
 h2 {
   font-size: 3rem;
   margin-top: 21px;
@@ -118,26 +118,33 @@ h2 {
   color: #f7a14d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000358}}
 h3,
 h4,
 h5,
 h6 {
-  font-size: 2.75rem;
+  font-size: 2.6rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000363}}
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000367}}
 a {
   color: #057b8c;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000369}}
 p {
   margin-top: 18px;
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000376}}
 .header-menu {
   height: 50px;
   padding: 0 0 0 10%;
@@ -149,22 +156,22 @@ p {
   /* W3C */
   background-color: #00a4bc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000382}}
 .header-menu ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000383}}
 .header-menu li {
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000384}}
 .header-menu a {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000387}}
 .header-menu-item {
   display: inline-block;
   height: 50px;
@@ -173,7 +180,7 @@ p {
   font-size: 1.8rem;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\0000395}}
 .header-menu-item.selected {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0%, #046978), color-stop(5px, rgba(4, 105, 120, 0)));
   /* Chrome,Safari4+ */
@@ -184,7 +191,7 @@ p {
   background-color: #057b8c;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003104}}
 .my-name {
   position: absolute;
   right: 10%;
@@ -193,23 +200,23 @@ p {
   font-size: 1.8rem;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003112}}
 .my-name:before, .my-name:after {
   font-family: "droidsans", arial, sans-serif;
   font-size: 2.4rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003118}}
 .my-name:before {
   content: "{";
   padding-right: 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003123}}
 .my-name:after {
   content: "}";
   padding-left: 2px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003130}}
 .flexible {
   display: -ms-flex;
   display: -webkit-flex;
@@ -222,23 +229,23 @@ p {
 }
 
 @media screen and (max-width: 1279px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003136}}
   .block-home {
     width: 28%;
   }
 }
 @media screen and (min-width: 1280px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003136}}
   .block-home {
     width: 18%;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003144}}
 .block-home .visual {
   height: 120px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003149}}
 .block-home .visual .icon-blog {
   display: block;
   margin: 0 auto;
@@ -248,66 +255,64 @@ p {
   padding-left: 12px;
   background-color: #00a4bc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003159}}
 .block-home .visual .icon-blog:before {
   color: #fff;
   font-size: 7.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003165}}
 .block-home.portrait {
   width: 121px;
   height: 121px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003174}}
 [role="main-content"], article {
   max-width: 746px;
   margin: 0 auto;
   padding: 0 18px 18px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003175}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003179}}
 .subtitle {
   font-size: 1.4rem;
   color: #a9a9a9;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003186}}
 .article_list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   margin-top: 18px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003190}}
 .article_list .item {
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003189}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003193}}
 .article_list .list_title {
   font-family: "leaguegothic", arial, sans-serif;
   font-size: 2.8rem;
-  margin: 25px 0 15px 0;
+  margin: 30px 0 15px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003195}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003199}}
 .article_list .title {
   display: block;
-  margin-bottom: 8px;
-  padding-bottom: 2px;
-  font-family: "leaguegothic", arial, sans-serif;
-  font-size: 2.6rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
   color: #f7a14d;
   text-decoration: none;
-  border-bottom: 1px solid #f7a14d;
   line-height: 2.5rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003208}}
 .article_list .title:after {
   display: inline-block;
   margin-left: 5px;
   content: "›";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003214}}
 .article_list .title .speaker {
   font-family: "droidsans", arial, sans-serif;
   font-size: 1.6rem;
