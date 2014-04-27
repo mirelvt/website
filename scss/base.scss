@@ -203,7 +203,6 @@ article {
     padding: 8px;
     color: #fff;
     background-color: $color-header;
-    // border-bottom: 1px solid $color-subtitle;
   }
 
   .title {
@@ -228,3 +227,37 @@ article {
     }
   }
 }
+
+// ============
+// CODE STYLING
+// ============
+pre {
+    position: relative;
+    margin: 5px;
+    padding: 0;
+    overflow: auto;
+    background: lighten($color-subtitle, 32%);
+    white-space: normal;
+    font-size: 1.2rem;
+    border: 1px solid $color-subtitle;
+}
+code {
+    display: block;
+    overflow: auto;
+    margin: 0;
+    padding: 15px;
+    white-space: pre;
+    font-family: monospace, sans-serif;
+}
+.comment { color: darken($color-subtitle, 10%); }
+
+.code-indent {
+    display: inline-block;
+    text-indent: $code-indent;
+}
+.code-indent-2 {
+    display: inline-block;
+    text-indent: $code-indent * 2;
+}
+.boolean { color: $color-maintitle; }
+.number { color: $color-header; }

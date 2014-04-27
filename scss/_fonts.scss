@@ -60,6 +60,21 @@
   font-style: italic;
 }
 
+//CODE
+@font-face {
+  font-family: 'monospace';
+  src: url('../fonts/MonospaceTypewriter-webfont.eot');
+  src: url('../fonts/MonospaceTypewriter-webfont.eot?#iefix')
+            format('embedded-opentype'),
+       url('../fonts/MonospaceTypewriter-webfont.woff') format('woff'),
+       url('../fonts/MonospaceTypewriter-webfont.ttf') format('truetype'),
+       url('../fonts/MonospaceTypewriter-webfont.svg#monospacetypewriterregular')
+            format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 // Font icons
 @font-face {
     font-family: 'mvt-icons';
