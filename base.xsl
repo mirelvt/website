@@ -10,7 +10,6 @@
       indent="yes" />
 
   <xsl:param name="target" />
-
   <xsl:template match="/">
      <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
     <html lang="nl">
@@ -18,7 +17,7 @@
 
       <body>
         <header class="header-menu">
-           <nav>
+           <nav role="navigation">
             <ul>
               <xsl:for-each select="document('navigation.xml')/navigation/item">
                 <li>

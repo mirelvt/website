@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <head>
     <title>Mirella van Teulingen - Fronteers</title>
    </head>
   <body>
-    <div role="main-content">
+    <div role="main">
         <div class="intro">
             <h1>Fronteers</h1>
             <p>
