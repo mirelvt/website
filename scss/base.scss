@@ -70,7 +70,11 @@ a {
   color: $c-header;
   text-decoration: none;
 
-  [role="main"] & { font-weight: bold; }
+  [role="main"] &,
+  .block-home & {
+    font-weight: bold;
+    &:hover { text-decoration: underline; }
+  }
 }
 
 p {
