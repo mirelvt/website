@@ -23,9 +23,9 @@ body {
   padding: 0;
   font-family: $font-main;
   font-size: 1.6rem;
-  color: $color-text;
+  color: $c-text;
   line-height: 2.1rem;
-  background-color: #fff;
+  background-color: #222930;
 
   @media (max-width: 500px) {
     font-size: 1.7rem;
@@ -46,6 +46,7 @@ h1 {
   margin-top: 28px;
   margin-bottom: 0;
   color: $color-maintitle;
+  text-shadow: 1px 1px 0 $c-shadow;
 }
 
 h2 {
@@ -53,6 +54,7 @@ h2 {
   margin-top: 21px;
   margin-bottom: 0;
   color: $color-maintitle;
+  text-shadow: 1px 1px 0 $c-shadow;
 }
 
 h3,
@@ -64,7 +66,7 @@ h4,
 h5,
 h6 { margin-bottom: 0; }
 
-a { color: $color-selected; }
+a { color: $c-selected; }
 
 p {
   margin-top: 18px;
@@ -76,8 +78,7 @@ p {
 .header-menu {
   height: 50px;
   padding: 0 0 0 10%;
-  @include header-shadow;
-  background-color: $color-header;
+  background-color: $color-maintitle;
 
   ul { @include reset-ul; }
   li { display: inline-block; }
@@ -93,8 +94,7 @@ p {
   color: #fff;
 
   &.selected {
-    @include header-shadow;
-    background-color: $color-selected;
+    background-color: $c-selected;
   }
 }
 
@@ -153,7 +153,8 @@ p {
       height: 121px;
       padding-top: 18px;
       padding-left: 12px;
-      background-color: $color-header;
+      background-color: $c-selected;
+      border: 2px solid $c-text;
     }
 
     .icon-blog:before {
@@ -202,7 +203,7 @@ article {
     margin: 15px 0;
     padding: 8px;
     color: #fff;
-    background-color: $color-header;
+    background-color: $c-header;
   }
 
   .title {
@@ -223,7 +224,7 @@ article {
     .speaker {
       font-family: $font-main;
       font-size: 1.6rem;
-      color: $color-text;
+      color: $c-text;
     }
   }
 }
@@ -239,7 +240,8 @@ pre {
     background: lighten($color-subtitle, 32%);
     white-space: normal;
     font-size: 1.2rem;
-    border: 1px solid $color-subtitle;
+    color: $c-code;
+    border: 1px solid $c-shadow;
 }
 code {
     display: block;
@@ -260,4 +262,4 @@ code {
     text-indent: $code-indent * 2;
 }
 .boolean { color: $color-maintitle; }
-.number { color: $color-header; }
+.number { color: $c-header; }

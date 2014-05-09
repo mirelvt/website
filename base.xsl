@@ -9,28 +9,13 @@
       encoding="utf-8"
       indent="yes" />
 
-  <xsl:param name="target" />
   <xsl:template match="/">
-     <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
+    <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html&gt;</xsl:text>
     <html lang="nl">
       <xsl:call-template name="head-section" />
-
       <body>
         <header class="header-menu">
-           <nav role="navigation">
-            <ul>
-              <xsl:for-each select="document('navigation.xml')/navigation/item">
-                <li>
-                  <a href="{name/@url}" class="header-menu-item">
-                     <xsl:if test="$target = name/@url">
-                        <xsl:attribute name="class">header-menu-item selected</xsl:attribute>
-                     </xsl:if>
-                    <xsl:value-of select="name" />
-                  </a>
-                </li>
-              </xsl:for-each>
-            </ul>
-          </nav>
+            <xsl:call-template name="navigation" />
            <span class="my-name">Mirella van Teulingen</span>
          </header>
 
@@ -58,6 +43,20 @@
       <xsl:text disable-output-escaping="yes">&lt;![endif]-->&#xA;</xsl:text>
 
     </head>
+  </xsl:template>
+
+  <xsl:template name="navigation">
+    <nav role="navigation">
+      <ul>
+        <xsl:for-each select="document('navigation.xml')/navigation/item">
+        <li>
+          <a href="{name/@url}" class="header-menu-item">
+            <xsl:value-of select="name" />
+          </a>
+        </li>
+        </xsl:for-each>
+      </ul>
+    </nav>
   </xsl:template>
 
 </xsl:stylesheet>

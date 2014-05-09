@@ -1,12 +1,15 @@
 @import "fonts";
 
-$color-text: #2d2d2d;
-$color-header: #00a4bc;
-$color-selected: #057b8c;
-$color-maintitle: #f7a14d;
+$c-text: #ffffff;
+$c-header: #f7a14d;
+$c-selected: $c-header;
+$color-maintitle: $c-selected;
 $color-subtitle: #a9a9a9;
+$c-code: #2d2d2d;
+$c-shadow: #4d5155;
 
-$font-main: 'droidsans', arial, sans-serif;
+// $font-main: 'droidsans', arial, sans-serif;
+$font-main: ssp-l, arial, sans-serif;
 $font-headers: 'leaguegothic', arial, sans-serif;
 
 $code-indent: 12px;

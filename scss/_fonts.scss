@@ -1,25 +1,42 @@
-// Font droid sans for the menu and body text
+// Font Source san pro light for the body text
 @font-face {
-  font-family: 'droidsans';
-   src: url('../fonts/DroidSans-webfont.eot');
-    src: url('../fonts/DroidSans-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/DroidSans-webfont.woff') format('woff'),
-         url('../fonts/DroidSans-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSans-webfont.svg#droid_sansregular') format('svg');
+  font-family: 'ssp-l';
+   src: url('../fonts/SourceSansPro-Light.eot');
+    src: url('../fonts/SourceSansPro-Light.otf.woff') format('woff'),
+         url('../fonts/SourceSansPro-Light.ttf') format('truetype'),
+         url('../fonts/SourceSansPro-Light.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'droidsans';
-  src: url('../fonts/DroidSans-Bold-webfont.eot');
-    src: url('../fonts/DroidSans-Bold-webfont.eot?#iefix')
-            format('embedded-opentype'),
-         url('../fonts/DroidSans-Bold-webfont.woff') format('woff'),
-         url('../fonts/DroidSans-Bold-webfont.ttf') format('truetype'),
-         url('../fonts/DroidSans-Bold-webfont.svg#droid_sansbold') format('svg');
+  font-family: 'ssp-l';
+   src: url('../fonts/SourceSansPro-Bold.eot');
+    src: url('../fonts/SourceSansPro-Bold.woff') format('woff'),
+         url('../fonts/SourceSansPro-Bold.ttf') format('truetype'),
+         url('../fonts/SourceSansPro-Bold.svg') format('svg');
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'ssp-l';
+   src: url('../fonts/SourceSansPro-BoldIt.eot');
+    src: url('../fonts/SourceSansPro-BoldIt.woff') format('woff'),
+         url('../fonts/SourceSansPro-BoldIt.ttf') format('truetype'),
+         url('../fonts/SourceSansPro-BoldIt.svg') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ssp-l';
+   src: url('../fonts/SourceSansPro-LightIt.eot');
+    src: url('../fonts/SourceSansPro-LightIt.woff') format('woff'),
+         url('../fonts/SourceSansPro-LightIt.ttf') format('truetype'),
+         url('../fonts/SourceSansPro-LightIt.svg') format('svg');
+  font-weight: normal;
+  font-style: italic;
 }
 
 // Font league Gothic for the headers
