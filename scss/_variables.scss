@@ -1,9 +1,10 @@
 @import "fonts";
 
+$c-bg: #222930;
 $c-text: #ffffff;
 $c-header: #f7a14d;
-$c-selected: $c-header;
-$color-maintitle: $c-selected;
+$c-selected: rgba($c-bg, 0.1);
+$color-maintitle: $c-header;
 $color-subtitle: #a9a9a9;
 $c-code: #2d2d2d;
 $c-shadow: #4d5155;
