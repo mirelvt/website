@@ -25,7 +25,8 @@ body {
   font-size: 1.7rem;
   color: $c-text;
   line-height: 2.1rem;
-  background-color: $c-bg;
+  background: url(../img/bg.jpg) $c-bg;
+  background-attachment: fixed;
 
   @media (max-width: 500px) {
     font-size: 1.7rem;
