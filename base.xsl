@@ -20,6 +20,9 @@
          </header>
 
         <xsl:copy-of select="/h:html/h:body/node()" />
+
+        <script src="js/zepto.min.js">>&#160;</script>
+        <script src="js/base.min.js">>&#160;</script>
       </body>
     </html>
   </xsl:template>
@@ -50,7 +53,8 @@
       <ul>
         <xsl:for-each select="document('navigation.xml')/navigation/item">
         <li>
-          <a href="{name/@url}" class="header-menu-item">
+          <a href="{name/@url}" class="header-menu-item"
+              data-target="{target}">
             <xsl:value-of select="name" />
           </a>
         </li>

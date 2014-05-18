@@ -11,6 +11,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-xsltproc');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // Project configuration.
   grunt.initConfig({
@@ -42,6 +43,10 @@ module.exports = function(grunt) {
       },
       html: {
         files: ['html/*.html'],
+      },
+      scripts: {
+        files: ['html/js/base.min.js'],
+        tasks: ['uglify']
       },
       css: {
         files: ['scss/*.scss'],
@@ -97,11 +102,23 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ["html/css"]
+    uglify: {
+      options: {
+        mangle: false,
+        // compress: false
+      },
+      dist: {
+        files: {
+          'html/js/base.min.js': ['js/base.js']
+        }
+      }
+    },
+
+    clean: ['html/css/', 'html/js/base.min.js']
   });
 
   // Default task(s).
-  grunt.registerTask('prod', ['clean', 'sass:prod', 'xsltproc', 'connect:prod']);
+  grunt.registerTask('prod', ['clean', 'uglify', 'sass:prod', 'xsltproc', 'connect:prod']);
   grunt.registerTask('dev', ['connect:dev', 'watch']);
 
 };

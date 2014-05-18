@@ -4,14 +4,18 @@
 <navigation>
   <item>
     <name url="index.html">Home</name>
+    <target>Home</target>
   </item>
   <item>
     <name url="fronteers.html">Fronteers</name>
+     <target>Fronteers</target>
   </item>
   <item>
     <name url="blog.html">Blog</name>
+     <target>Blog</target>
   </item>
   <item>
     <name url="about-me.html">About me</name>
+     <target>About me</target>
   </item>
 </navigation>

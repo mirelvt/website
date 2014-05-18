@@ -4,7 +4,7 @@
     <title>Mirella van Teulingen - front end developer</title>
    </head>
   <body>
-    <section class="flexible">
+    <section class="flexible" data-page="Home">
       <div class="block-home">
         <p class="visual">
           <img src="img/portret-small.jpg" alt="zelfportret"
