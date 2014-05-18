@@ -38,27 +38,29 @@
         <li>The content editor sees the site for the first time and start filling it with content.</li>
         <li>Site is ready for launch.</li>
       </ul>
-      <h4>Problem #1</h4>
-      <p>
+       <p>
+        <strong>Problem #1</strong><br/>
         Problem of this approach is how many screen resolutions must the designer take into account in his design mock up? 3 types, like desktop (1024x 786), 1 tablet (600x 800), 1 smartphone: 320 x 480? or 8?
       </p>
-      <h4>Problem #2</h4>
       <p>
+        <strong>Problem #2</strong><br />
         How many pages must be presented in these mock ups? Homepage? Product page?
       </p>
-      <h4>Problem #3</h4>
       <p>
+        <strong>Problem #3</strong><br />
         It cannot be pixel perfect. What you see in the mock up can hardly be implemented the exact same way on all screen resolutions, or browsers.
       </p>
-      <h4>Problem #4</h4>
       <p>
+        <strong>Problem #4</strong><br />
         In many cases the content editor has only seen some mock ups and start fill in content when the site is ready. However when the editor starts writing the content he can run into some boundaries of the layout/functionality of the site. In that case the editor can do 2 things: either has to change the content so it fits the design or go back to the designer + development team to let them come with a solution that fits the content.
       </p>
       <h2>Responsive design challenge Advertising:</h2>
       <p>
         "Advertising has been ruining the design of content web sites for 20 years." - Peter-Paul Koch. "Advertisments are really tied to certain sizes. Technically it would be trivial to develop something that would serve different ads at different breakpoints. The advertising model is still selling areas with ads like 50 years ago. In responsive there are no fixed areas."
       </p>
-      <h4>How do we deal with this in responsive designs?</h4>
+      <p>
+      <strong>How do we deal with this in responsive designs?</strong>
+      </p>
       <p>Advertising don't want to change. We shouldn't try to. Just try to make them come to you.</p>
       <h2>Responsive design challenges content:</h2>
       <p>Stories have a collections of little pieces of content attached (video, quotes, images, text, etc) The story is no longer a page but a content editor still thinks this way.</p>

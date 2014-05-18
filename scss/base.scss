@@ -47,7 +47,7 @@ h1 {
   margin-top: 28px;
   margin-bottom: 0;
   color: $color-maintitle;
-  text-shadow: 1px 1px 0 $c-shadow;
+  text-shadow: 1px 1px 3px $c-shadow;
 }
 
 h2 {
@@ -55,7 +55,7 @@ h2 {
   margin-top: 21px;
   margin-bottom: 0;
   color: $color-maintitle;
-  text-shadow: 1px 1px 0 $c-shadow;
+  text-shadow: 1px 1px 2px $c-shadow;
 }
 
 h3,
@@ -70,17 +70,19 @@ h6 { margin-bottom: 0; }
 a {
   color: $c-header;
   text-decoration: none;
-
-  [role="main"] &,
-  .block-home & {
-    font-weight: bold;
-    &:hover { text-decoration: underline; }
-  }
+  &:hover { text-decoration: underline; }
 }
 
 p {
   margin-top: 18px;
   margin-bottom: 0;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 2rem;
+  color: $c-header;
+  font-weight: bold;
 }
 // ===========
 // HEADER MENU
@@ -189,13 +191,10 @@ p {
 [role="main"],
 article {
   max-width: 746px;
-  margin: 0 auto;
+  margin: 0 auto 18px auto;
   padding: 0 18px 18px 0;
 }
-.subtitle {
-  font-size: 1.5rem;
-  color: $color-subtitle;
-}
+.subtitle { font-size: 1.5rem; }
 
 // Article list
 // ------------
@@ -203,21 +202,14 @@ article {
   @include reset-ul;
   margin-top: 18px;
 
+  &.no-description a:not(.title) { font-weight: normal; }
   .item { margin-bottom: 20px; }
-
-  &.no-description {
-    .item { color: darken($color-subtitle,20%); }
-     a:not(.title) { color: darken($color-subtitle, 20%); }
-  }
 
   // Used as title of a listing
   .list_title {
     font-family: $font-headers;
     font-size: 2.8rem;
-    margin: 15px 0;
-    padding: 8px;
-    color: #fff;
-    background-color: $c-header;
+    margin: 35px 0 15px 0;
   }
 
   .title {
@@ -226,7 +218,6 @@ article {
     font-weight: bold;
     letter-spacing: -0.1rem;
     color: $color-maintitle;
-    text-decoration: none;
     line-height: 2.5rem;
 
     &:after {
