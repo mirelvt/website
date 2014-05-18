@@ -84,6 +84,23 @@ blockquote {
   color: $c-header;
   font-weight: bold;
 }
+
+
+figure {
+  padding: 8px;
+
+  img {
+    display: inline-block;
+    margin: 0 auto;
+    border: 2px solid lighten($c-bg, 15%);
+  }
+
+  figcaption {
+    font-style: italic;
+    text-align: right;
+  }
+}
+
 // ===========
 // HEADER MENU
 // ===========
