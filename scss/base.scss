@@ -9,13 +9,15 @@
 // * 1: Computes to 10px by the browsers so we can use rem the nice way
 // * 2: Specifies a size adjustment for displaying text content on smartphones.
 // * 3: Improve text-rendering in Webkit browsers and firefox on OSX.
+// * 4: Set the kerning and ligatures for current and future browsers.
+//      Smashing Booke #4 Chapter 9.
 
 html {
   font-size: 62.5%; // * 1 *
-  -ms-text-size-adjust: 100%; // * 2 *
-  -webkit-text-size-adjust: 100%; // * 2 *
-  -webkit-font-smoothing: antialiased; // *3
-  -moz-osx-font-smoothing: grayscale; // *3
+  @include text-adjust; // * 2 *
+  @include font-smoothing; // * 3 *
+  @include font-kerning; // * 4 *
+  @include font-feature-settings; // * 4 *
 }
 
 body {

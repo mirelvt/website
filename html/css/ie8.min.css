@@ -1,1 +1,10 @@
-header,footer,section,aside,nav{display:block}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/ie8\.scss}line{font-family:\000031}}
+header,
+footer,
+section,
+aside,
+nav {
+  display: block;
+}
+
+/*# sourceMappingURL=ie8.min.css.map */
