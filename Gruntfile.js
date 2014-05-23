@@ -5,9 +5,10 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-harp');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-contrib-compressor');
 
 
   // Project configuration.
@@ -32,7 +33,7 @@ module.exports = function(grunt) {
       },
       dist: {
         source: './',
-        dest: 'build'
+        dest: 'tmp'
       },
     },
 
@@ -42,47 +43,54 @@ module.exports = function(grunt) {
       },
       html: {
         files: ['public/**/*.ejs'],
-        tasks: ['harp']
+        tasks: ['harp', 'compressor']
       },
       css: {
         files: ['scss/*.scss'],
-        tasks: ['sass:dev', 'harp']
+        tasks: ['compass:dev', 'harp']
       },
     },
 
-    sass: {
+    compass: {
       dev: {
         options: {
-          style: 'expanded',
-          sourcemap: true,
+          sassDir: ['scss'],
+          cssDir: ['public/css'],
+          imagesDir: ['build/img'],
+          outputStyle: 'expanded',
           debugInfo: true
-        },
-        files: [{
-          expand: true,
-          cwd: 'scss',
-          src: ['*.scss'],
-          dest: 'public/css',
-          ext: '.min.css'
-        }]
+        }
       },
       deploy: {
         options: {
-          style: 'compressed',
+          sassDir: ['scss'],
+          cssDir: ['public/css'],
+          imagesDir: ['build/img'],
+          outputStyle: 'compressed'
+        }
+      }
+    },
+
+    compressor: {
+      html: {
+        options: {
+          removeComments: true,
+          collapseWhitespace: true
         },
         files: [{
           expand: true,
-          cwd: 'scss',
-          src: ['*.scss'],
-          dest: 'public/css',
-          ext: '.min.css'
+          cwd: 'tmp',
+          src: ['**/*.html'],
+          dest: 'build',
+          ext: '.html'
         }]
       }
     },
 
-     clean: ['build/css/']
+    clean: ['build/css', 'public/css', 'build/minified']
   });
 
    // Default task(s).
   grunt.registerTask('dev', ['connect', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'sass:deploy', 'harp']);
+  grunt.registerTask('deploy', ['clean', 'compass:deploy', 'harp', 'compressor']);
 };
