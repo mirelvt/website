@@ -1,0 +1,17 @@
+{
+  "meeting-jan8-2013-01": {
+    "page_title": "OOCSS",
+    "source": "fronteers",
+    "submenu": true
+  },
+  "meeting-jan8-2013-02": {
+    "page_title": "The zoom interface of www.rijksmuseum.nl",
+    "source": "fronteers",
+    "submenu": true
+  },
+   "meeting-jan8-2013-03": {
+    "page_title": "Accessibility is also UX design",
+    "source": "fronteers",
+    "submenu": true
+  }
+}

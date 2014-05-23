@@ -1,29 +1,20 @@
 {
-  "name": "mirellavanteulingen.nl",
-  "version": "0.0.0",
-  "description": "My website",
+  "name": "website_app",
+  "version": "0.1.0",
+  "description": "mirellavanteulingen.nl",
   "copyright": "2014",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mirelvt/website.git"
-  },
   "author": "Mirella van Teulingen",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mirelvt/website/issues"
-  },
-  "homepage": "https://github.com/mirelvt/website",
   "devDependencies": {
-    "grunt": "^0.4.4",
-    "grunt-contrib-connect": "^0.7.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-harp": "^0.1.4",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-xsltproc": "^0.3.0",
-    "grunt-contrib-sass": "~0.7.3",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-uglify": "^0.4.0"
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-connect": "^0.7.1"
   }
 }

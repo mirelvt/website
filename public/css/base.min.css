@@ -1,0 +1,431 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'ssp-l';
+  src: url("../fonts/SourceSansPro-Light.eot");
+  src: url("../fonts/SourceSansPro-Light.woff") format("woff"), url("../fonts/SourceSansPro-Light.ttf") format("truetype"), url("../fonts/SourceSansPro-Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ssp-l';
+  src: url("../fonts/SourceSansPro-Semibold.eot");
+  src: url("../fonts/SourceSansPro-Semibold.woff") format("woff"), url("../fonts/SourceSansPro-Semibold.ttf") format("truetype"), url("../fonts/SourceSansPro-Semibold.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ssp-l';
+  src: url("../fonts/SourceSansPro-SemiboldIt.eot");
+  src: url("../fonts/SourceSansPro-SemiboldIt.woff") format("woff"), url("../fonts/SourceSansPro-SemiboldIt.ttf") format("truetype"), url("../fonts/SourceSansPro-SemiboldIt.svg") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'ssp-l';
+  src: url("../fonts/SourceSansPro-LightIt.eot");
+  src: url("../fonts/SourceSansPro-LightIt.woff") format("woff"), url("../fonts/SourceSansPro-LightIt.ttf") format("truetype"), url("../fonts/SourceSansPro-LightIt.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'leaguegothic';
+  src: url("../fonts/leaguegothic-regular-webfont.eot");
+  src: url("../fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'leaguegothic';
+  src: url("../fonts/leaguegothic-regular-webfont.eot");
+  src: url("../fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'leaguegothic';
+  src: url("../fonts/leaguegothic-italic-webfont.eot");
+  src: url("../fonts/leaguegothic-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-italic-webfont.woff") format("woff"), url("../fonts/leaguegothic-italic-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-italic-webfont.svg#league_gothicitalic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'monospace';
+  src: url("../fonts/MonospaceTypewriter-webfont.eot");
+  src: url("../fonts/MonospaceTypewriter-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MonospaceTypewriter-webfont.woff") format("woff"), url("../fonts/MonospaceTypewriter-webfont.ttf") format("truetype"), url("../fonts/MonospaceTypewriter-webfont.svg#monospacetypewriterregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'mvt-icons';
+  src: url("../fonts/mvt-icons.eot?i1d32");
+  src: url("../fonts/mvt-icons.eot?#iefixi1d32") format("embedded-opentype"), url("../fonts/mvt-icons.woff?i1d32") format("woff"), url("../fonts/mvt-icons.ttf?i1d32") format("truetype"), url("../fonts/mvt-icons.svg?i1d32#mvt-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/_fonts\.scss}line{font-family:\00003107}}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'mvt-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/_fonts\.scss}line{font-family:\00003121}}
+.icon-blog:before {
+  content: "\e600";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\000034}}
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000315}}
+html {
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: normal;
+  -moz-font-kerning: normal;
+  font-kerning: normal;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga", "kern";
+  font-feature-settings: "liga", "kern";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000323}}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ssp-l, arial, sans-serif;
+  font-size: 1.7rem;
+  color: white;
+  line-height: 2.1rem;
+  background: url(../img/bg.jpg) #222930;
+  background-attachment: fixed;
+}
+@media (max-width: 500px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000323}}
+  body {
+    font-size: 1.7rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000338}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "leaguegothic", arial, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000347}}
+h1 {
+  font-size: 3.5rem;
+  margin-top: 28px;
+  margin-bottom: 0;
+  color: #f7a14d;
+  text-shadow: 1px 1px 3px black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000355}}
+h2 {
+  font-size: 3rem;
+  margin-top: 21px;
+  margin-bottom: 0;
+  color: #f7a14d;
+  text-shadow: 1px 1px 2px black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000363}}
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2.6rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000368}}
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000372}}
+a {
+  color: #f7a14d;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000375}}
+a:hover {
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000378}}
+p {
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000383}}
+blockquote {
+  font-style: italic;
+  font-size: 2rem;
+  color: #f7a14d;
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000391}}
+figure {
+  padding: 8px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\0000394}}
+figure img {
+  display: inline-block;
+  margin: 0 auto;
+  border: 2px solid #424f5d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003100}}
+figure figcaption {
+  font-style: italic;
+  text-align: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003109}}
+.header-menu {
+  height: 50px;
+  padding: 0 0 0 10%;
+  background-color: #f7a14d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003114}}
+.header-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003115}}
+.header-menu li {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003116}}
+.header-menu a {
+  text-decoration: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003119}}
+.header-menu-item {
+  display: inline-block;
+  height: 50px;
+  padding: 14px 15px;
+  font-family: "leaguegothic", arial, sans-serif;
+  font-size: 2.7rem;
+  letter-spacing: 0.05rem;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003128}}
+.header-menu-item.selected, .header-menu-item:hover {
+  background-color: rgba(34, 41, 48, 0.1);
+  -webkit-transition: background-color 0.5s ease-in;
+  -moz-transition: background-color 0.5s ease-in;
+  -ms-transition: background-color 0.5s ease-in;
+  -o-transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-in;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003138}}
+.my-name {
+  position: absolute;
+  right: 10%;
+  top: 12px;
+  font-family: ssp-l, arial, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003147}}
+.my-name:before, .my-name:after {
+  font-family: ssp-l, arial, sans-serif;
+  font-size: 2.4rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003153}}
+.my-name:before {
+  content: "{";
+  padding-right: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003158}}
+.my-name:after {
+  content: "}";
+  padding-left: 2px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003165}}
+.flexible {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -ms-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1279px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003171}}
+  .block-home {
+    width: 28%;
+  }
+}
+@media screen and (min-width: 1280px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003171}}
+  .block-home {
+    width: 18%;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003179}}
+.block-home .visual {
+  height: 120px;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003184}}
+.block-home .visual .icon-blog {
+  display: block;
+  margin: 0 auto;
+  width: 121px;
+  height: 121px;
+  padding-top: 18px;
+  padding-left: 12px;
+  background-color: #f7a14d;
+  border: 2px solid white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003195}}
+.block-home .visual .icon-blog:before {
+  color: #fff;
+  font-size: 7.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003201}}
+.block-home.portrait {
+  width: 121px;
+  height: 121px;
+  border: 2px solid white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003211}}
+[role="main"],
+article {
+  max-width: 746px;
+  margin: 0 auto 18px auto;
+  padding: 0 18px 18px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003217}}
+.subtitle {
+  font-size: 1.5rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003221}}
+.article_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003225}}
+.article_list.no-description a:not(.title) {
+  font-weight: normal;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003226}}
+.article_list .item {
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003229}}
+.article_list .list_title {
+  font-family: "leaguegothic", arial, sans-serif;
+  font-size: 2.8rem;
+  margin: 35px 0 15px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003235}}
+.article_list .title {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: -0.1rem;
+  color: #f7a14d;
+  line-height: 2.5rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003243}}
+.article_list .title:after {
+  display: inline-block;
+  margin-left: 5px;
+  content: "›";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003249}}
+.article_list .title .speaker {
+  font-family: ssp-l, arial, sans-serif;
+  font-size: 1.6rem;
+  color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003260}}
+pre {
+  position: relative;
+  margin: 5px;
+  padding: 0;
+  overflow: auto;
+  background: #fbfbfb;
+  white-space: normal;
+  font-size: 1.2rem;
+  color: #2d2d2d;
+  border: 1px solid black;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003271}}
+code {
+  display: block;
+  overflow: auto;
+  margin: 0;
+  padding: 15px;
+  white-space: pre;
+  font-family: monospace, sans-serif;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003279}}
+.comment {
+  color: #8f8f8f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003281}}
+.code-indent {
+  display: inline-block;
+  text-indent: 12px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003285}}
+.code-indent-2 {
+  display: inline-block;
+  text-indent: 24px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003289}}
+.boolean {
+  color: #f7a14d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website_app\/scss\/base\.scss}line{font-family:\00003290}}
+.number {
+  color: #f7a14d;
+}
+
+/*# sourceMappingURL=base.min.css.map */

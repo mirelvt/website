@@ -1,39 +1,38 @@
 module.exports = function(grunt) {
 
-  // Load the Npm tasks configured for this project:
-  // connect: webserver
-  // watch: watch file changes + livereload
-  // sass
-  // xsltproc: for converting xsl to html
-  // clean
+  // Load the npm tasks configured for this project:
+  // * sass
+
+  grunt.loadNpmTasks('grunt-harp');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-xsltproc');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
+
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
     connect: {
-      dev: {
+      server: {
         options: {
-          port: 9008,
-          base: 'html',
+          port: 9000,
+          base: 'build',
           livereload: true,
           open: true
         },
+      }
+    },
+
+    harp: {
+      server: {
+        server: false,
+        source: './'
       },
-      prod: {
-        options: {
-          port: 9009,
-          base: 'html',
-          keepalive: true,
-          livereload: true,
-          open: true
-        },
+      dist: {
+        source: './',
+        dest: 'build'
       },
     },
 
@@ -42,19 +41,13 @@ module.exports = function(grunt) {
         livereload: true,
       },
       html: {
-        files: ['html/*.html'],
-      },
-      scripts: {
-        files: ['html/js/base.min.js'],
+        files: ['public/**/*.ejs'],
+        tasks: ['harp']
       },
       css: {
         files: ['scss/*.scss'],
-        tasks: ['sass:dev'],
+        tasks: ['sass:dev', 'harp']
       },
-      shtml: {
-        files: ['**/*.shtml'],
-        tasks: ['xsltproc'],
-      }
     },
 
     sass: {
@@ -68,11 +61,11 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'scss',
           src: ['*.scss'],
-          dest: 'html/css',
+          dest: 'public/css',
           ext: '.min.css'
         }]
       },
-      prod: {
+      deploy: {
         options: {
           style: 'compressed',
         },
@@ -80,44 +73,16 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'scss',
           src: ['*.scss'],
-          dest: 'html/css',
+          dest: 'public/css',
           ext: '.min.css'
         }]
       }
     },
 
-    xsltproc: {
-      options: {
-        stylesheet: 'base.xsl'
-      },
-      compile: {
-        files: [{
-          expand: true,
-          cwd: '.',
-          src: '*.shtml',
-          dest: 'html',
-          ext: '.html'
-        }]
-      }
-    },
-
-    uglify: {
-      options: {
-        mangle: false,
-        // compress: false
-      },
-      dist: {
-        files: {
-          'html/js/base.min.js': ['js/base.js']
-        }
-      }
-    },
-
-    clean: ['html/css/', 'html/js/base.min.js']
+     clean: ['build/css/']
   });
 
-  // Default task(s).
-  grunt.registerTask('prod', ['clean', 'uglify', 'sass:prod', 'xsltproc', 'connect:prod']);
-  grunt.registerTask('dev', ['connect:dev', 'watch']);
-
+   // Default task(s).
+  grunt.registerTask('dev', ['connect', 'watch']);
+  grunt.registerTask('deploy', ['clean', 'sass:deploy', 'harp']);
 };

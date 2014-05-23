@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <%- partial("../../_partials/_metatags") %>
+  <title><%= title %> - <%= page_title %></title>
+  <%- partial("../../_partials/_stylesheet", {css_path: "../../css"}) %>
+</head>
+<body>
+  <%- partial("../../_partials/_header") %>
+  <%- submenu == true ? partial("../../_partials/_submenu"): '' %>
+  <%- yield %>
+</body>
+</html>
