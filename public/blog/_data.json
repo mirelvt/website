@@ -1,4 +1,9 @@
 {
+  "index": {
+    "page_title": "Blog",
+    "source": "blog",
+    "submenu": false
+  },
   "cssday2013": {
     "page_title": "CSS Day 2013",
     "source": "blog",

@@ -1,50 +1,50 @@
 {
-  "fronteers-conf-2012": {
+  "index": {
     "page_title": "Fronteers 2012",
     "source": "fronteers",
     "submenu": false
   },
-  "fc2012-accessability": {
+  "accessability": {
     "page_title": "Accessability - Fronteers 2012",
     "source": "fronteers",
     "submenu": true
   },
-  "fc2012-developer-toolbelt": {
+  "developer-toolbelt": {
     "page_title": "Developer toolbelt - Fronteers 2012",
     "source": "fronteers",
     "submenu": true
   },
-  "fc2012-os-aintfree": {
+  "os-aintfree": {
     "page_title": "Open source ain't free - Fronteers 2012",
     "source": "fronteers",
     "submenu": true
   },
-  "fc2012-pixelisnotapixel": {
+  "pixelisnotapixel": {
     "page_title": "A pixel is not a pixel - Fronteers 2012",
     "source": "fronteers",
     "submenu": true
   },
-  "fc2012-responsive-design": {
+  "responsive-design": {
     "page_title": "Responsive design - Fronteers 2012",
     "source": "fronteers",
     "submenu": true
   },
-  "fc2012-shortnotes": {
+  "shortnotes": {
     "page_title": "The short notes - Fronteers 2012",
     "source": "fronteers",
     "submenu": true
   },
-  "fc2012-smellyourcms": {
+  "smellyourcms": {
     "page_title": "I can smell your CMS - Fronteers 2012",
     "source": "fronteers",
     "submenu": true
   },
-  "fc2012-statehtml5video": {
+  "statehtml5video": {
     "page_title": "The stat of HTML5 video",
     "source": "fronteers",
     "submenu": true
   },
-  "fc2012-styleguides": {
+  "styleguides": {
     "page_title": "Style guides - Fronteers 2012",
     "source": "fronteers",
     "submenu": true

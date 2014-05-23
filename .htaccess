@@ -119,3 +119,16 @@ mod_gzip_item_include mime ^image/
 <IfModule mod_php5.c>
   php_value session.cookie_httponly true
 </IfModule>
+
+# Provide Specific Index Page (Set the default handler)
+DirectoryIndex index.html
+
+# Redirect old file path to new file path
+Redirect /fronteers/index.php http://mirellavanteulingen.nl/fronteers.html
+Redirect /blog/index.php http://mirellavanteulingen.nl/blog.html
+Redirect /fronteers/oocss/index.php http://mirellavanteulingen.nl/articles/oocss.html
+Redirect /fronteers/rijksmuseum/index.php http://mirellavanteulingen.nl/articles/rijksmuseum.html
+Redirect /fronteers/accessibility-is-ux-design/index.php http://mirellavanteulingen.nl/articles/accessibility-is-ux-design.html
+
+Redirect /fronteers/fronteers2012/index.php http://mirellavanteulingen.nl/articles/fronteers2012/index.html
+
