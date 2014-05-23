@@ -124,11 +124,26 @@ mod_gzip_item_include mime ^image/
 DirectoryIndex index.html
 
 # Redirect old file path to new file path
-Redirect /fronteers/index.php http://mirellavanteulingen.nl/fronteers.html
-Redirect /blog/index.php http://mirellavanteulingen.nl/blog.html
-Redirect /fronteers/oocss/index.php http://mirellavanteulingen.nl/articles/oocss.html
-Redirect /fronteers/rijksmuseum/index.php http://mirellavanteulingen.nl/articles/rijksmuseum.html
-Redirect /fronteers/accessibility-is-ux-design/index.php http://mirellavanteulingen.nl/articles/accessibility-is-ux-design.html
-
-Redirect /fronteers/fronteers2012/index.php http://mirellavanteulingen.nl/articles/fronteers2012/index.html
+Redirect /fronteers/index.php http://mirellavanteulingen.nl/fronteers/index.html
+Redirect /blog/index.php http://mirellavanteulingen.nl/blog/index.html
+Redirect /fronteers/oocss/index.php http://mirellavanteulingen.nl/fronteers/oocss.html
+Redirect /fronteers/rijksmuseum/index.php http://mirellavanteulingen.nl/fronteers/rijksmuseum.html
+Redirect /fronteers/accessibility-is-ux-design/index.php http://mirellavanteulingen.nl/fronteers/accessibility-is-ux-design.html
+Redirect /fronteers/fronteers2012/index.php http://mirellavanteulingen.nl/fronteers/fronteers2012
+Redirect /fronteers/fronteers2012/responsive-design/index.php http://mirellavanteulingen.nl/fronteers/fronteers2012/responsive-design.html
+Redirect /fronteers/fronteers2012/developer-tools/index.php http://mirellavanteulingen.nl/fronteers/fronteers2012/developer-toolbelt.html
+Redirect /fronteers/fronteers2012/pixel-is-not-a-pixel/index.php http://mirellavanteulingen.nl/fronteers/fronteers2012/pixelisnotapixel.html
+Redirect /fronteers/fronteers2012/style-guides/index.php http://mirellavanteulingen.nl/fronteers/fronteers2012/style-guides.html
+Redirect /fronteers/fronteers2012/short-notes/index.php#alexgraul http://mirellavanteulingen.nl/fronteers/fronteers2012/shortnotes.html#alexgraul
+Redirect /fronteers/fronteers2012/short-notes/index.php#mathias http://mirellavanteulingen.nl/fronteers/fronteers2012/shortnotes.html#mathias
+Redirect /fronteers/fronteers2012/accessibility/ http://mirellavanteulingen.nl/fronteers/fronteers2012/accessability.html
+Redirect /fronteers/fronteers2012/short-notes/index.php#leaverou http://mirellavanteulingen.nl/fronteers/fronteers2012/shortnotes.html#leaverou
+Redirect /fronteers/fronteers2012/opensource-aintfree/ http://mirellavanteulingen.nl/fronteers/fronteers2012/os-aintfree.html
+Redirect /fronteers/fronteers2012/html5video/ http://mirellavanteulingen.nl/fronteers/fronteers2012/statehtml5video.html
+Redirect /fronteers/fronteers2012/smellycms/ http://mirellavanteulingen.nl/fronteers/fronteers2012/smellyourcms.html
+Redirect /fronteers/fronteers2012/short-notes/index.php#peternederlof http://mirellavanteulingen.nl/fronteers/fronteers2012/shortnotes.html#peternederhof
+Redirect /fronteers/fronteers2012/short-notes/index.php#rebeccamurphey http://mirellavanteulingen.nl/fronteers/fronteers2012/shortnotes.html#rebeccamurphey
+Redirect /fronteers/fronteers2012/short-notes/index.php#alexrussell http://mirellavanteulingen.nl/fronteers/fronteers2012/shortnotes.html#alexrussell
+Redirect /blog/cssday2013/index.php http://mirellavanteulingen.nl/blog/cssday2013.html
+Redirect /blog/sublime/index.php http://mirellavanteulingen.nl/blog/customize-sublime.html
 
