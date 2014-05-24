@@ -1,0 +1,35 @@
+@import "mixins";
+
+%article_list {
+  @include reset-ul;
+  margin-top: 18px;
+
+  &.no-description a:not(.title) { font-weight: normal; }
+  .item { margin-bottom: 20px; }
+
+  .title {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: -0.1rem;
+    color: $color-maintitle;
+    line-height: 2.5rem;
+
+    &:after {
+      display: inline-block;
+      margin-left: 5px;
+      content: "›";
+    }
+
+    .speaker {
+      font-family: $font-main;
+      font-size: 1.6rem;
+      color: $c-text;
+    }
+  }
+}
+
+%list_title {
+  font-family: $font-headers;
+  font-size: 2.8rem;
+}
