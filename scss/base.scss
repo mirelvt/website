@@ -107,29 +107,73 @@ figure {
 // HEADER MENU
 // ===========
 .header-menu {
+  position: relative;
   height: 50px;
-  padding: 0 0 0 10%;
   background-color: $color-maintitle;
 
-  ul { @include reset-ul; }
-  li { display: inline-block; }
-  a { text-decoration: none; }
+  @include mq-max(699px) {
+    padding: 0 0 0 5%;
+  }
+
+  @include mq-min(700px) {
+    padding: 0 0 0 10%;
+  }
+}
+
+.menu {
+  @include reset-ul;
+
+  @include mq-max(699px) {
+    position: absolute;
+    display: none;
+    top: 50px;
+    background-color: $color-maintitle;
+
+    .show & { display: block; }
+  }
+
+  @include mq-min(700px) {
+    li { display: inline-block; }
+  }
 }
 
 .header-menu-item {
-  display: inline-block;
-  height: 50px;
-  padding: 14px 15px;
   font-family: $font-headers;
-  font-size: 2.7rem;
-  letter-spacing: 0.05rem;
   color: #fff;
+  text-decoration: none;
 
   &.selected,
   &:hover {
     background-color: $c-selected;
+    text-decoration: none;
     @include transition(background-color, 0.5s, ease-in);
   }
+
+  @include mq-max(699px) {
+    display: block;
+    padding: 8px 28px 8px 12px;
+    font-size: 2.2rem;
+  }
+
+  @include mq-min(700px) {
+    display: inline-block;
+    height: 50px;
+    padding: 14px 15px;
+    font-size: 2.7rem;
+    letter-spacing: 0.05rem;
+  }
+}
+
+.menu_title {
+  display: inline-block;
+  height: 50px;
+  padding: 10px 15px;
+  font-size: 2.7rem;
+  cursor: pointer;
+
+  .show & { background-color: $c-selected; }
+
+  @include mq-min(700px) { display: none; }
 }
 
 // =======
