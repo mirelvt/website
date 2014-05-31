@@ -618,3 +618,12 @@ code {
 .language-css .property {
   color: #4c7cc1;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003386}}
+.language-html .attribute {
+  color: #7a8622;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003387}}
+.language-html .tag {
+  color: #4c7cc1;
+}
