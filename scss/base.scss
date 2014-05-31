@@ -335,7 +335,27 @@ pre {
     font-size: 1.2rem;
     color: $c-code;
     border: 1px solid $c-shadow;
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 8px 0;
+      text-indent: 15px;
+      color: #fff;
+      font-family: $font-headers;
+      font-weight: bold;
+      font-size: 2rem;
+      content: attr(rel);
+      background-color: $c-header;
+    }
+
+    &[rel] {
+      padding-top: 33px;
+    }
 }
+
 code {
     display: block;
     overflow: auto;
@@ -356,3 +376,12 @@ code {
 }
 .boolean { color: $color-maintitle; }
 .number { color: $c-header; }
+
+
+.language-css {
+  .selector { color: #7a8622; }
+  .property { color: #4c7cc1; }
+}
+
+// @End CODE STYLING
+// =================

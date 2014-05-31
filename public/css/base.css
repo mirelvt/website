@@ -550,11 +550,30 @@ pre {
   background: #fbfbfb;
   white-space: normal;
   font-size: 1.2rem;
-  color: #2d2d2d;
+  color: #424f5d;
   border: 1px solid black;
 }
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003339}}
+pre:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 8px 0;
+  text-indent: 15px;
+  color: #fff;
+  font-family: "leaguegothic", arial, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  content: attr(rel);
+  background-color: #f7a14d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003354}}
+pre[rel] {
+  padding-top: 33px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003359}}
 code {
   display: block;
   overflow: auto;
@@ -564,29 +583,38 @@ code {
   font-family: monospace, sans-serif;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003367}}
 .comment {
   color: #8f8f8f;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003369}}
 .code-indent {
   display: inline-block;
   text-indent: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003373}}
 .code-indent-2 {
   display: inline-block;
   text-indent: 24px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003377}}
 .boolean {
   color: #f7a14d;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003378}}
 .number {
   color: #f7a14d;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003382}}
+.language-css .selector {
+  color: #7a8622;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mirella\/Documents\/github\/website\/scss\/base\.scss}line{font-family:\00003383}}
+.language-css .property {
+  color: #4c7cc1;
 }

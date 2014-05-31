@@ -6,7 +6,7 @@ $c-header: #f7a14d;
 $c-selected: rgba($c-bg, 0.1);
 $color-maintitle: $c-header;
 $color-subtitle: #a9a9a9;
-$c-code: #2d2d2d;
+$c-code: lighten($c-bg, 15%);
 // $c-shadow: #4d5155;
 $c-shadow: #000;
 // $font-main: 'droidsans', arial, sans-serif;
