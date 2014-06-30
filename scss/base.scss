@@ -389,3 +389,35 @@ code {
 
 // @End CODE STYLING
 // =================
+
+// =============
+// ABOUT ME PAGE
+// =============
+.photos {
+  position: relative;
+  height: 286px;
+}
+
+.photo-side,
+.photo-front {
+  position: absolute;
+  max-width: 100%;
+  border: 10px solid #fff;
+  @include box-shadow(1px 1px 8px 0 #000);
+}
+
+.photo-side {
+  top: 20px;
+  @include transform(rotate(5deg));
+
+  &:nth-of-type(2) { right: 0; }
+}
+
+.photo-front {
+  top: 10px;
+  left: 50%;
+  margin-left: -(278/2) * 1px;
+}
+
+//@End ABOUT ME PAGE
+// =================

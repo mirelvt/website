@@ -75,4 +75,15 @@
     @content;
   }
 }
+
+@mixin box-shadow($value) {
+  -webkit-box-shadow: $value;
+  box-shadow: $value;
+}
+
+@mixin transform($value...) {
+  -ms-transform: $value;
+  -webkit-transform: $value;
+  transform: $value
+}
 // ========
