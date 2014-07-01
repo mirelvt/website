@@ -330,7 +330,7 @@ pre {
     margin: 5px;
     padding: 0;
     overflow: auto;
-    background: lighten($color-subtitle, 32%);
+    background: #fff;
     white-space: normal;
     font-size: 1.2rem;
     color: $c-code;
@@ -364,7 +364,7 @@ code {
     white-space: pre;
     font-family: monospace, sans-serif;
 }
-.comment { color: darken($color-subtitle, 10%); }
+.comment { color: darken($color-subtitle, 18%); }
 
 .code-indent {
     display: inline-block;

@@ -548,10 +548,10 @@ pre {
   margin: 5px;
   padding: 0;
   overflow: auto;
-  background: #fbfbfb;
+  background: #fff;
   white-space: normal;
   font-size: 1.2rem;
-  color: #424f5d;
+  color: #37424e;
   border: 1px solid black;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003339}}
@@ -586,7 +586,7 @@ code {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003367}}
 .comment {
-  color: #8f8f8f;
+  color: #7b7b7b;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/mirella\/Playground\/MyNewSite\/website\/scss\/base\.scss}line{font-family:\00003369}}
