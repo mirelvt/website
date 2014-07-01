@@ -51,7 +51,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['public/js/*.js'],
-        tasks: ['harp']
+        tasks: ['harp', 'compressor']
         }
     },
 
@@ -88,10 +88,22 @@ module.exports = function(grunt) {
           dest: 'build',
           ext: '.html'
         }]
+      },
+      js: {
+        options: {
+          mangle: true
+        },
+        files: [{
+          expand: true,
+          cwd: 'tmp',
+          src: ['**/*.js'],
+          dest: 'build',
+          ext: '.js'
+        }]
       }
     },
 
-    clean: ['build/css', 'public/css', 'build/minified']
+    clean: ['build/css', 'public/css', 'build/minified', 'build/js']
   });
 
    // Default task(s).
