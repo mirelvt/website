@@ -10,7 +10,7 @@
 
     function toggleMenu() {
       if (container.hasAttribute('class')) {
-          container.removeAttribute('class')
+          container.removeAttribute('class');
       }
       else {
         container.setAttribute('class', 'show');
@@ -20,7 +20,6 @@
 
   document.addEventListener('DOMContentLoaded', function() {
     var nav = document.querySelector('nav');
-    new MenuComponent(nav);
   }, false);
 
 })();
