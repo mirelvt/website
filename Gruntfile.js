@@ -61,6 +61,7 @@ module.exports = function(grunt) {
           sassDir: ['scss'],
           cssDir: ['public/css'],
           imagesDir: ['build/img'],
+          fontsDir: ['/../fonts'],
           outputStyle: 'expanded',
           debugInfo: true
         }
@@ -70,6 +71,7 @@ module.exports = function(grunt) {
           sassDir: ['scss'],
           cssDir: ['public/css'],
           imagesDir: ['build/img'],
+          fontsDir: ['../fonts'],
           outputStyle: 'compressed'
         }
       }

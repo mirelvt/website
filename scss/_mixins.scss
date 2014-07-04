@@ -49,14 +49,6 @@
   #{$property}: calc(#{$expression});
 }
 
-@mixin transition($property, $time, $method) {
-  -webkit-transition: $property $time $method;
-  -moz-transition: $property $time $method;
-  -ms-transition: $property $time $method;
-  -o-transition: $property $time $method;
-  transition: $property $time $method;
-}
-
 // Mixins for media queries
 @mixin mq-min($width) {
   @media screen and (min-width: $width) {
@@ -76,14 +68,4 @@
   }
 }
 
-@mixin box-shadow($value) {
-  -webkit-box-shadow: $value;
-  box-shadow: $value;
-}
-
-@mixin transform($value...) {
-  -ms-transform: $value;
-  -webkit-transform: $value;
-  transform: $value
-}
 // ========

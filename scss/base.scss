@@ -1,6 +1,7 @@
 @import "variables";
 @import "placeholders";
 @import "compass/utilities/general/clearfix";
+@import "compass/css3";
 
 * {
   -moz-box-sizing: border-box;
@@ -28,7 +29,7 @@ body {
   font-size: 1.7rem;
   color: $c-text;
   line-height: 2.1rem;
-  background: url(../img/bg.jpg) $c-bg;
+  background: inline-image("../img/bg.jpg") $c-bg;
   background-attachment: fixed;
 
   @media (max-width: 500px) {
@@ -389,6 +390,42 @@ code {
 
 // @End CODE STYLING
 // =================
+
+// ==============
+// ERROR MESSAGES
+// ==============
+
+.messages-block {
+  position: relative;
+  margin: 0 auto;
+  width: 130px;
+  padding: 35px 0;
+  text-align: center;
+  font-family: $font-headers;
+  font-size: 5rem;
+  color: $c-header;
+  background: rgba(#000, 0.2);
+  border-radius: 10px;
+
+  // Arrow
+  &:before {
+    position: absolute;
+    top: -14px;
+    left: -1px;
+    display: block;
+    content:"";
+    width: 0;
+    height: 0;
+    border: {
+      width: 0 8px 18px 8px;
+      style: solid;
+      color: transparent transparent #2f3337 transparent;
+    }
+    @include transform(rotate(-15deg));
+  }
+}
+// @End ERROR MESSAGES
+// ===================
 
 // =============
 // ABOUT ME PAGE

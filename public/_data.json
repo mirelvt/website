@@ -6,5 +6,19 @@
   "about": {
     "page_title": "About me",
     "source": "about"
+  },
+   "404": {
+    "page_title": "404 Page Not Found",
+    "source": "404"
+  },
+  "403": {
+    "page_title": "Forbidden",
+    "source": "403"
+  },
+  "500": {
+    "page_title": "Internal Server Error",
+    "source": "500"
   }
+
+
 }
