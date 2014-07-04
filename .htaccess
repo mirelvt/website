@@ -147,3 +147,8 @@ Redirect /fronteers/fronteers2012/short-notes/index.php#alexrussell http://mirel
 Redirect /blog/cssday2013/index.php http://mirellavanteulingen.nl/blog/cssday2013.html
 Redirect /blog/sublime/index.php http://mirellavanteulingen.nl/blog/customize-sublime.html
 
+# Error pages
+ErrorDocument 404 404.html
+ErrorDocument 403 403.html
+ErrorDocument 500 500.html
+
