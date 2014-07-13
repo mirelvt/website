@@ -4,11 +4,14 @@
   <%- partial("../_partials/_metatags") %>
   <title><%= title %> - <%= page_title %></title>
   <%- partial("../_partials/_stylesheet", {css_path: "../css"}) %>
+  <link rel="icon" type="image/ico" href="../img/favicon.ico"/>
 </head>
 <body>
   <%- partial("../_partials/_header") %>
   <%- submenu == true ? partial("../_partials/_submenu"): '' %>
   <%- yield %>
+
+  <script src="../js/fastclick.js"></script>
   <script src="../js/base.js"></script>
 </body>
 </html>

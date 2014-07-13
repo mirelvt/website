@@ -21,6 +21,8 @@
   document.addEventListener('DOMContentLoaded', function() {
     var nav = document.querySelector('nav');
     new MenuComponent(nav);
+
+    FastClick.attach(document.body);
   }, false);
 
 })();
