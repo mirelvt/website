@@ -44,6 +44,7 @@ h4,
 h5,
 h6 {
   font-family: $font-headers;
+  line-height: 100%;
 }
 
 h1 {
@@ -90,12 +91,15 @@ blockquote {
 
 
 figure {
-  padding: 8px;
+  @include mq-min(500px) {
+    padding: 8px;
+  }
 
   img {
     display: inline-block;
     margin: 0 auto;
     border: 2px solid lighten($c-bg, 15%);
+    max-width: 100%;
   }
 
   figcaption {
@@ -274,6 +278,11 @@ article {
   margin: 28px auto 18px auto;
   padding: 28px;
   background-color: rgba(#44484d, 0.7);
+
+  ul {
+    margin-left: 0;
+    padding-left: 18px;
+  }
 }
 .subtitle { font-size: 1.5rem; }
 
