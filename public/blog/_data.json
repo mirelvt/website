@@ -2,16 +2,19 @@
   "index": {
     "page_title": "Blog",
     "source": "blog",
-    "submenu": false
+    "submenu": false,
+    "description": "My blog about front end development, things I come across while coding and the meetings/conferences I attended."
   },
   "cssday2013": {
     "page_title": "CSS Day 2013",
     "source": "blog",
-    "submenu": false
+    "submenu": false,
+    "description": "CSS Day 2013, conference about new techniques and the future of CSS."
   },
   "customize-sublime": {
     "page_title": "Customize Sublime text editor",
     "source": "blog",
-    "submenu": false
+    "submenu": false,
+    "description": "Customize Sublime Text 2 configuration and how to install handy packages."
   }
 }

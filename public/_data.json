@@ -1,24 +1,27 @@
 {
   "index": {
     "page_title": "front end developer",
-    "source": "index"
+    "source": "index",
+    "description": "Mirella van Teulingen is a Dutch front end developer and this is her professional blog."
   },
   "about": {
     "page_title": "About me",
-    "source": "about"
+    "source": "about",
+    "description": "My key areas of experience: HTML, CSS, Django templating, SASS and LESS."
   },
    "404": {
     "page_title": "404 Page Not Found",
-    "source": "404"
+    "source": "404",
+    "description": ""
   },
   "403": {
     "page_title": "Forbidden",
-    "source": "403"
+    "source": "403",
+    "description": ""
   },
   "500": {
     "page_title": "Internal Server Error",
-    "source": "500"
+    "source": "500",
+    "description": ""
   }
-
-
 }
