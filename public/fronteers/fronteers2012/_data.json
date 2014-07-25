@@ -27,36 +27,36 @@
     "page_title": "A pixel is not a pixel - Fronteers 2012",
     "source": "fronteers",
     "submenu": true,
-    "description": ""
+    "description": "Presentation by Peter-Paul Koch about the pixel differences on mobile devices."
   },
   "responsive-design": {
     "page_title": "Responsive design - Fronteers 2012",
     "source": "fronteers",
     "submenu": true,
-    "description": ""
+    "description": "Presentation by Mark boulton about the challenges of Responsive Design."
   },
   "shortnotes": {
     "page_title": "The short notes - Fronteers 2012",
     "source": "fronteers",
     "submenu": true,
-    "description": ""
+    "description": "Short presentation notes about data visualizations, things you don't know about html, css transitions, and writing cleaner javascript."
   },
   "smellyourcms": {
     "page_title": "I can smell your CMS - Fronteers 2012",
     "source": "fronteers",
     "submenu": true,
-    "description": ""
+    "description": "Presentation by Phil Hawksworth abouth being critical when to use a CMS and its flaws."
   },
   "statehtml5video": {
-    "page_title": "The stat of HTML5 video",
+    "page_title": "The state of HTML5 video",
     "source": "fronteers",
     "submenu": true,
-    "description": ""
+    "description": "Jeroen Wijering shows how far JWPlayer is in using HTML5."
   },
   "styleguides": {
     "page_title": "Style guides - Fronteers 2012",
     "source": "fronteers",
     "submenu": true,
-    "description": ""
+    "description": "Presentation by Stephen Hay how to use Style guides in your development process."
   }
 }
