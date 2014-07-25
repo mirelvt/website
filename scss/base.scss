@@ -32,7 +32,7 @@ body {
   background: inline-image("../img/bg.jpg") $c-bg;
   background-attachment: fixed;
 
-  @media (max-width: 500px) {
+  @media screen and (max-width: 500px) {
     font-size: 1.7rem;
   }
 }
