@@ -1,28 +1,20 @@
 <header class="header-menu">
   <nav role="navigation">
     <span class="menu_title icon-menu"></span>
-    <ul class="menu">
-      <li>
-        <a href="/" class="header-menu-item <%- source == 'index' ? 'selected' : '' %>">
-         Home
-       </a>
-      </li>
-      <li>
-        <a href="/fronteers" class="header-menu-item <%- source == 'fronteers' ? 'selected' : '' %>">
-         Fronteers
-        </a>
-      </li>
-       <li>
-        <a href="/blog" class="header-menu-item <%- source == 'blog' ? 'selected' : '' %>">
-         Blog
-        </a>
-      </li>
-       <li>
-        <a href="/about.html" class="header-menu-item <%- source == 'about' ? 'selected' : '' %>">
-         About me
-        </a>
-      </li>
-    </ul>
+    <div class="menu">
+      <a href="/" class="header-menu-item <%- source == 'index' ? 'selected' : '' %>">
+        Home
+      </a>
+      <a href="/fronteers" class="header-menu-item <%- source == 'fronteers' ? 'selected' : '' %>">
+       Fronteers
+      </a>
+      <a href="/blog" class="header-menu-item <%- source == 'blog' ? 'selected' : '' %>">
+       Blog
+      </a>
+      <a href="/about.html" class="header-menu-item <%- source == 'about' ? 'selected' : '' %>">
+       About me
+      </a>
+    </div>
   </nav>
   <span class="my-name">Mirella van Teulingen</span>
 </header>

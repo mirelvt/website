@@ -126,8 +126,6 @@ figure {
 }
 
 .menu {
-  @include reset-ul;
-
   @include mq-max(699px) {
     position: absolute;
     display: none;
@@ -136,16 +134,13 @@ figure {
 
     .show & { display: block; }
   }
-
-  @include mq-min(700px) {
-    li { display: inline-block; }
-  }
 }
 
 .header-menu-item {
   font-family: $font-headers;
   color: #fff;
   text-decoration: none;
+  white-space: nowrap;
 
   &.selected,
   &:hover {
