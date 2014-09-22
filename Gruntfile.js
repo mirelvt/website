@@ -9,6 +9,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compressor');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
 
   // Project configuration.
@@ -106,10 +107,17 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      main: {
+        src: ['public/rss.xml'],
+        dest: 'build/rss.xml',
+      },
+    },
+
     clean: ['build/css', 'public/css', 'build/minified', 'build/js']
   });
 
    // Default task(s).
-  grunt.registerTask('dev', ['connect', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'compass:deploy', 'harp', 'compressor']);
+  grunt.registerTask('dev', ['connect', 'copy', 'watch']);
+  grunt.registerTask('deploy', ['clean', 'compass:deploy', 'harp', 'copy', 'compressor']);
 };

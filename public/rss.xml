@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+    <title>Blog - Mirella van Teulingen</title>
+    <link>http://www.mirellavanteulingen.nl</link>
+    <description>My latest articles</description>
+    <item>
+        <title>CSS Day 2013 Amsterdam</title>
+        <link>http://www.mirellavanteulingen.nl/blog/cssday2013.html</link>
+    </item>
+    <item>
+        <title>Customize Sublime text editor</title>
+        <link>http://www.mirellavanteulingen.nl/blog/customize-sublime.html</link>
+    </item>
+</channel>
