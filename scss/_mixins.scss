@@ -5,13 +5,13 @@
 }
 
 // Mixins for flexbox layout
-@mixin flexbox {
+@mixin myflexbox {
   display: -ms-flex;
   display: -webkit-flex;
   display: flex;
 }
 
-@mixin flex-justify-content($value) {
+@mixin myflex-justify-content($value) {
   -ms-justify-content: $value;
   -moz-justify-content: $value;
   -webkit-justify-content: $value;

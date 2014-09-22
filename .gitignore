@@ -1,4 +1,5 @@
 # Ignore the following files:
 .sass-cache
+*.css.map
 tmp
 node_modules

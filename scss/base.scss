@@ -214,8 +214,8 @@ figure {
 .flexible {
   margin-top: 40px;
   @include mq-min(815px) {
-    @include flexbox;
-    @include flex-justify-content(space-around);
+    @include myflexbox;
+    @include myflex-justify-content(space-around);
   }
 }
 
@@ -316,8 +316,8 @@ article {
   max-width: 1200px;
 
   @include mq-min(780px) {
-    @include flexbox;
-    @include flex-justify-content(space-around);
+    @include myflexbox;
+    @include myflex-justify-content(space-around);
   }
 }
 
