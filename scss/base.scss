@@ -288,6 +288,15 @@ article {
 
 }
 
+.example-img {
+  text-align: center;
+
+  img {
+    border: 10px solid rgba(#fff, 0.8);
+    @include box-shadow(1px 1px 8px 0 #000);
+  }
+}
+
 // Article list
 // ------------
 .article_list {
@@ -433,6 +442,7 @@ input[type="text"] {
 }
 
 .field { margin-bottom: 10px; }
+
 // @END FORM STYLES
 // ================
 

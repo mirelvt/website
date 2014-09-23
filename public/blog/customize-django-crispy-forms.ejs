@@ -38,9 +38,9 @@
 <span class="statement">self</span>.helper[<span class="number">0</span>:<span class="number">2</span>].wrap_together(layout.Fieldset, <span class="string">'Your name'</span>)
 <span class="statement">self</span>.helper[<span class="number">1</span>:<span class="number">6</span>].wrap_together(layout.Fieldset, <span class="string">'Your Address'</span>)
 </code></pre>
-<p>As you can see we only need 2 lines of code to create two fieldsets.</p>
-  <p>
-    <img src="..img/crispy-forms-fieldsets.png" alt="Example Crispy forms Fieldset">
+  <p>As you can see we only need 2 lines of code to create two fieldsets.</p>
+  <p class="example-img">
+    <img src="../img/crispy-fieldsets.png" alt="Example Crispy forms Fieldset">
   </p>
   <h2>Wrap fields together</h2>
   <p>
@@ -53,8 +53,8 @@
 <span class="statement">self</span>.helper[<span class="string">'house_number'</span>].wrap(layout.Field, <span class="crispy-attribute">wrapper_class</span>=<span class="string">"housenumber"</span>)
 <span class="statement">self</span>.helper[<span class="string">'addition'</span>].wrap(layout.Field, <span class="crispy-attribute">wrapper_class</span>=<span class="string">"addition"</span>)
 </code></pre>
-  <p>
-    <img src="../img/crispy-forms-field-manipulation-code.png" alt="">
+  <p class="example-img">
+    <img src="../img/crispy-field-manipulation-code.png" alt="">
   </p>
   Now you can style and manipulate the 2 fields without touching the other
   fields. However there are three things you need to be aware of:
@@ -79,8 +79,8 @@
       <i>after</i> the fieldsets are created.
     </li>
   </ol>
-  <p>
-      <img src="../img/crispy-forms-field-manipulation.png" alt="">
+  <p  class="example-img">
+      <img src="../img/crispy-field-manipulation.png" alt="">
   </p>
   <h2>Insert HTML between fields</h2>
   <p>
@@ -93,6 +93,9 @@
     <span class="string">'&lt;p&gt;No spaces in the zipcode, please.&lt;/p&gt;'</span>
 ))
 </code></pre>
+ <p class="example-img">
+    <img src="../img/crispy-add-content.png" alt="">
+  </p>
   <p>
     The complete code with all the examples in the right order:
   </p><pre class="python" rel="Python"><code><span class="comment"># Wrapping the fields "housenumber and addition". Assign extra class to the fields</span>
@@ -109,46 +112,4 @@
     <span class="string">'&lt;p&gt;No spaces in the zipcode, please.&lt;/p&gt;'</span>
 ))
   </code></pre>
-  <p>
-    <img src="../img/crispy-forms-inserted-text.png" alt="">
-  </p>
-
-  <form action="">
-    <fieldset>
-      <legend>Your name</legend>
-      <div class="field">
-        <label for="">First name</label>
-        <input type="text">
-      </div>
-      <div class="field">
-        <label for="">Last name</label>
-        <input type="text">
-      </div>
-    </fieldset>
-     <fieldset>
-      <legend>Your address</legend>
-      <div class="field">
-        <label for="">Street</label>
-        <input type="text">
-      </div>
-      <div class="housenumber-wrapper">
-        <div class="field house-number">
-          <label for="">House number</label>
-          <input type="text">
-        </div>
-         <div class="field addition">
-          <label for="">Addition</label>
-          <input type="text">
-        </div>
-      </div>
-      <div class="field">
-        <label for="">Zip code</label>
-        <input type="text">
-      </div>
-      <div class="field">
-        <label for="">City</label>
-        <input type="text">
-      </div>
-    </fieldset>
-  </form>
 </article>
