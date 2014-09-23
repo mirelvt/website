@@ -292,6 +292,7 @@ article {
   text-align: center;
 
   img {
+    max-width: 100%;
     border: 10px solid rgba(#fff, 0.8);
     @include box-shadow(1px 1px 8px 0 #000);
   }
