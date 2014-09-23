@@ -5,6 +5,10 @@
         <link>http://www.mirellavanteulingen.nl</link>
         <description>My latest articles</description>
         <item>
+            <title>Django form customization using Crispy Forms</title>
+            <link>http://www.mirellavanteulingen.nl/blog/customize-django-crispy-forms.html</link>
+        </item>
+        <item>
             <title>CSS Day 2013 Amsterdam</title>
             <link>http://www.mirellavanteulingen.nl/blog/cssday2013.html</link>
         </item>

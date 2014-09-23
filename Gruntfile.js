@@ -118,6 +118,6 @@ module.exports = function(grunt) {
   });
 
    // Default task(s).
-  grunt.registerTask('dev', ['connect', 'copy', 'watch']);
+  grunt.registerTask('dev', ['connect', 'watch']);
   grunt.registerTask('deploy', ['clean', 'compass:deploy', 'harp', 'copy', 'compressor']);
 };
