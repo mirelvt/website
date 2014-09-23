@@ -1,1 +1,28 @@
-!function(){"use strict";function a(a){function b(){a.hasAttribute("class")?a.removeAttribute("class"):a.setAttribute("class","show")}var c=a.querySelector(".menu_title");c.addEventListener("click",function(){b()},!1)}document.addEventListener("DOMContentLoaded",function(){var b=document.querySelector("nav");new a(b),FastClick.attach(document.body)},!1)}();
+(function() {
+  'use strict';
+
+  function MenuComponent(container) {
+    var menu_title = container.querySelector('.menu_title');
+
+    menu_title.addEventListener('click', function(evt) {
+      toggleMenu();
+    }, false);
+
+    function toggleMenu() {
+      if (container.hasAttribute('class')) {
+          container.removeAttribute('class');
+      }
+      else {
+        container.setAttribute('class', 'show');
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var nav = document.querySelector('nav');
+    new MenuComponent(nav);
+
+    FastClick.attach(document.body);
+  }, false);
+
+})();
