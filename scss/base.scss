@@ -332,7 +332,7 @@ article {
 // ============
 pre {
     position: relative;
-    margin: 5px;
+    margin: 5px 10px 20px 10px;
     padding: 0;
     overflow: auto;
     background: #fff;
@@ -390,6 +390,16 @@ code {
 .language-html {
   .attribute { color: #7a8622; }
   .tag { color: #4c7cc1; }
+}
+.python {
+  .number,
+  .statement { color: #7A8622; }
+  .string { color: $color-maintitle; }
+
+  .crispy-attribute {
+    font-style: italic;
+    color: #4976BC;
+  }
 }
 
 // @End CODE STYLING
