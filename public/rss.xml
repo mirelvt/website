@@ -7,14 +7,30 @@
         <item>
             <title>Django form customization using Crispy Forms</title>
             <link>http://www.mirellavanteulingen.nl/blog/customize-django-crispy-forms.html</link>
+            <description>
+                At Dreamsolution we regularly use Crispy Forms to generate complex
+                forms in Django. I want to share some practical customization examples
+                with Crispy Forms using the formhelper API.
+            </description>
         </item>
         <item>
             <title>CSS Day 2013 Amsterdam</title>
             <link>http://www.mirellavanteulingen.nl/blog/cssday2013.html</link>
+            <description>
+                Friday 14 june 2013 in Amsterdam I attended the CSSDay conference.
+                Eight experts talked about 8 different CSS modules. The focus was
+                on techniques of these modules we might not know about and the future of CSS.
+            </description>
         </item>
         <item>
             <title>Customize Sublime text editor</title>
             <link>http://www.mirellavanteulingen.nl/blog/customize-sublime.html</link>
+            <description>
+                 This article is a small tutorial with tips to configure Sublime to your
+                 needs, interesting packages, how to customize a theme and links
+                 to useful documentation.
+            </description>
+
         </item>
     </channel>
 </rss>

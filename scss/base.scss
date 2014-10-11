@@ -326,6 +326,16 @@ article {
   }
 }
 
+.rss-link {
+  float: right;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: none;
+
+  img { max-width: 100%; }
+}
+
 // Used as title of a listing
 .list_title {
   @extend %list_title;
