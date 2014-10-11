@@ -45,12 +45,10 @@
   }
   // }}
 
-  document.addEventListener('DOMContentLoaded', function() {
+  function onDocumentLoaded() {
     new AboutMeComponent(img_container);
-  }, false);
+  }
 
-  window.addEventListener('resize', function() {
-    new AboutMeComponent(img_container);
-  }, false);
-
+  document.addEventListener('DOMContentLoaded', onDocumentLoaded, false);
+  window.addEventListener('resize', onDocumentLoaded, false);
 })();

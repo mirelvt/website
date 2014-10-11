@@ -1,5 +1,4 @@
-@import "variables";
-@import "placeholders";
+@import "mixins";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3";
 
@@ -111,7 +110,7 @@ figure {
 // ===========
 // HEADER MENU
 // ===========
-.header-menu {
+header {
   position: relative;
   height: 50px;
   background-color: $color-maintitle;
@@ -125,7 +124,7 @@ figure {
   }
 }
 
-.menu {
+[role="menubar"] {
   @include mq-max(699px) {
     position: absolute;
     display: none;
@@ -136,7 +135,7 @@ figure {
   }
 }
 
-.header-menu-item {
+[role="menubar"] [ role="menuitem"] {
   font-family: $font-headers;
   color: #fff;
   text-decoration: none;
@@ -164,7 +163,7 @@ figure {
   }
 }
 
-.menu_title {
+.menu-title {
   display: inline-block;
   height: 50px;
   padding: 10px 15px;
@@ -214,8 +213,52 @@ figure {
   }
 }
 
-.block-home {
-  @include mq-max(814px) {
+.block-home-visual { height: 120px; }
+
+.block-home-portrait {
+  width: 121px;
+  height: 121px;
+  border: 2px solid $c-text;
+}
+
+// Give the blog icon a nice background color + border-radius and center it.
+.icon-blog {
+  display: block;
+  width: 121px;
+  height: 121px;
+  padding-top: 18px;
+  padding-left: 12px;
+  background-color: $c-header;
+  border: 2px solid $c-text;
+
+  &:before {
+    color: #fff;
+    font-size: 7.5rem;
+  }
+}
+
+
+// Media queries block home
+// ------------------------
+@include mq-max(464px) {
+  .block-home-visual { text-align: center; }
+  .icon-blog { margin: 0 auto; }
+}
+
+@include mq-min(815px) {
+  .block-home-visual { text-align: center; }
+  .icon-blog { margin: 0 auto; }
+}
+
+ @include mq-min-max(465px, 814px) {
+  .block-home-visual {
+    float: left;
+    margin-right: 28px;
+  }
+}
+
+@include mq-max(814px) {
+  .block-home {
     margin-bottom: 28px;
     padding-left: 28px;
     padding-right: 28px;
@@ -223,52 +266,21 @@ figure {
 
     h2 { margin-top: 15px; }
   }
+}
 
-  @include mq-min-max(815px, 1279px) { width: 28%; }
-  @include mq-min(1280px) { width: 18%; }
+@include mq-min-max(815px, 1279px) {
+  .block-home { width: 28%; }
+}
 
-  .visual {
-    height: 120px;
-
-    @include mq-min-max(465px, 814px) {
-      float: left;
-      margin-right: 28px;
-    }
-    @include mq-max(464px) { text-align: center; }
-    @include mq-min(815px) { text-align: center; }
-
-    // Give the blog icon a nice background color + border-radius and center it.
-    .icon-blog {
-      display: block;
-      width: 121px;
-      height: 121px;
-      padding-top: 18px;
-      padding-left: 12px;
-      background-color: $c-header;
-      border: 2px solid $c-text;
-
-      @include mq-max(464px) {  margin: 0 auto; }
-      @include mq-min(815px) {  margin: 0 auto; }
-    }
-
-    .icon-blog:before {
-      color: #fff;
-      font-size: 7.5rem;
-    }
-  }
-
-  .portrait {
-    width: 121px;
-    height: 121px;
-    border: 2px solid $c-text;
-  }
+@include mq-min(1280px) {
+  .block-home { width: 18%; }
 }
 
 // =======
 // CONTENT
 // =======
 [role="main"],
-article {
+[role="article"] {
   max-width: 746px;
   margin: 28px auto 18px auto;
   padding: 28px;
@@ -280,13 +292,6 @@ article {
   }
 }
 .subtitle { font-size: 1.5rem; }
-
-.intro {
-  margin: 0 auto;
-  max-width: 746px;
-  padding: 28px;
-
-}
 
 .example-img {
   text-align: center;
@@ -300,23 +305,20 @@ article {
 
 // Article list
 // ------------
-.article_list {
-  @extend %article_list;
+[role="main"] [role="list"],
+.article_list_flexible {
+  @include article_list;
 }
 
 .article_list_flexible {
-  @extend %article_list;
   @include mq-min(780px) { width: 550px; }
-
-  &:first-of-type {
-    padding-right: 28px;
-  }
+  &:first-of-type { padding-right: 28px; }
 }
 
 .flexible_listing {
   padding-left: 28px;
   padding-right: 28px;
-  margin: 0 auto;
+  margin: 0 auto 38px auto;
   width: 100%;
   max-width: 1200px;
 
@@ -337,15 +339,14 @@ article {
 }
 
 // Used as title of a listing
-.list_title {
-  @extend %list_title;
-  margin: 35px 0 15px 0;
+.list_title,
+.list_title_flexible {
+  font-family: $font-headers;
+  font-size: 2.8rem;
 }
 
-.list_title_flexible {
-  @extend %list_title;
-  margin-bottom: 15px;
-}
+.list_title { margin: 35px 0 15px 0; }
+.list_title_flexible { margin-bottom: 15px; }
 
 // ============
 // CODE STYLING
@@ -382,26 +383,24 @@ pre {
 }
 
 code {
-    display: block;
-    overflow: auto;
-    margin: 0;
-    padding: 15px;
-    white-space: pre;
-    font-family: monospace, sans-serif;
+  display: block;
+  overflow: auto;
+  margin: 0;
+  padding: 15px;
+  white-space: pre;
+  font-family: monospace, sans-serif;
 }
 .comment { color: darken($color-subtitle, 18%); }
 
-.code-indent {
-    display: inline-block;
-    text-indent: $code-indent;
-}
+.code-indent,
 .code-indent-2 {
-    display: inline-block;
-    text-indent: $code-indent * 2;
+  display: inline-block;
 }
+
+.code-indent { text-indent: $code-indent; }
+.code-indent-2 { text-indent: $code-indent * 2; }
 .boolean { color: $color-maintitle; }
 .number { color: $c-header; }
-
 
 .language-css {
   .selector { color: #7a8622; }
@@ -524,3 +523,6 @@ input[type="text"] {
 
 //@End ABOUT ME PAGE
 // =================
+
+@import "placeholders";
+@import "fonts";

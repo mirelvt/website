@@ -64,8 +64,6 @@ module.exports = function(grunt) {
           imagesDir: ['build/img'],
           fontsDir: ['/../fonts'],
           outputStyle: 'expanded',
-          // debugInfo: true, // is needed if you use fire-sass for firebug
-          raw: "sass_options = {:sourcemap => true}" // Used for firefox developer tools sass debug
         }
       },
       deploy: {

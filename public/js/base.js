@@ -2,7 +2,7 @@
   'use strict';
 
   function MenuComponent(container) {
-    var menu_title = container.querySelector('.menu_title');
+    var menu_title = container.querySelector('.menu-title');
 
     menu_title.addEventListener('click', function(evt) {
       toggleMenu();
@@ -18,11 +18,12 @@
     }
   }
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var nav = document.querySelector('nav');
+  function onDocumentLoaded() {
+    var nav = document.querySelector('[role="navigation"]');
     new MenuComponent(nav);
 
     FastClick.attach(document.body);
-  }, false);
+  }
 
+  document.addEventListener('DOMContentLoaded', onDocumentLoaded, false);
 })();
