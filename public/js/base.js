@@ -1,26 +1,20 @@
 (function() {
   'use strict';
 
-  function MenuComponent(container) {
+  function menuComponent(container) {
     var menu_title = container.querySelector('.menu-title');
 
-    menu_title.addEventListener('click', function(evt) {
-      toggleMenu();
-    }, false);
+    menu_title.addEventListener('click', toggleMenu, false);
 
     function toggleMenu() {
-      if (container.hasAttribute('class')) {
-          container.removeAttribute('class');
-      }
-      else {
-        container.setAttribute('class', 'show');
-      }
+      var dropdown_menu = container.classList.contains('show') ? container.classList.remove('show') :
+                          container.classList.add('show');
     }
   }
 
   function onDocumentLoaded() {
     var nav = document.querySelector('[role="navigation"]');
-    new MenuComponent(nav);
+    menuComponent(nav);
 
     FastClick.attach(document.body);
   }
