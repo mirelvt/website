@@ -1,3 +1,5 @@
+@import "variables";
+@import "placeholders";
 @import "mixins";
 @import "compass/utilities/general/clearfix";
 @import "compass/css3";
@@ -198,7 +200,7 @@ header {
     padding-right: 2px;
   }
 
-   &:after {
+  &:after {
     content: "}";
     padding-left: 2px;
   }
@@ -208,7 +210,7 @@ header {
 .flexible {
   margin-top: 40px;
   @include mq-min(815px) {
-    @include myflexbox;
+    @include myflexbox(false);
     @include myflex-justify-content(space-around);
   }
 }
@@ -250,7 +252,7 @@ header {
   .icon-blog { margin: 0 auto; }
 }
 
- @include mq-min-max(465px, 814px) {
+@include mq-min-max(465px, 814px) {
   .block-home-visual {
     float: left;
     margin-right: 28px;
@@ -291,6 +293,7 @@ header {
     padding-left: 18px;
   }
 }
+
 .subtitle { font-size: 1.5rem; }
 
 .example-img {
@@ -307,6 +310,7 @@ header {
 // ------------
 [role="main"] [role="list"],
 .article_list_flexible {
+  @extend %reset-ul;
   @include article_list;
 }
 
@@ -323,7 +327,7 @@ header {
   max-width: 1200px;
 
   @include mq-min(780px) {
-    @include myflexbox;
+    @include myflexbox(false);
     @include myflex-justify-content(space-around);
   }
 }
@@ -406,10 +410,12 @@ code {
   .selector { color: #7a8622; }
   .property { color: #4c7cc1; }
 }
+
 .language-html {
   .attribute { color: #7a8622; }
   .tag { color: #4c7cc1; }
 }
+
 .python {
   .number,
   .statement { color: #7A8622; }
@@ -523,6 +529,4 @@ input[type="text"] {
 
 //@End ABOUT ME PAGE
 // =================
-
-@import "placeholders";
 @import "fonts";

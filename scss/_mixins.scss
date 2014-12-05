@@ -1,16 +1,20 @@
 @import "variables";
 
-@mixin reset-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 
 // Mixins for flexbox layout
-@mixin myflexbox {
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: flex;
+@mixin myflexbox($extend: true) {
+  @if $extend {
+    @extend %myflexbox;
+  }
+  @else {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+  }
+}
+
+%myflexbox {
+  @include myflexbox($extend: false);
 }
 
 @mixin myflex-justify-content($value) {
@@ -72,7 +76,6 @@
 // ========
 
 @mixin article_list {
-  @include reset-ul;
   margin-top: 18px;
 
   &.no-description a:not(.title) { font-weight: normal; }

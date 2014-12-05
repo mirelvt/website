@@ -22,5 +22,11 @@
     "source": "fronteers",
     "submenu": true,
     "description": "A talk about accessability and usability issues."
+  },
+  "fronteers2014": {
+    "page_title": "Fronteers Conference 2014",
+    "source": "fronteers",
+    "submenu": true,
+    "description": "Summary of Fronteers Conference 2014"
   }
 }
