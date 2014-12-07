@@ -683,58 +683,58 @@ input[type="text"] {
 }
 
 @font-face {
-  font-family: 'ssp-l';
+  font-family: ssp-l;
   src: url("../fonts/SourceSansPro-Light.eot");
   src: url("../fonts/SourceSansPro-Light.woff") format("woff"), url("../fonts/SourceSansPro-Light.ttf") format("truetype"), url("../fonts/SourceSansPro-Light.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'ssp-l';
+  font-family: ssp-l;
   src: url("../fonts/SourceSansPro-Semibold.eot");
   src: url("../fonts/SourceSansPro-Semibold.woff") format("woff"), url("../fonts/SourceSansPro-Semibold.ttf") format("truetype"), url("../fonts/SourceSansPro-Semibold.svg") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'ssp-l';
+  font-family: ssp-l;
   src: url("../fonts/SourceSansPro-SemiboldIt.eot");
   src: url("../fonts/SourceSansPro-SemiboldIt.woff") format("woff"), url("../fonts/SourceSansPro-SemiboldIt.ttf") format("truetype"), url("../fonts/SourceSansPro-SemiboldIt.svg") format("svg");
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
-  font-family: 'ssp-l';
+  font-family: ssp-l;
   src: url("../fonts/SourceSansPro-LightIt.eot");
   src: url("../fonts/SourceSansPro-LightIt.woff") format("woff"), url("../fonts/SourceSansPro-LightIt.ttf") format("truetype"), url("../fonts/SourceSansPro-LightIt.svg") format("svg");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'leaguegothic';
+  font-family: leaguegothic;
   src: url("../fonts/leaguegothic-regular-webfont.eot");
-  src: url("../fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
+  src: url("../fonts/leaguegothic-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'leaguegothic';
+  font-family: leaguegothic;
   src: url("../fonts/leaguegothic-regular-webfont.eot");
-  src: url("../fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
+  src: url("../fonts/leaguegothic-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'leaguegothic';
+  font-family: leaguegothic;
   src: url("../fonts/leaguegothic-italic-webfont.eot");
-  src: url("../fonts/leaguegothic-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-italic-webfont.woff") format("woff"), url("../fonts/leaguegothic-italic-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-italic-webfont.svg#league_gothicitalic") format("svg");
+  src: url("../fonts/leaguegothic-italic-webfont.woff") format("woff"), url("../fonts/leaguegothic-italic-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-italic-webfont.svg#league_gothicitalic") format("svg");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
-  font-family: 'monospace';
+  font-family: monospace;
   src: url("../fonts/MonospaceTypewriter-webfont.eot");
-  src: url("../fonts/MonospaceTypewriter-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/MonospaceTypewriter-webfont.woff") format("woff"), url("../fonts/MonospaceTypewriter-webfont.ttf") format("truetype"), url("../fonts/MonospaceTypewriter-webfont.svg#monospacetypewriterregular") format("svg");
+  src: url("../fonts/MonospaceTypewriter-webfont.woff") format("woff"), url("../fonts/MonospaceTypewriter-webfont.ttf") format("truetype"), url("../fonts/MonospaceTypewriter-webfont.svg#monospacetypewriterregular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -745,7 +745,7 @@ input[type="text"] {
   font-weight: normal;
   font-style: normal;
 }
-/* line 107, ../../scss/_fonts.scss */
+/* line 37, ../../scss/_fonts.scss */
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'mvt-icons';
   speak: none;
@@ -759,12 +759,12 @@ input[type="text"] {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 121, ../../scss/_fonts.scss */
+/* line 51, ../../scss/_fonts.scss */
 .icon-menu:before {
   content: "\e600";
 }
 
-/* line 124, ../../scss/_fonts.scss */
+/* line 54, ../../scss/_fonts.scss */
 .icon-blog:before {
   content: "\e601";
 }

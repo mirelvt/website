@@ -4,6 +4,15 @@
         <title>Blog - Mirella van Teulingen</title>
         <link>http://www.mirellavanteulingen.nl</link>
         <description>My latest articles</description>
+         <item>
+            <title>Fronteers Conference 2014</title>
+            <link>http://www.mirellavanteulingen.nl/fronteers/fronteers2014.html</link>
+            <description>
+               On 9 and 10 october was the big event. Two days of inspiring talks and
+               where you meet old friends and make new ones. This article gives a
+               summary of most of the talks.
+            </description>
+        </item>
         <item>
             <title>Django form customization using Crispy Forms</title>
             <link>http://www.mirellavanteulingen.nl/blog/customize-django-crispy-forms.html</link>
@@ -30,7 +39,6 @@
                  needs, interesting packages, how to customize a theme and links
                  to useful documentation.
             </description>
-
         </item>
     </channel>
 </rss>

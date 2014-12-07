@@ -1,96 +1,26 @@
 // Font Source sans pro light for the body text
-@font-face {
-  font-family: 'ssp-l';
-   src: url('../fonts/SourceSansPro-Light.eot');
-    src: url('../fonts/SourceSansPro-Light.woff') format('woff'),
-         url('../fonts/SourceSansPro-Light.ttf') format('truetype'),
-         url('../fonts/SourceSansPro-Light.svg') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+$fonts: (
+  'ssp_regular': (name: ssp-l, url: SourceSansPro-Light, type: normal, weight: normal),
+  'ssp_bold': (name: ssp-l, url: SourceSansPro-Semibold, type: normal, weight: bold),
+  'ssp_bolditalic': (name: ssp-l, url: SourceSansPro-SemiboldIt, type: italic, weight: bold),
+  'ssp_italic': (name: ssp-l, url: SourceSansPro-LightIt, type: italic, weight: normal),
+  'lg_regular': (name: leaguegothic, url: leaguegothic-regular-webfont, type: normal, weight: normal, svg_id: #league_gothicregular),
+  'lg_bold': (name: leaguegothic, url: leaguegothic-regular-webfont, type: normal, weight: bold, svg_id: #league_gothicregular),
+  'lg_italic': (name: leaguegothic, url: leaguegothic-italic-webfont, type: italic, weight: normal, svg_id: #league_gothicitalic),
+  'mono_regular': (name: monospace, url: MonospaceTypewriter-webfont, type: normal, weight: normal, svg_id: #monospacetypewriterregular),
+);
 
-@font-face {
-  font-family: 'ssp-l';
-   src: url('../fonts/SourceSansPro-Semibold.eot');
-    src: url('../fonts/SourceSansPro-Semibold.woff') format('woff'),
-         url('../fonts/SourceSansPro-Semibold.ttf') format('truetype'),
-         url('../fonts/SourceSansPro-Semibold.svg') format('svg');
-  font-weight: bold;
-  font-style: normal;
+@each $font, $props in $fonts {
+  @font-face {
+      font-family: #{map-get($props, name)};
+       src: url('../fonts/#{map-get($props, url)}.eot');
+        src: url('../fonts/#{map-get($props, url)}.woff') format('woff'),
+             url('../fonts/#{map-get($props, url)}.ttf') format('truetype'),
+             url('../fonts/#{map-get($props, url)}.svg#{map-get($props, svg_id)}') format('svg');
+      font-weight: #{map-get($props, weight)};
+      font-style: #{map-get($props, type)};
+    }
 }
-
-@font-face {
-  font-family: 'ssp-l';
-   src: url('../fonts/SourceSansPro-SemiboldIt.eot');
-    src: url('../fonts/SourceSansPro-SemiboldIt.woff') format('woff'),
-         url('../fonts/SourceSansPro-SemiboldIt.ttf') format('truetype'),
-         url('../fonts/SourceSansPro-SemiboldIt.svg') format('svg');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'ssp-l';
-   src: url('../fonts/SourceSansPro-LightIt.eot');
-    src: url('../fonts/SourceSansPro-LightIt.woff') format('woff'),
-         url('../fonts/SourceSansPro-LightIt.ttf') format('truetype'),
-         url('../fonts/SourceSansPro-LightIt.svg') format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-
-// Font league Gothic for the headers
-@font-face {
-  font-family: 'leaguegothic';
-  src: url('../fonts/leaguegothic-regular-webfont.eot');
-    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix')
-              format('embedded-opentype'),
-         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular')
-              format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'leaguegothic';
- src: url('../fonts/leaguegothic-regular-webfont.eot');
-    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix')
-            format('embedded-opentype'),
-         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular')
-            format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'leaguegothic';
-  src: url('../fonts/leaguegothic-italic-webfont.eot');
-    src: url('../fonts/leaguegothic-italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/leaguegothic-italic-webfont.woff') format('woff'),
-         url('../fonts/leaguegothic-italic-webfont.ttf') format('truetype'),
-         url('../fonts/leaguegothic-italic-webfont.svg#league_gothicitalic') format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-
-//CODE
-@font-face {
-  font-family: 'monospace';
-  src: url('../fonts/MonospaceTypewriter-webfont.eot');
-  src: url('../fonts/MonospaceTypewriter-webfont.eot?#iefix')
-            format('embedded-opentype'),
-       url('../fonts/MonospaceTypewriter-webfont.woff') format('woff'),
-       url('../fonts/MonospaceTypewriter-webfont.ttf') format('truetype'),
-       url('../fonts/MonospaceTypewriter-webfont.svg#monospacetypewriterregular')
-            format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 // Font icons
 @font-face {
