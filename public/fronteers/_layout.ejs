@@ -6,7 +6,7 @@
   <%- partial("../_partials/_stylesheet", {css_path: "../css"}) %>
   <link rel="icon" type="image/ico" href="../img/favicon.ico"/>
 </head>
-<body>
+<body data-page-name="<%= submenu_title !== false ? submenu_title : '' %> ">
   <%- partial("../_partials/_header") %>
   <%- submenu == true ? partial("../_partials/_submenu"): '' %>
   <%- yield %>

@@ -1,1 +1,9 @@
-<!-- Submenu -->
+<aside role="menu">
+    <% for(var item in public.fronteers._data){ %>
+         <% if( public.fronteers._data[item].submenu_title !== false) { %>
+            <a href="<%= item %>.html" role="menuitem" data-page="<%= public.fronteers._data[item].submenu_title %>">
+                <%= public.fronteers._data[item].submenu_title %>
+            </a>
+        <% } %>
+    <% }; %>
+</aside>
