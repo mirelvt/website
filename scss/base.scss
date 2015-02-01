@@ -284,9 +284,16 @@ header {
 [role="main"],
 [role="article"] {
   max-width: 746px;
-  margin: 28px auto 18px auto;
   padding: 28px;
   background-color: rgba(#44484d, 0.7);
+
+  &:not(.column-content) {
+    margin: 28px auto 18px auto;
+  }
+
+  &.column-content {
+    margin: 28px 28px 18px 236px;
+  }
 
   ul {
     margin-left: 0;
@@ -529,4 +536,35 @@ input[type="text"] {
 
 //@End ABOUT ME PAGE
 // =================
+
+// =================
+// SUBMENU + CONTENT
+// =================
+
+aside[role="menu"] {
+  float: left;
+  width: 200px;
+  margin: 28px 28px 18px 8px;
+  background-color: rgba($c-header, 0.8);
+
+  [role="menuitem"] {
+    display: block;
+    height: 32px;
+    padding: 4px 8px 0 8px;
+    color: #fff;
+
+    &:not(:first-child) { border-top: 1px solid rgba($c-header, 0.5); }
+    &:not(:last-child) { border-bottom: 1px solid rgba($c-bg, 0.25); }
+
+    &.selected,
+    &:hover {
+      text-decoration: none;
+      background-color: $c-selected;
+      @include transition(background-color, 0.5s, ease-in);
+    }
+  }
+}
+// @END SUBMENU + CONTENT
+// ======================
+
 @import "fonts";
