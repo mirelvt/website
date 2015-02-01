@@ -2,7 +2,7 @@
   'use strict';
 
   function menuComponent(container) {
-    var menu_title = container.querySelector('.menu-title');
+    var menu_title = container.querySelector('.js-toggle-menu');
 
     menu_title.addEventListener('click', toggleMenu, false);
 
@@ -14,7 +14,10 @@
 
   function onDocumentLoaded() {
     var nav = document.querySelector('[role="navigation"]');
+    var subnav = document.querySelector('[role="menu"]');
+
     menuComponent(nav);
+    menuComponent(subnav);
 
     FastClick.attach(document.body);
   }

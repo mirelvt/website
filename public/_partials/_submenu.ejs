@@ -1,4 +1,7 @@
 <aside role="menu">
+    <span class="submenu-title js-toggle-menu">
+        <span class="submenu-arrow">&raquo;</span>
+    </span>
     <% for(var item in public.fronteers._data){ %>
          <% if( public.fronteers._data[item].submenu_title !== false) { %>
             <a href="<%= item %>.html" role="menuitem" data-page="<%= public.fronteers._data[item].submenu_title %>">
