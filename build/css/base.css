@@ -702,33 +702,33 @@ input[type="text"] {
 }
 
 /* line 553, ../../scss/base.scss */
-aside[role="menu"] {
+.desktop-menu {
   width: 230px;
   background-color: rgba(68, 72, 77, 0.7);
-  box-shadow: 0 4px 6px #222930;
 }
-/* line 559, ../../scss/base.scss */
-aside[role="menu"] [role="menuitem"] {
+/* line 558, ../../scss/base.scss */
+.desktop-menu [role="menuitem"] {
   position: relative;
   display: block;
   height: 32px;
   padding: 4px 8px 0 22px;
+  color: #fff;
 }
 /* line 565, ../../scss/base.scss */
-aside[role="menu"] [role="menuitem"]:not(:first-of-type) {
+.desktop-menu [role="menuitem"]:not(:first-of-type) {
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 /* line 566, ../../scss/base.scss */
-aside[role="menu"] [role="menuitem"]:not(:last-child) {
+.desktop-menu [role="menuitem"]:not(:last-child) {
   border-bottom: 1px solid rgba(34, 41, 48, 0.75);
 }
 /* line 568, ../../scss/base.scss */
-aside[role="menu"] [role="menuitem"].selected, aside[role="menu"] [role="menuitem"]:hover {
+.desktop-menu [role="menuitem"].selected, .desktop-menu [role="menuitem"]:hover {
   text-decoration: none;
   background-color: rgba(13, 15, 18, 0.1);
 }
 /* line 573, ../../scss/base.scss */
-aside[role="menu"] [role="menuitem"].selected:before, aside[role="menu"] [role="menuitem"]:hover:before {
+.desktop-menu [role="menuitem"].selected:before, .desktop-menu [role="menuitem"]:hover:before {
   position: absolute;
   left: 8px;
   top: 2px;
@@ -738,42 +738,35 @@ aside[role="menu"] [role="menuitem"].selected:before, aside[role="menu"] [role="
 }
 @media screen and (max-width: 699px) {
   /* line 553, ../../scss/base.scss */
-  aside[role="menu"] {
+  .desktop-menu {
     position: absolute;
     top: 78px;
     bottom: 0;
     left: -230px;
+    box-shadow: 0 4px 6px #222930;
     -moz-transition: -moz-transform 0.5s ease-in;
     -o-transition: -o-transform 0.5s ease-in;
     -webkit-transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
   }
-  /* line 592, ../../scss/base.scss */
-  aside[role="menu"].show {
+  /* line 594, ../../scss/base.scss */
+  .desktop-menu.show {
     background-color: #575c63;
     -moz-transform: translateX(230px);
     -ms-transform: translateX(230px);
     -webkit-transform: translateX(230px);
     transform: translateX(230px);
   }
-  /* line 597, ../../scss/base.scss */
-  aside[role="menu"] [role="menuitem"] {
-    color: #fff;
-  }
 }
 @media screen and (min-width: 700px) {
   /* line 553, ../../scss/base.scss */
-  aside[role="menu"] {
+  .desktop-menu {
     float: left;
     margin: 28px 28px 18px 8px;
   }
-  /* line 605, ../../scss/base.scss */
-  aside[role="menu"] [role="menuitem"] {
-    color: #f7a14d;
-  }
 }
 
-/* line 611, ../../scss/base.scss */
+/* line 606, ../../scss/base.scss */
 .submenu-title {
   position: absolute;
   top: 0;
@@ -793,21 +786,21 @@ aside[role="menu"] [role="menuitem"].selected:before, aside[role="menu"] [role="
   transition: background-color 0.5s ease-in;
 }
 @media screen and (min-width: 700px) {
-  /* line 611, ../../scss/base.scss */
+  /* line 606, ../../scss/base.scss */
   .submenu-title {
     display: none;
   }
 }
-/* line 628, ../../scss/base.scss */
+/* line 623, ../../scss/base.scss */
 .submenu-title:hover, .show .submenu-title {
   background-color: #575c63;
 }
-/* line 630, ../../scss/base.scss */
+/* line 625, ../../scss/base.scss */
 .show .submenu-title {
   box-shadow: 3px 0px 6px -3px #222930;
 }
 
-/* line 633, ../../scss/base.scss */
+/* line 628, ../../scss/base.scss */
 .submenu-arrow {
   display: block;
   width: 30px;
@@ -820,7 +813,7 @@ aside[role="menu"] [role="menuitem"].selected:before, aside[role="menu"] [role="
   -webkit-transition: -webkit-transform 0.15s ease-in;
   transition: transform 0.15s ease-in;
 }
-/* line 642, ../../scss/base.scss */
+/* line 637, ../../scss/base.scss */
 .show .submenu-arrow {
   padding-top: 13px;
   -moz-transform: rotate(-180deg);

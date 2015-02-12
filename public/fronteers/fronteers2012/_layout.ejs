@@ -5,10 +5,11 @@
   <title><%= title %> - <%= page_title %></title>
   <%- partial("../../_partials/_stylesheet", {css_path: "../../css"}) %>
 </head>
-<body>
+<body data-page-name="<%= submenu_title !== false ? submenu_title : '' %> ">
   <%- partial("../../_partials/_header") %>
   <%- submenu == true ? partial("../../_partials/_submenu"): '' %>
   <%- yield %>
+  <%- partial("../../_partials/_mobilemenu") %>
   <script src="../../js/base.js"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];

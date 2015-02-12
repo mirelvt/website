@@ -550,17 +550,17 @@ input[type="text"] {
 // SUBMENU
 // ========
 
-aside[role="menu"] {
+.desktop-menu {
   $w-menu: 230px;
   width: $w-menu;
   background-color: rgba(#44484d, 0.7);
-  box-shadow: 0 4px 6px $c-bg;
 
   [role="menuitem"] {
     position: relative;
     display: block;
     height: 32px;
     padding: 4px 8px 0 22px;
+    color: #fff;
 
     &:not(:first-of-type) { border-top: 1px solid rgba(#fff, 0.15); }
     &:not(:last-child) { border-bottom: 1px solid rgba($c-bg, 0.75); }
@@ -586,25 +586,20 @@ aside[role="menu"] {
     top: 78px;
     bottom: 0;
     left: -$w-menu;
+    box-shadow: 0 4px 6px $c-bg;
     @include transition(transform 0.5s ease-in);
+
 
 
     &.show {
       background-color: lighten(#44484d, 8%);
       @include transform(translateX($w-menu));
     }
-
-    [role="menuitem"] {
-      color: #fff;
-    }
   }
 
   @include mq-min(700px) {
     float: left;
     margin: 28px 28px 18px 8px;
-    [role="menuitem"] {
-      color: $c-header;
-    }
   }
 }
 
