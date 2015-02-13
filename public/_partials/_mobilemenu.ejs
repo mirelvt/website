@@ -10,12 +10,13 @@
           <a href="/fronteers" role="menuitem" class="<%- source == 'fronteers' ? 'selected' : '' %>">
            Fronteers
           </a>
-          <% if(submenu == true) { %>
+          <% if(submenu == true && source == 'fronteers') { %>
           <ul>
             <li>
                <% for(var item in public.fronteers._data){ %>
                      <% if( public.fronteers._data[item].submenu_title !== false) { %>
-                        <a href="<%= item %>.html" role="menuitem" data-page="<%= public.fronteers._data[item].submenu_title %>">
+                        <a href="<%= item %>.html" role="menuitem"
+                            class="<%- item == sub_page ? 'selected' : '' %>">
                             <%= public.fronteers._data[item].submenu_title %>
                         </a>
                     <% } %>
@@ -25,9 +26,23 @@
           <% } %>
         </li>
         <li>
-          <a href="/blog" role="menuitem" class=" <%- source == 'blog' ? 'selected' : '' %>">
-           Blog
-          </a>
+            <a href="/blog" role="menuitem" class=" <%- source == 'blog' ? 'selected' : '' %>">
+                Blog
+            </a>
+            <% if(submenu == true && source == 'blog') { %>
+            <ul>
+                <li>
+                    <% for(var item in public.fronteers._data){ %>
+                        <% if( public.fronteers._data[item].submenu_title !== false) { %>
+                            <a href="<%= item %>.html" role="menuitem"
+                                class="<%- item == sub_page ? 'selected' : '' %>">
+                                <%= public.fronteers._data[item].submenu_title %>
+                            </a>
+                        <% } %>
+                    <% }; %>
+                </li>
+            </ul>
+            <% } %>
         </li>
         <li>
           <a href="/about.html" role="menuitem" class="<%- source == 'about' ? 'selected' : '' %>">

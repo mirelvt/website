@@ -4,6 +4,8 @@
     "source": "fronteers",
     "submenu": false,
     "submenu_title": false,
+    "sub_page": false,
+    "sub_source": false,
     "description": "Fronteers is a Dutch non-profit trade organisation for front end developers. They organize monthly meetings, workshops and the annual Fronteers Conference."
   },
   "fronteers2014": {
@@ -11,6 +13,8 @@
     "source": "fronteers",
     "submenu": true,
     "submenu_title": "Fronteers Conference 2014",
+    "sub_page": "fronteers2014",
+    "sub_source": false,
     "description": "Summary of Fronteers Conference 2014"
   },
   "oocss": {
@@ -18,6 +22,8 @@
     "source": "fronteers",
     "submenu": true,
     "submenu_title": "OOCSS",
+    "sub_page": "oocss",
+    "sub_source": false,
     "description": "A talk about using Object Oriented CSS to create a flexible and powerful framework for the Dutch National Museum website."
   },
   "rijksmuseum": {
@@ -25,12 +31,16 @@
     "source": "fronteers",
     "submenu": true,
     "submenu_title": "Rijksmuseum",
+    "sub_page": "rijksmuseum",
+    "sub_source": false,
     "description": "The challenges Remco Veldkamp encountered when developing the responsive site for the collection of the Dutch National Museum."
   },
    "accessibility-is-ux-design": {
     "page_title": "Accessibility is also UX design",
     "source": "fronteers",
     "submenu": true,
+    "sub_page": "accessibility-is-ux-design",
+    "sub_source": false,
     "submenu_title": "Accessibility is UX Design",
     "description": "A talk about accessability and usability issues."
   },
@@ -38,6 +48,8 @@
     "page_title": "Fronteers Conference 2012",
     "source": "fronteers",
     "submenu": true,
+    "sub_page": "fronteers2012/index",
+    "sub_source": "f2012",
     "submenu_title": "Fronteers Conference 2012",
     "description": "Summary of Fronteers Conference 2012"
   }

@@ -3,24 +3,36 @@
     "page_title": "Blog",
     "source": "blog",
     "submenu": false,
+    "submenu_title": false,
+    "sub_page": false,
+    "sub_source": false,
     "description": "My blog about front end development, things I come across while coding and the meetings/conferences I attended."
   },
   "cssday2013": {
     "page_title": "CSS Day 2013",
     "source": "blog",
-    "submenu": false,
+    "submenu": true,
+    "submenu_title": "CSS Day 2013",
+    "sub_page": "cssday2013",
+    "sub_source": false,
     "description": "CSS Day 2013, conference about new techniques and the future of CSS."
   },
   "customize-sublime": {
     "page_title": "Customize Sublime text editor",
     "source": "blog",
-    "submenu": false,
+    "submenu": true,
+    "submenu_title": "customize sublime",
+    "sub_page": "customize-sublime",
+    "sub_source": false,
     "description": "Customize Sublime Text 2 configuration and how to install handy packages."
   },
   "customize-django-crispy-forms": {
     "page_title": "Django form customization using Crispy Forms",
     "source": "blog",
-    "submenu": false,
+    "submenu": true,
+    "sub_source": false,
+    "sub_page": "customize-django-crispy-forms",
+    "submenu_title": "Customize django crispy forms",
     "description": "This article shows some practical customization examples with crispy forms using the formhelper API."
   }
 }
