@@ -1,23 +1,41 @@
 (function() {
   'use strict';
 
-  function menuComponent(container) {
-    var menu_title = container.querySelector('.js-toggle-menu');
+function MobileMenuComponent(mobile_menu) {
+  var is_active;
 
-    menu_title.addEventListener('click', toggleMenu, false);
+  mobile_menu.querySelector('.js-toggle-menu').addEventListener('click', toggleMenu, false);
 
-    function toggleMenu() {
-      var dropdown_menu = container.classList.contains('show') ? container.classList.remove('show') :
-                          container.classList.add('show');
+  document.addEventListener('suske-mobile-active', disableContent, false);
+
+  function toggleMenu(evt) {
+    if(mobile_menu.classList.contains('show')) {
+      is_active = false;
+      mobile_menu.classList.remove('show');
     }
+    else {
+      is_active = true;
+      mobile_menu.classList.add('show');
+    }
+
+    mobile_menu.dispatchEvent(new CustomEvent('suske-mobile-active', {
+        detail: is_active,
+        bubbles: true
+    }));
   }
 
-  function onDocumentLoaded() {
-    var nav = document.querySelector('[role="navigation"]');
-    var subnav = document.querySelector('[role="menu"]');
+  function disableContent() {
+    var html_doc = document.documentElement;
 
-    menuComponent(nav);
-    menuComponent(subnav);
+    var disable_scroll = is_active == true ?
+        html_doc.classList.add('disable-scroll') :
+        html_doc.classList.remove('disable-scroll');
+  }
+}
+
+
+  function onDocumentLoaded() {
+   new MobileMenuComponent(document.documentElement.querySelector('.mobile-menu'))
 
     FastClick.attach(document.body);
   }
