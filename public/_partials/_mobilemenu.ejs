@@ -18,7 +18,7 @@
             <li>
                <% for(var item in public.fronteers._data){ %>
                      <% if( public.fronteers._data[item].submenu_title !== false) { %>
-                        <a href="<%= item %>.html" role="menuitem"
+                        <a href="/fronteers/<%= item %>.html" role="menuitem"
                             class="<%- item == sub_page ? 'selected' : '' %>">
                             <%= public.fronteers._data[item].submenu_title %>
                         </a>

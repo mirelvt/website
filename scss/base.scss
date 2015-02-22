@@ -272,6 +272,15 @@ header {
   .block-home { width: 18%; }
 }
 
+.columns-wrapper {
+  margin: 0 auto;
+  max-width: 746px + 230px;
+
+  @include mq-min(1304px) {
+      @include transform(translateX(-160px));
+  }
+}
+
 // =======
 // CONTENT
 // =======
@@ -318,26 +327,32 @@ header {
 // Article list
 // ------------
 [role="main"] [role="list"],
-.article_list_flexible {
+.article_list {
   @extend %reset-ul;
-  @include article_list;
-}
+  margin-top: 18px;
 
-.article_list_flexible {
-  @include mq-min(780px) { width: 550px; }
-  &:first-of-type { padding-right: 28px; }
-}
+  &.no-description a:not(.title) { font-weight: normal; }
+  [role="listitem"] { margin-bottom: 20px; }
 
-.flexible_listing {
-  padding-left: 28px;
-  padding-right: 28px;
-  margin: 0 auto 38px auto;
-  width: 100%;
-  max-width: 1200px;
+  .title {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: -0.1rem;
+    color: $color-maintitle;
+    line-height: 2.5rem;
 
-  @include mq-min(780px) {
-    @include myflexbox(false);
-    @include myflex-justify-content(space-around);
+    &:after {
+      display: inline-block;
+      margin-left: 5px;
+      content: "›";
+    }
+
+    .speaker {
+      font-family: $font-main;
+      font-size: 1.6rem;
+      color: $c-text;
+    }
   }
 }
 
@@ -352,15 +367,12 @@ header {
 }
 
 // Used as title of a listing
-.list_title,
-.list_title_flexible {
+.list_title {
   font-family: $font-headers;
   font-size: 2.8rem;
 }
 
 .list_title { margin: 35px 0 15px 0; }
-.list_title_flexible { margin-bottom: 15px; }
-
 // ============
 // CODE STYLING
 // ============
@@ -545,7 +557,7 @@ input[type="text"] {
 .desktop-menu {
   width: $w-menu;
   float: left;
-  margin: 28px 28px 18px 8px;
+  margin: 0 28px 18px 8px;
   background-color: rgba(#44484d, 0.7);
 
   @include mq-max(699px) {
@@ -594,12 +606,12 @@ input[type="text"] {
   left: -$w-menu;
   width: $w-menu;
   background-color: rgba(#44484d, 0.7);
-  box-shadow: 0 4px 6px $c-bg;
   @include transition(transform 0.5s ease-in);
 
   &.show {
     background-color: lighten(#44484d, 8%);
     @include transform(translateX($w-menu));
+    box-shadow: 0 4px 6px $c-bg;
   }
 
   @include mq-min(700px) {
@@ -631,10 +643,10 @@ input[type="text"] {
   height: $w-touch;
   padding-top: 6px;
   color: #fff;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   cursor: pointer;
   text-align: center;
-  background-color: rgba(#44484d, 0.7);
+  background-color: rgba(#44484d, 0.3);
   border-radius: 0 4px 4px 0;
   @include transition(background-color 0.5s ease-in);
 
@@ -646,20 +658,6 @@ input[type="text"] {
   }
 }
 
-// .menu-arrow {
-//     display: block;
-//     width: $w-touch - 2;
-//     height: $w-touch - 2;
-//     padding-top: 10px;
-//     text-align: center;
-//     line-height: 0;
-//     @include transition(transform 0.15s ease-in);
-
-//     .show & {
-//       padding-top: 13px;
-//       @include transform(rotate(-180deg));
-//     }
-//   }
 // @END SUBMENU + CONTENT
 // ======================
 

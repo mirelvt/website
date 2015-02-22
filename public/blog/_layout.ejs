@@ -8,8 +8,16 @@
 </head>
 <body>
   <%- partial("../_partials/_header") %>
-  <%- submenu == true ? partial("../_partials/_submenu"): '' %>
-  <%- yield %>
+
+  <% if (submenu == true) { %>
+    <div class="columns-wrapper">
+      <%- partial("../_partials/_submenu") %>
+      <%- yield %>
+    </div>
+    <% } else { %>
+    <%- yield %>
+  <% } %>
+
   <%- partial("../_partials/_mobilemenu") %>
   <script src="../js/fastclick.js"></script>
   <script src="../js/base.js"></script>

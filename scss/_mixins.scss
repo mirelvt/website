@@ -74,31 +74,3 @@
   }
 }
 // ========
-
-@mixin article_list {
-  margin-top: 18px;
-
-  &.no-description a:not(.title) { font-weight: normal; }
-  [role="listitem"] { margin-bottom: 20px; }
-
-  .title {
-    display: block;
-    font-size: 2rem;
-    font-weight: bold;
-    letter-spacing: -0.1rem;
-    color: $color-maintitle;
-    line-height: 2.5rem;
-
-    &:after {
-      display: inline-block;
-      margin-left: 5px;
-      content: "›";
-    }
-
-    .speaker {
-      font-family: $font-main;
-      font-size: 1.6rem;
-      color: $c-text;
-    }
-  }
-}
