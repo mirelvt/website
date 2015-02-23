@@ -16,14 +16,16 @@
           <% if(submenu == true && source == 'fronteers') { %>
           <ul role="menu" class="submenu">
             <li>
-               <% for(var item in public.fronteers._data){ %>
-                     <% if( public.fronteers._data[item].submenu_title !== false) { %>
+               <% for(var item in public.fronteers._data) {
+                    var item_obj = public.fronteers._data[item];
+                { %>
+                     <% if( item_obj.submenu_title !== false) { %>
                         <a href="/fronteers/<%= item %>.html" role="menuitem"
                             class="<%- item == sub_page ? 'selected' : '' %>">
-                            <%= public.fronteers._data[item].submenu_title %>
+                            <%= item_obj.submenu_title %>
                         </a>
                     <% } %>
-                <% }; %>
+                <% } }; %>
             </li>
           </ul>
           <% } %>
@@ -35,14 +37,16 @@
             <% if(submenu == true && source == 'blog') { %>
             <ul role="menu" class="submenu">
                 <li>
-                    <% for(var item in public.blog._data){ %>
-                        <% if( public.blog._data[item].submenu_title !== false) { %>
+                    <% for(var item in public.blog._data) {
+                        var item_obj = public.blog._data[item];
+                    { %>
+                        <% if( item_obj.submenu_title !== false) { %>
                             <a href="<%= item %>.html" role="menuitem"
                                 class="<%- item == sub_page ? 'selected' : '' %>">
-                                <%= public.blog._data[item].submenu_title %>
+                                <%=  item_obj.submenu_title %>
                             </a>
                         <% } %>
-                    <% }; %>
+                    <% } }; %>
                 </li>
             </ul>
             <% } %>

@@ -1,23 +1,27 @@
 <aside role="menu" class="desktop-menu">
 <% if (source == 'fronteers') { %>
-    <% for(var item in public.fronteers._data){ %>
-         <% if (public.fronteers._data[item].submenu_title !== false) { %>
+    <% for(var item in public.fronteers._data) {
+            var item_obj = public.fronteers._data[item];
+        { %>
+         <% if (item_obj.submenu_title !== false) { %>
             <a href="/fronteers/<%= item %>.html" role="menuitem"
                 class="<%- item == sub_page ? 'selected' : '' %>">
-                <%= public.fronteers._data[item].submenu_title %>
+                <%= item_obj.submenu_title %>
             </a>
         <% } %>
-    <% }; %>
+    <% } }; %>
 <% } %>
 
 <% if (source == 'blog') { %>
-    <% for(var item in public.blog._data){ %>
-         <% if (public.blog._data[item].submenu_title !== false) { %>
+    <% for(var item in public.blog._data) {
+             var item_obj = public.blog._data[item];
+        { %>
+         <% if (item_obj.submenu_title !== false) { %>
             <a href="/blog/<%= item %>.html" role="menuitem"
                 class="<%- item == sub_page ? 'selected' : '' %>">
-                <%= public.blog._data[item].submenu_title %>
+                <%= item_obj.submenu_title %>
             </a>
         <% } %>
-    <% }; %>
+    <% } }; %>
 <% } %>
 </aside>
