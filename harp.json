@@ -1,5 +1,7 @@
 {
   "globals": {
-    "title": "Mirella van Teulingen"
+    "title": "Mirella van Teulingen",
+    "description": "This is my personal blog where I write about things I come across while coding and the meetings/conferences I attended. Most articles are related to front end development.",
+    "url": "http://www.mirellavanteulingen.nl"
   }
 }

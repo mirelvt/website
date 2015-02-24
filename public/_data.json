@@ -37,5 +37,8 @@
     "sub_page": false,
     "sub_source": false,
     "description": ""
+  },
+   "feed": {
+    "layout": false
   }
 }

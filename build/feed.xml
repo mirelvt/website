@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mirella van Teulingen</title>
+    <link>http://www.mirellavanteulingen.nl</link>
+    <description>This is my personal blog where I write about things I come across while coding and the meetings/conferences I attended. Most articles are related to front end development.</description>
+    <atom:link href="http://www.mirellavanteulingen.nl/feed.xml" rel="self" type="application/rss+xml" />
+    
+        
+        
+    
+        
+        
+            <item>
+                <title>CSS Day 2013</title>
+                <description>
+                     <![CDATA[Friday 14 june in Amsterdam I attended the CSSDay conference. Eight experts talked about 8 different CSS modules. The focus was on techniques of these modules we might not know about and the future of CSS. During the conference I learned that CSS is in very active development. It was an incredible, informative and awesome day. An high standard conference I've ever attended so far. I hope that there will be another one within 1 or 2 years.]]>
+                </description>
+                <pubDate>
+                    Tue Feb 24 2015 20:49:40 GMT+0100 (CET)
+                </pubDate>
+                <link>
+                    http://www.mirellavanteulingen.nl/blog/cssday2013
+                </link>
+                <guid isPermaLink="true">
+                    http://www.mirellavanteulingen.nl/blog/cssday2013
+                </guid>
+            </item>
+        
+    
+        
+        
+            <item>
+                <title>Customize Sublime text editor</title>
+                <description>
+                     <![CDATA[At the Fronteers conference 2012 in Amsterdam, Addy Osmani used Sublime Text Editor in his presentation. The editor looked really interesting. Right after the conference I installed Sublime and looked around for packages which would make my life as front end developer easier and make editing more fun. This article is a small tutorial with tips to configure Sublime to your needs, a list of interesting packages, how to customize a theme and links to useful documentation.]]>
+                </description>
+                <pubDate>
+                    Tue Feb 24 2015 20:49:40 GMT+0100 (CET)
+                </pubDate>
+                <link>
+                    http://www.mirellavanteulingen.nl/blog/customize-sublime
+                </link>
+                <guid isPermaLink="true">
+                    http://www.mirellavanteulingen.nl/blog/customize-sublime
+                </guid>
+            </item>
+        
+    
+        
+        
+            <item>
+                <title>Django form customization using Crispy Forms</title>
+                <description>
+                     <![CDATA[At Dreamsolution we regularly use Crispy Forms to generate  complex forms in Django. I want to share some practical customization examples with Crispy Forms using the formhelper API.]]>
+                </description>
+                <pubDate>
+                    Tue Feb 24 2015 20:49:40 GMT+0100 (CET)
+                </pubDate>
+                <link>
+                    http://www.mirellavanteulingen.nl/blog/customize-django-crispy-forms
+                </link>
+                <guid isPermaLink="true">
+                    http://www.mirellavanteulingen.nl/blog/customize-django-crispy-forms
+                </guid>
+            </item>
+        
+    
+  </channel>
+</rss>
