@@ -302,7 +302,7 @@ header {
 
   @include mq-max(699px) {
     &.column-content {
-      margin: 28px auto 18px ($w-touch * 1.5);
+      margin: 28px auto 18px auto;
     }
   }
 
