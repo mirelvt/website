@@ -14,6 +14,7 @@
 //      Smashing Booke #4 Chapter 9.
 
 html {
+  height: 100%;
   font-size: 62.5%; // * 1 *
   @include text-adjust; // * 2 *
   @include font-smoothing; // * 3 *
@@ -23,12 +24,13 @@ html {
 
 body {
   margin: 0;
-  padding: 0 0 60px 0;
+  padding: 0;
   font-family: $font-main;
   font-size: 1.6rem;
   color: $c-text;
   line-height: 2rem;
 }
+
 // Generate headings
 @for $i from 1 through 6 {
   h#{$i} {
@@ -58,25 +60,6 @@ p {
   margin-bottom: 18px;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50px;
-  padding-top: 15px;
-  text-align: center;
-  @include gradient($c-main, top, to bottom, #e65f2d 0%, #c6491a 100%);
-}
-
-.my-name {
-  color: #fff;
-  font: {
-    size: 1.8rem;
-    weight: bold;
-  }
-}
-
 blockquote {
   font-style: italic;
   font-size: 2rem;
@@ -103,6 +86,99 @@ figure {
   }
 }
 
+.visualwrapper {
+  width: 50%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+// Footer
+// ------
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+  max-width: 800px;
+  height: 50px;
+  padding-top: 15px;
+  text-align: center;
+  @include gradient($c-main, top, to bottom, #e65f2d 0%, #c6491a 100%);
+}
+
+.my-name {
+  color: #fff;
+  font: {
+    size: 1.8rem;
+    weight: bold;
+  }
+}
+// @End footer
+// -----------
+
+// Menu
+// ----
+[role="navigation"] {
+  position: relative;
+  width: 160px;
+  height: 150px;
+  margin: 0 auto;
+  @include transform(translateX(25%));
+  font-family: $font-menu;
+}
+
+[role="menuitem"] {
+  position: absolute;
+  display: block;
+  width: $w-menu-item;
+  height: $w-menu-item;
+  font-size: 1.4rem;
+  color: #fff;
+  @include gradient($c-main, top, to bottom, #e65f2d 0%, #c6491a 100%);
+  box-shadow: 0 0 4px 0 rgba(0,0,0, 0.5);
+  @include transform(rotate(45deg));
+
+  .menu-text {
+    display: block;
+    @include transform(rotate(-45deg));
+  }
+
+  // fronteers
+  &:nth-child(1) .menu-text {
+    margin-left: -9px;
+    padding-top: 24px;
+  }
+
+  // home
+  &:nth-child(2) {
+    top: 57px;
+    left: -58px;
+    .menu-text {
+      margin-left: 2px;
+      padding-top: 21px;
+    }
+  }
+
+  // about me
+  &:nth-child(3) {
+    top: 57px;
+    left: 58px;
+    .menu-text {
+      padding-top: 24px;
+      margin-left: -8px;
+    }
+  }
+
+  // blog
+  &:nth-child(4) {
+    top: 114px;
+    .menu-text {
+      margin-left: 10px;
+      padding-top: 17px;
+    }
+  }
+}
 
 // Give the blog icon a nice background color + border-radius and center it.
 // .icon-blog {
