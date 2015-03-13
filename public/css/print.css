@@ -1,1 +1,48 @@
-body{font-family:ssp-l,arial,sans-serif;font-size:11pt;color:#222930;line-height:14pt}h1,h2,h3,h4,h5,h6{font-family:"leaguegothic",arial,sans-serif}h1{margin-top:0;margin-bottom:28px;font-size:20pt;font-size:24pt}h2{margin-top:30px;margin-bottom:10px;font-size:18pt;line-height:22pt}h3,h4,h5,h6{margin-top:28px;margin-bottom:10px;font-size:16pt;line-height:20pt}a{color:#f7a14d;text-decoration:none}blockquote{font-style:italic;font-size:11pt;font-weight:bold;line-height:14pt}header{display:none}
+body {
+  font-family: ssp, arial, helvetica, sans-serif;
+  font-size: 11pt;
+  line-height: 14pt; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: slabo, arial, helvetica, sans-serif; }
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 20pt;
+  font-size: 24pt; }
+
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 18pt;
+  line-height: 22pt; }
+
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-size: 16pt;
+  line-height: 20pt; }
+
+a {
+  color: #f7a14d;
+  text-decoration: none; }
+
+blockquote {
+  font-style: italic;
+  font-size: 11pt;
+  font-weight: bold;
+  line-height: 14pt; }
+
+header {
+  display: none; }
+
+/*# sourceMappingURL=print.css.map */

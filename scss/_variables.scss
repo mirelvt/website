@@ -1,15 +1,22 @@
-$c-bg: #222930;
-$c-text: #fff;
+$c-text: #3c4946;
+$c-main: #e65f2d;
+$bg-code: rgba(#c8d1cf, 0.15);
+
+$font-generic: arial, helvetica, sans-serif;
+$font-main: ssp, $font-generic;
+$font-headers: slabo, $font-generic;
+$font-menu: arvo, $font-generic;
+$font-code: droidsansmono, $font-generic;
+
+// old variables
 $c-header: #f7a14d;
-$c-selected: rgba($c-bg, 0.1);
+// $c-selected: rgba($c-bg, 0.1);
 $color-maintitle: $c-header;
 $color-subtitle: #a9a9a9;
-$c-code: lighten($c-bg, 10%);
-// $c-shadow: #4d5155;
+// $c-code: lighten($c-bg, 10%);
 $c-shadow: #000;
-// $font-main: 'droidsans', arial, sans-serif;
-$font-main: ssp-l, arial, sans-serif;
-$font-headers: 'leaguegothic', arial, sans-serif;
+
+
 
 $code-indent: 12px;
 

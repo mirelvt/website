@@ -55,6 +55,14 @@
   #{$property}: calc(#{$expression});
 }
 
+@mixin gradient($basic, $deg-prefix, $deg, $arguments...) {
+  background-color: $basic;
+  background: -webkit-linear-gradient($deg-prefix, $arguments);
+  background: -o-linear-gradient($deg-prefix, $arguments);
+  background: -ms-linear-gradient($deg-prefix, $arguments);
+  background: linear-gradient($deg, $arguments);
+}
+
 // Mixins for media queries
 @mixin mq-min($width) {
   @media screen and (min-width: $width) {
@@ -63,7 +71,7 @@
 }
 
 @mixin mq-max($width) {
-  @media screen and (max-width: $width) {
+  @media screen and (max-width: $width - 1px) {
     @content;
   }
 }

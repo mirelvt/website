@@ -5,7 +5,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-harp');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compressor');
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['scss/*.scss'],
-        tasks: ['compass:dev', 'harp']
+        tasks: ['sass:dev', 'harp']
       },
       js: {
         files: ['public/js/*.js'],
@@ -56,24 +56,40 @@ module.exports = function(grunt) {
         }
     },
 
-    compass: {
+    sass: {
       dev: {
-        options: {
-          sassDir: ['scss'],
-          cssDir: ['public/css'],
-          imagesDir: ['build/img'],
-          fontsDir: ['/../fonts'],
-          outputStyle: 'expanded',
-        }
+        files: [{
+          expand: true,
+          cwd: 'scss',
+          src: ['*.scss'],
+          dest: 'public/css',
+          ext: '.css',
+          style: 'expanded'
+        }]
+        // options: {
+        //   sassDir: ['scss'],
+        //   cssDir: ['public/css'],
+        //   imagesDir: ['build/img'],
+        //   fontsDir: ['/../fonts'],
+        //   outputStyle: 'expanded',
+        // }
       },
       deploy: {
-        options: {
-          sassDir: ['scss'],
-          cssDir: ['public/css'],
-          imagesDir: ['build/img'],
-          fontsDir: ['../fonts'],
-          outputStyle: 'compressed'
-        }
+        files: [{
+          expand: true,
+          cwd: 'scss',
+          src: ['*.scss'],
+          dest: 'public/css',
+          ext: '.css',
+          style: 'compressed'
+        }]
+        // options: {
+        //   sassDir: ['scss'],
+        //   cssDir: ['public/css'],
+        //   imagesDir: ['build/img'],
+        //   fontsDir: ['../fonts'],
+        //   outputStyle: 'compressed'
+        // }
       }
     },
 
@@ -117,5 +133,5 @@ module.exports = function(grunt) {
 
    // Default task(s).
   grunt.registerTask('dev', ['connect', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'compass:deploy', 'harp', 'copy', 'compressor']);
+  grunt.registerTask('deploy', ['clean', 'sass:deploy', 'harp', 'copy', 'compressor']);
 };

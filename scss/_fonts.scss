@@ -1,56 +1,55 @@
-// Font Source sans pro light for the body text
+// Font Source sans pro regular for the body text,
+// Arvo for the menu, DroidSansMono for the code and Slabo for the headers.
 $fonts: (
-  'ssp_regular': (name: ssp-l, url: SourceSansPro-Light, type: normal, weight: normal),
-  'ssp_bold': (name: ssp-l, url: SourceSansPro-Semibold, type: normal, weight: bold),
-  'ssp_bolditalic': (name: ssp-l, url: SourceSansPro-SemiboldIt, type: italic, weight: bold),
-  'ssp_italic': (name: ssp-l, url: SourceSansPro-LightIt, type: italic, weight: normal),
-  'lg_regular': (name: leaguegothic, url: leaguegothic-regular-webfont, type: normal, weight: normal, svg_id: #league_gothicregular),
-  'lg_bold': (name: leaguegothic, url: leaguegothic-regular-webfont, type: normal, weight: bold, svg_id: #league_gothicregular),
-  'lg_italic': (name: leaguegothic, url: leaguegothic-italic-webfont, type: italic, weight: normal, svg_id: #league_gothicitalic),
-  'mono_regular': (name: monospace, url: MonospaceTypewriter-webfont, type: normal, weight: normal, svg_id: #monospacetypewriterregular),
+  "arvo": (
+    "name": "arvo",
+    "url": "Arvo-Bold",
+    "weight": "bold",
+    "type": "normal"
+  ),
+  "droidsansmono": (
+    "name": "droidsansmono",
+    "url":"DroidSansMono",
+    "weight": "normal",
+    "type": "normal"
+  ),
+  "slabo": (
+    "name": "slabo",
+    "url": "Slabo27px-Regular",
+    "weight": "normal",
+    "type": "normal"
+  ),
+  "ssp-regular": (
+    "name": "ssp",
+    "url": "SourceSansPro-Regular",
+    "weight": "normal",
+    "type": "normal"
+  ),
+  "ssp-semi-bold": (
+    "name": "ssp",
+    "url": "SourceSansPro-Semibold",
+    "weight": "bold",
+    "type": "normal"
+  ),
+  "ssp-semi-bold-italic": (
+    "name": "ssp",
+    "url": "SourceSansPro-SemiboldItalic",
+    "weight": "bold",
+    "type": "italic"
+  ),
+  "ssp-semi-italic": (
+    "name": "ssp",
+    "url": "SourceSansPro-Italic",
+    "weight": "normal",
+    "type": "italic"
+  ),
 );
 
 @each $font, $props in $fonts {
   @font-face {
       font-family: #{map-get($props, name)};
-       src: url('../fonts/#{map-get($props, url)}.eot');
-        src: url('../fonts/#{map-get($props, url)}.woff') format('woff'),
-             url('../fonts/#{map-get($props, url)}.ttf') format('truetype'),
-             url('../fonts/#{map-get($props, url)}.svg#{map-get($props, svg_id)}') format('svg');
+       src: url('../fonts/#{map-get($props, url)}.ttf') format('truetype');
       font-weight: #{map-get($props, weight)};
       font-style: #{map-get($props, type)};
     }
-}
-
-// Font icons
-@font-face {
-  font-family: 'mvt-icons';
-  src:url('../fonts/mvt-icons.eot?ar17kp');
-  src:url('../fonts/mvt-icons.eot?#iefixar17kp') format('embedded-opentype'),
-    url('../fonts/mvt-icons.woff?ar17kp') format('woff'),
-    url('../fonts/mvt-icons.ttf?ar17kp') format('truetype'),
-    url('../fonts/mvt-icons.svg?ar17kp#mvt-icons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-    font-family: 'mvt-icons';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.icon-menu:before {
-  content: "\e600";
-}
-.icon-blog:before {
-  content: "\e601";
 }
