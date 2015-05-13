@@ -1,0 +1,34 @@
+@import "_generic";
+@import "_menu";
+
+
+.visualwrapper { max-width: 1700px; }
+
+@include mq-max(900) {
+  .block-home {
+    @include flexbox() ;
+    @include flex-flow(row wrap);
+
+    &-visual {
+      margin-right: 20px;
+      @include flex(0,0,125px);
+    }
+    &-text {
+      @include flex(1,0,250px);
+    }
+  };
+}
+
+@include mq-min(900) {
+  section { @include flexbox() }
+
+  .block-home {
+    @include flex-grow(1);
+    @include flex-shrink(1);
+
+    &:not(:last-child) { margin-right: 30px; }
+
+    &-visual { text-align: center; }
+
+  }
+}

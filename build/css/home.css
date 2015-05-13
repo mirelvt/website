@@ -1,0 +1,168 @@
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: normal;
+  -moz-font-kerning: normal;
+  font-kerning: normal;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga", "kern";
+  font-feature-settings: "liga", "kern"; }
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: ssp, arial, helvetica, sans-serif;
+  font-size: 1.6rem;
+  color: #3c4946;
+  line-height: 2rem;
+  background: url(../img/bg.png); }
+
+a {
+  color: #a7ad7e; }
+  a:hover {
+    color: #828856; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 18px; }
+
+blockquote {
+  font-style: italic;
+  font-size: 2rem;
+  color: #f5be88;
+  font-weight: bold; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: slabo, arial, helvetica, sans-serif;
+  font-weight: normal;
+  color: #a7ad7e;
+  line-height: 100%; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 16px; }
+
+.visualwrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 36px 20px;
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25); }
+
+[role="navigation"] {
+  position: relative;
+  font-size: 1.8rem;
+  font-family: arvo, arial, helvetica, sans-serif; }
+
+@media screen and (max-width: 465px) {
+  [role="menuitem"] {
+    display: block; } }
+[role="menuitem"] {
+  text-decoration: none; }
+
+@media screen and (min-width: 466px) {
+  [role="navigation"] {
+    margin-bottom: 36px;
+    padding: 10px 25px;
+    text-align: center; }
+    [role="navigation"]:before, [role="navigation"]:after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: block;
+      height: 1px;
+      content: "";
+      background: -webkit-linear-gradient(left, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
+      background: -o-linear-gradient(left, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
+      background: -ms-linear-gradient(left, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
+      background: linear-gradient(to right, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%); }
+    [role="navigation"]:before {
+      top: 0; }
+    [role="navigation"]:after {
+      bottom: 0; }
+
+  [role="menuitem"] {
+    display: inline-block;
+    padding: 0 8px;
+    color: #a7ad7e; }
+    [role="menuitem"].selected:before {
+      content: "{"; }
+    [role="menuitem"].selected:after {
+      content: "}"; } }
+.visualwrapper {
+  max-width: 1700px; }
+
+@media screen and (max-width: 900px) {
+  .block-home {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap; }
+    .block-home-visual {
+      margin-right: 20px;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 125px;
+      -moz-box-flex: 0;
+      -moz-flex: 0 0 125px;
+      -ms-flex: 0 0 125px;
+      flex: 0 0 125px; }
+    .block-home-text {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 0 250px;
+      -moz-box-flex: 1;
+      -moz-flex: 1 0 250px;
+      -ms-flex: 1 0 250px;
+      flex: 1 0 250px; } }
+@media screen and (min-width: 901px) {
+  section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex; }
+
+  .block-home {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1; }
+    .block-home:not(:last-child) {
+      margin-right: 30px; }
+    .block-home-visual {
+      text-align: center; } }
+
+/*# sourceMappingURL=home.css.map */
