@@ -1,7 +1,10 @@
 module.exports = function(grunt) {
 
   // Load the npm tasks configured for this project:
-  // * sass
+  // * sass, watch, clean,
+  //* compressor (minify html and js),
+  // * connect (used for live reload).
+  // * harp to compile static files.
 
   grunt.loadNpmTasks('grunt-harp');
   grunt.loadNpmTasks('grunt-contrib-connect');
@@ -9,8 +12,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compressor');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-
 
   // Project configuration.
   grunt.initConfig({
@@ -66,13 +67,6 @@ module.exports = function(grunt) {
           ext: '.css',
           style: 'expanded'
         }]
-        // options: {
-        //   sassDir: ['scss'],
-        //   cssDir: ['public/css'],
-        //   imagesDir: ['build/img'],
-        //   fontsDir: ['/../fonts'],
-        //   outputStyle: 'expanded',
-        // }
       },
       deploy: {
         files: [{
@@ -83,13 +77,6 @@ module.exports = function(grunt) {
           ext: '.css',
           style: 'compressed'
         }]
-        // options: {
-        //   sassDir: ['scss'],
-        //   cssDir: ['public/css'],
-        //   imagesDir: ['build/img'],
-        //   fontsDir: ['../fonts'],
-        //   outputStyle: 'compressed'
-        // }
       }
     },
 
@@ -121,17 +108,10 @@ module.exports = function(grunt) {
       }
     },
 
-    copy: {
-      main: {
-        src: ['public/rss.xml'],
-        dest: 'build/rss.xml',
-      },
-    },
-
     clean: ['build/css', 'public/css', 'build/minified', 'build/js']
   });
 
    // Default task(s).
   grunt.registerTask('dev', ['connect', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'sass:deploy', 'harp', 'copy', 'compressor']);
+  grunt.registerTask('deploy', ['clean', 'sass:deploy', 'harp', 'compressor']);
 };
