@@ -1,42 +1,37 @@
 (function() {
   'use strict';
 
-function MobileMenuComponent(mobile_menu) {
-  var is_active;
+  function mobileMenuComponent(nav) {
+    nav.querySelector('.hamburger-wrapper').addEventListener('click', toggleMenu, false);
 
-  mobile_menu.querySelector('.js-toggle-menu').addEventListener('click', toggleMenu, false);
+    // Toggle the hamburger icon + menu
+    function toggleMenu(evt) {
+      var elm = evt.currentTarget;
+      var nav_active = nav.classList.contains('active');
+      var hamburger = elm.querySelector('.hamburger');
 
-  document.addEventListener('suske-mobile-active', disableContent, false);
+      // toggle active class on navigation element
+      nav.classList.toggle('active', !nav_active);
 
-  function toggleMenu(evt) {
-    if(mobile_menu.classList.contains('show')) {
-      is_active = false;
-      mobile_menu.classList.remove('show');
+      // toggle hamburger icon
+      hamburger.classList.toggle('active', !hamburger.classList.contains('active'));
+
+      toggleOverlay(nav_active);
+      disableScroll(nav_active);
     }
-    else {
-      is_active = true;
-      mobile_menu.classList.add('show');
+
+    // Show overlay if mobile menu is visible
+    function toggleOverlay(active) {
+      document.querySelector('.overlay').classList.toggle('active', !active);
     }
 
-    mobile_menu.dispatchEvent(new CustomEvent('suske-mobile-active', {
-        detail: is_active,
-        bubbles: true
-    }));
+    function disableScroll(active) {
+      document.body.classList.toggle('scroll-disabled', !active);
+    }
   }
-
-  function disableContent() {
-    var html_doc = document.documentElement;
-
-    var disable_scroll = is_active == true ?
-        html_doc.classList.add('disable-scroll') :
-        html_doc.classList.remove('disable-scroll');
-  }
-}
-
 
   function onDocumentLoaded() {
-   new MobileMenuComponent(document.documentElement.querySelector('.mobile-menu'))
-
+    mobileMenuComponent(document.querySelector('[role="navigation"]'));
     FastClick.attach(document.body);
   }
 

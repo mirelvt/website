@@ -85,46 +85,6 @@ figure figcaption {
   background-color: #fff;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25); }
 
-[role="navigation"] {
-  position: relative;
-  font-size: 1.8rem;
-  font-family: arvo, arial, helvetica, sans-serif; }
-
-@media screen and (max-width: 465px) {
-  [role="menuitem"] {
-    display: block; } }
-[role="menuitem"] {
-  text-decoration: none; }
-
-@media screen and (min-width: 466px) {
-  [role="navigation"] {
-    margin-bottom: 36px;
-    padding: 10px 25px;
-    text-align: center; }
-    [role="navigation"]:before, [role="navigation"]:after {
-      position: absolute;
-      left: 0;
-      right: 0;
-      display: block;
-      height: 1px;
-      content: "";
-      background: -webkit-linear-gradient(left, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
-      background: -o-linear-gradient(left, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
-      background: -ms-linear-gradient(left, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
-      background: linear-gradient(to right, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%); }
-    [role="navigation"]:before {
-      top: 0; }
-    [role="navigation"]:after {
-      bottom: 0; }
-
-  [role="menuitem"] {
-    display: inline-block;
-    padding: 0 8px;
-    color: #a7ad7e; }
-    [role="menuitem"].selected:before {
-      content: "{"; }
-    [role="menuitem"].selected:after {
-      content: "}"; } }
 pre {
   position: relative;
   margin: 5px 10px 20px 10px;

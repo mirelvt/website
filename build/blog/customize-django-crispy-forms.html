@@ -18,19 +18,26 @@
 </head>
 <body>
   <div class="visualwrapper">
-    <nav role="navigation">
-  <a href="/" role="menuitem" class="">
-    <span class="menu-text">Home</span>
-  </a>
-  <a href="/blog" role="menuitem" class=" selected">
-    <span class="menu-text">Blog</span>
-  </a>
-  <a href="/fronteers" role="menuitem" class="">
-    <span class="menu-text">Fronteers</span>
-  </a>
-  <a href="/about.html" role="menuitem" class="">
-    <span class="menu-text">About me</span>
-  </a>
+    <div class="overlay"></div>
+<nav role="navigation">
+  <div class="hamburger-wrapper">
+      <div class="hamburger"></div>
+      <div class="menu-text">Menu</div>
+  </div>
+  <div class="mobile-wrapper">
+    <a href="/" role="menuitem" class="">
+      <span class="menu-text">Home</span>
+    </a>
+    <a href="/blog" role="menuitem" class=" selected">
+      <span class="menu-text">Blog</span>
+    </a>
+    <a href="/fronteers" role="menuitem" class="">
+      <span class="menu-text">Fronteers</span>
+    </a>
+    <a href="/about.html" role="menuitem" class="">
+      <span class="menu-text">About me</span>
+    </a>
+  </div>
 </nav>
     <article role="article" class="column-content">
   <h1>Django form customization using Crispy Forms</h1>
