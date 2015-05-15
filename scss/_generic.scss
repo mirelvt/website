@@ -33,6 +33,8 @@ body {
 a {
   color: $c-main;
   &:hover { color: darken($c-main, 15%) }
+
+  h2 & { text-decoration: none; }
 }
 
 p {
@@ -48,6 +50,8 @@ blockquote {
 }
 
 %generic-h {
+  margin-top: 0;
+  margin-bottom: 15px;
   font-family: $font-headers;
   font-weight: normal;
   color: $c-main;

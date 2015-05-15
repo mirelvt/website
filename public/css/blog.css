@@ -30,6 +30,8 @@ a {
   color: #a7ad7e; }
   a:hover {
     color: #828856; }
+  h2 a {
+    text-decoration: none; }
 
 p {
   margin-top: 0;
@@ -42,6 +44,8 @@ blockquote {
   font-weight: bold; }
 
 h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 15px;
   font-family: slabo, arial, helvetica, sans-serif;
   font-weight: normal;
   color: #a7ad7e;
@@ -86,7 +90,7 @@ h6 {
 
 @media screen and (min-width: 466px) {
   [role="navigation"] {
-    margin-bottom: 36px;
+    margin-bottom: 100px;
     padding: 10px 25px;
     text-align: center; }
     [role="navigation"]:before, [role="navigation"]:after {

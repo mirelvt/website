@@ -30,6 +30,8 @@ a {
   color: #a7ad7e; }
   a:hover {
     color: #828856; }
+  h2 a {
+    text-decoration: none; }
 
 p {
   margin-top: 0;
@@ -42,6 +44,8 @@ blockquote {
   font-weight: bold; }
 
 h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 15px;
   font-family: slabo, arial, helvetica, sans-serif;
   font-weight: normal;
   color: #a7ad7e;
@@ -86,7 +90,7 @@ h6 {
 
 @media screen and (min-width: 466px) {
   [role="navigation"] {
-    margin-bottom: 36px;
+    margin-bottom: 100px;
     padding: 10px 25px;
     text-align: center; }
     [role="navigation"]:before, [role="navigation"]:after {
@@ -116,6 +120,24 @@ h6 {
 .visualwrapper {
   max-width: 1700px; }
 
+.block-home-visual {
+  margin-bottom: 20px; }
+
+.img-border {
+  display: block;
+  width: 125px;
+  height: 125px;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  box-shadow: 0 0 4px 0 #3C4946; }
+  .img-border img {
+    vertical-align: top; }
+
+.block-home:nth-child(3n-1) .img-border {
+  padding-top: 23px;
+  padding-left: 6px;
+  background-color: #a7ad7e; }
+
 @media screen and (max-width: 900px) {
   .block-home {
     display: -webkit-box;
@@ -126,7 +148,8 @@ h6 {
     -webkit-flex-flow: row wrap;
     -moz-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    margin-bottom: 20px; }
     .block-home-visual {
       margin-right: 20px;
       -webkit-box-flex: 0;
