@@ -1,5 +1,9 @@
-<link rel="stylesheet" media="screen" href="<%- css_path %>/base.css" />
+<% if (source == 'index') { %>
+<link rel="stylesheet" media="screen" href="<%- css_path %>/home.css" />
+<% } %>
+<% if (source == 'blog') { %>
+<link rel="stylesheet" media="screen" href="<%- css_path %>/blog.css" />
+<% } %>
+
+<!-- <link rel="stylesheet" media="screen" href="<%- css_path %>/base.css" /> -->
 <link rel="stylesheet" media="print" href="<%- css_path %>/print.css" />
- <!--[if lte IE 9]>
-  <link rel="stylesheet" href="<%- css_path %>/ie8.css" />
-<![endif]-->
