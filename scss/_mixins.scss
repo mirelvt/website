@@ -25,7 +25,6 @@
     @return $prefixed;
 }
 
-
 @mixin transition($values...) {
   $transitions: ();
     @each $declaration in $values {
@@ -47,6 +46,15 @@
 @mixin transform($arguments...) {
   -webkit-transform: $arguments;
   transform: $arguments;
+}
+
+@mixin perspective($value:200px, $origin: 50% 0) {
+  -moz-perspective-origin: $origin;
+  -moz-perspective: $value;
+  -webkit-perspective-origin: $origin;
+  -webkit-perspective: $value;
+  perspective-origin: origin;
+  perspective: $value;
 }
 
 // Mixins for flexbox layout

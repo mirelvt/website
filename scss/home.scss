@@ -18,19 +18,28 @@
   margin: 0 auto;
   border: 2px solid #fff;
   box-shadow: 0 0 4px 0 $c-shadow;
+  @include transition(transform 0.75s ease);
+
+  &:hover { @include transform(rotateY(5deg))}
 
   img { vertical-align: top; }
 }
 
+.block-home-visual { @include perspective(); }
+
 // Blog
 .block-home:nth-child(3n-1) .img-border {
   padding-top: 23px;
-  padding-left: 6px;
+  padding-left: 21px;
   background-color: $c-main;
 }
 
 // ===========
 // Breakpoints
+@include mq-max(467) {
+  .block-home { @include justify-content(center) }
+}
+
 @include mq-max(900) {
   .block-home {
     @include flexbox() ;
