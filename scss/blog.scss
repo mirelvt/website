@@ -1,2 +1,54 @@
+@import "_variables";
 @import "_generic";
 @import "_menu";
+@import "_code";
+
+h2 { margin-top: 30px; }
+.visualwrapper { max-width: 1700px; }
+
+[role="main"],
+[role="article"] {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+[role="article"] {
+
+
+  ul {
+    margin: 0 0 15px 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      position: relative;
+      padding-left: 25px;
+
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        display: block;
+        width: 10px;
+        height: 10px;
+        content: "";
+        background-color: $c-main
+      }
+    }
+  }
+}
+
+
+.article_list {
+  margin: 4rem 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+[role="listitem"] { margin-bottom: 4rem; }
+
+.blog-date {
+  color: $c-text;
+  font-size: 1.8rem;
+}

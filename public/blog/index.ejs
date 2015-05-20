@@ -1,20 +1,19 @@
  <div role="main">
-   <a href="http://www.mirellavanteulingen.nl/feed.xml" class="rss-link">
-    <img src="../img/rss-feed.svg" alt="link to my rss feed">
-  </a>
-  <h1>Blog</h1>
+   <h1>Blog</h1>
 
   <ul class="article_list" role="list">
       <% for (var blog_item in public.blog._data) {
           var blog_obj = public.blog._data[blog_item];
         { %>
         <% if(blog_obj.sub_page !== false) { %>
-         <li class="item" role="listitem">
-          <a href="<%=  blog_obj.sub_page %>.html"
-              class="title">
-              <%=  blog_obj.page_title %>
-          </a>
-          <%=  blog_obj.date %><br>
+         <li role="listitem">
+         <h2>
+            <div class="blog-date"><%=  blog_obj.date %></div>
+            <a href="<%=  blog_obj.sub_page %>.html"
+                class="title">
+                <%=  blog_obj.page_title %>
+            </a>
+          </h2>
           <%=  blog_obj.description %>
          </li>
         <% } %>
