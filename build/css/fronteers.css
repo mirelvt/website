@@ -35,7 +35,7 @@ a {
   transition: color 0.25s; }
   a:hover {
     color: #828856; }
-  h2 a {
+  h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none; }
 
 p {
@@ -101,6 +101,7 @@ h6 {
 
 .visualwrapper {
   width: 100%;
+  max-width: 1700px;
   min-height: 100%;
   margin: 0 auto;
   background-color: #fff;
@@ -329,5 +330,41 @@ figure {
 
   .hamburger-wrapper {
     display: none; } }
+[role="main"],
+[role="article"] {
+  max-width: 800px;
+  margin: 0 auto; }
+
+[role="article"] ul {
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style-type: none; }
+  [role="article"] ul li {
+    position: relative;
+    padding-left: 25px; }
+    [role="article"] ul li:before {
+      position: absolute;
+      left: 0;
+      top: 8px;
+      display: block;
+      width: 10px;
+      height: 10px;
+      content: "";
+      background-color: #a7ad7e; }
+
+[role="list"] {
+  margin: 4rem 0 0 0;
+  padding: 0;
+  list-style-type: none; }
+  [role="list"]:not(.conference-list) [role="listitem"] {
+    margin-bottom: 4rem; }
+  [role="list"].conference-list [role="listitem"] {
+    margin-bottom: 2rem; }
+
+h2 + [role="list"] {
+  margin-top: 0; }
+
+[role="listitem"] h2 {
+  margin-bottom: 0.5rem; }
 
 /*# sourceMappingURL=fronteers.css.map */

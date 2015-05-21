@@ -35,7 +35,7 @@ a {
   transition: color 0.25s; }
   a:hover {
     color: #828856; }
-  h2 a {
+  h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none; }
 
 p {
@@ -101,6 +101,7 @@ h6 {
 
 .visualwrapper {
   width: 100%;
+  max-width: 1700px;
   min-height: 100%;
   margin: 0 auto;
   background-color: #fff;
@@ -329,9 +330,6 @@ figure {
 
   .hamburger-wrapper {
     display: none; } }
-.visualwrapper {
-  max-width: 1700px; }
-
 .photos {
   position: relative;
   height: 286px; }

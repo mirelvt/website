@@ -4,7 +4,6 @@
 @import "_code";
 
 h2 { margin-top: 4rem; }
-.visualwrapper { max-width: 1700px; }
 
 [role="main"],
 [role="article"] {
@@ -36,13 +35,17 @@ h2 { margin-top: 4rem; }
   }
 }
 
-.article_list {
+[role="list"] {
   margin: 4rem 0 0 0;
   padding: 0;
   list-style-type: none;
 }
 
-[role="listitem"] { margin-bottom: 4rem; }
+[role="listitem"] {
+    margin-bottom: 4rem;
+
+    h2 { margin-bottom: 0.5rem; }
+}
 
 .blog-date {
   color: $c-text;

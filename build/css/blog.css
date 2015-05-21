@@ -35,7 +35,7 @@ a {
   transition: color 0.25s; }
   a:hover {
     color: #828856; }
-  h2 a {
+  h2 a, h3 a, h4 a, h5 a, h6 a {
     text-decoration: none; }
 
 p {
@@ -101,6 +101,7 @@ h6 {
 
 .visualwrapper {
   width: 100%;
+  max-width: 1700px;
   min-height: 100%;
   margin: 0 auto;
   background-color: #fff;
@@ -402,9 +403,6 @@ code {
 h2 {
   margin-top: 4rem; }
 
-.visualwrapper {
-  max-width: 1700px; }
-
 [role="main"],
 [role="article"] {
   max-width: 800px;
@@ -427,13 +425,15 @@ h2 {
       content: "";
       background-color: #a7ad7e; }
 
-.article_list {
+[role="list"] {
   margin: 4rem 0 0 0;
   padding: 0;
   list-style-type: none; }
 
 [role="listitem"] {
   margin-bottom: 4rem; }
+  [role="listitem"] h2 {
+    margin-bottom: 0.5rem; }
 
 .blog-date {
   color: #3c4946;

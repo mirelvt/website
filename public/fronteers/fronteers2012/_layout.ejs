@@ -6,19 +6,11 @@
   <%- partial("../../_partials/_stylesheet", {css_path: "../../css"}) %>
 </head>
 <body>
-  <%- partial("../../_partials/_header") %>
-
-  <% if (submenu == true) { %>
-    <div class="columns-wrapper">
-      <%- partial("../../_partials/_submenu") %>
-      <%- yield %>
-    </div>
-    <% } else { %>
+ <div class="visualwrapper">
+    <%- partial("../../_partials/_header") %>
     <%- yield %>
-  <% } %>
+  </div>
 
-  <%- partial("../../_partials/_mobilemenu") %>
-   <%- partial("../../_partials/_footer") %>
   <script src="../../js/base.js"></script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
