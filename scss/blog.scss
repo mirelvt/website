@@ -3,19 +3,16 @@
 @import "_menu";
 @import "_code";
 
-h2 { margin-top: 30px; }
+h2 { margin-top: 4rem; }
 .visualwrapper { max-width: 1700px; }
 
 [role="main"],
 [role="article"] {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 [role="article"] {
-
-
   ul {
     margin: 0 0 15px 0;
     padding: 0;
@@ -38,7 +35,6 @@ h2 { margin-top: 30px; }
     }
   }
 }
-
 
 .article_list {
   margin: 4rem 0 0 0;

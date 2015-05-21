@@ -43,14 +43,29 @@ p {
   margin-bottom: 18px; }
 
 blockquote {
+  position: relative;
+  margin-left: 0;
+  padding-left: 35px;
+  font-weight: normal;
   font-style: italic;
   font-size: 2rem;
-  color: #f5be88;
   font-weight: bold; }
+  blockquote:before {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 6rem;
+    content: open-quote;
+    color: #a7ad7e; }
+
+cite {
+  display: block;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 15px;
   font-family: slabo, arial, helvetica, sans-serif;
   font-weight: normal;
   color: #a7ad7e;
@@ -63,16 +78,26 @@ h2 {
   font-size: 3.2rem; }
 
 h3 {
-  font-size: 3rem; }
+  font-size: 2.9rem; }
 
 h4 {
-  font-size: 2.8rem; }
-
-h5 {
   font-size: 2.6rem; }
 
+h5 {
+  font-size: 2.3rem; }
+
 h6 {
-  font-size: 2.4rem; }
+  font-size: 2.0rem; }
+
+h1,
+h2 {
+  margin-bottom: 15px; }
+
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0; }
 
 .visualwrapper {
   width: 100%;
@@ -80,6 +105,22 @@ h6 {
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25); }
+
+figure {
+  margin: 0;
+  text-align: center; }
+  figure img {
+    display: inline-block;
+    border: 10px solid #fff;
+    box-shadow: 0 0 8px 0 rgba(60, 73, 70, 0.6);
+    max-width: 100%; }
+  figure figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #849a95; }
+  figure + p {
+    margin-top: 2rem; }
 
 @media screen and (max-width: 467px) {
   .visualwrapper {
@@ -359,7 +400,7 @@ code {
   color: #4976BC; }
 
 h2 {
-  margin-top: 30px; }
+  margin-top: 4rem; }
 
 .visualwrapper {
   max-width: 1700px; }
@@ -367,8 +408,7 @@ h2 {
 [role="main"],
 [role="article"] {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px; }
+  margin: 0 auto; }
 
 [role="article"] ul {
   margin: 0 0 15px 0;

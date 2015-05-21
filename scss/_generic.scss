@@ -45,15 +45,35 @@ p {
 }
 
 blockquote {
-  font-style: italic;
-  font-size: 2rem;
-  color: rgb(245, 190, 136);;
-  font-weight: bold;
+  position: relative;
+  margin-left: 0;
+  padding-left: 35px;
+  font: {
+    weight: normal;
+    style: italic;
+    size: 2rem;
+    weight: bold;
+  }
+
+  &:before {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    font-size: 6rem;
+    content: open-quote;
+    color: $c-main;
+  }
+}
+
+cite {
+  display:block;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: normal;
 }
 
 %generic-h {
   margin-top: 0;
-  margin-bottom: 15px;
   font-family: $font-headers;
   font-weight: normal;
   color: $c-main;
@@ -69,10 +89,18 @@ blockquote {
       font-size: 4.6rem;
     }
     @else {
-      font-size: 3.6rem - (2 * $i / 10);
+      font-size: 3.8rem - (3 * $i / 10);
     }
   }
 }
+
+h1,
+h2 { margin-bottom: 15px; }
+
+h3,
+h4,
+h5,
+h6 { margin-bottom: 0; }
 
 .visualwrapper {
   width: 100%;
@@ -80,6 +108,27 @@ blockquote {
   margin: 0 auto;
   background-color: #fff;
   box-shadow: 0 0 4px 0 rgba(#000, 0.25);
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+
+  img {
+    display: inline-block;
+    border: 10px solid #fff;
+    box-shadow: 0 0 8px 0 rgba($c-text, 0.6);
+    max-width: 100%;
+  }
+
+  figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: lighten($c-text, 30%);
+  }
+
+  + p { margin-top: 2rem; }
 }
 
 // Breakpoints

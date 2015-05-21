@@ -8,12 +8,12 @@
         <% if(blog_obj.sub_page !== false) { %>
          <li role="listitem">
          <h2>
-            <div class="blog-date"><%=  blog_obj.date %></div>
             <a href="<%=  blog_obj.sub_page %>.html"
                 class="title">
                 <%=  blog_obj.page_title %>
             </a>
           </h2>
+          <div class="blog-date"><%=  blog_obj.date %></div>
           <%=  blog_obj.description %>
          </li>
         <% } %>
