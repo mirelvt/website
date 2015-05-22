@@ -152,13 +152,13 @@
 
 // Mixins for media queries
 @mixin mq-min($width) {
-  @media screen and (min-width: $width + 1px) {
+  @media screen and (min-width: $width + 0.1rem) {
     @content;
   }
 }
 
 @mixin mq-max($width) {
-  @media screen and (max-width: $width * 1px) {
+  @media screen and (max-width: $width) {
     @content;
   }
 }

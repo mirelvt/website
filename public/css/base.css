@@ -1,261 +1,92 @@
-h1, h2, h3, h4, h5, h6 {
-  font-family: slabo, arial, helvetica, sans-serif;
-  font-weight: normal;
-  color: #a7ad7e;
-  line-height: 100%; }
+/*
+Error: Incompatible units: 'rem' and 'px'.
+        on line 155 of scss/_mixins.scss, in `mq-min'
+        from line 72 of scss/base.scss
 
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+150: //   }
+151: // }
+152: 
+153: // Give the blog icon a nice background color + border-radius and center it.
+154: // .icon-blog {
+155: //   display: block;
+156: //   width: 121px;
+157: //   height: 121px;
+158: //   padding-top: 18px;
+159: //   padding-left: 12px;
+160: //   background-color: $c-header;
 
-html {
-  height: 100%;
-  font-size: 62.5%;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-kerning: normal;
-  -moz-font-kerning: normal;
-  font-kerning: normal;
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga", "kern";
-  font-feature-settings: "liga", "kern"; }
-
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: ssp, arial, helvetica, sans-serif;
-  font-size: 1.6rem;
-  color: #3c4946;
-  line-height: 2rem;
-  background: url(../img/bg.png); }
-
-h1 {
-  font-size: 24px; }
-
-h2 {
-  font-size: 20px; }
-
-h3 {
-  font-size: 18px; }
-
-h4 {
-  font-size: 16px; }
-
-h5 {
-  font-size: 16px; }
-
-h6 {
-  font-size: 16px; }
-
-a {
-  color: #a7ad7e; }
-  a:hover {
-    color: #828856; }
-
-p {
-  margin-top: 0;
-  margin-bottom: 18px; }
-
-blockquote {
-  font-style: italic;
-  font-size: 2rem;
-  color: #f5be88;
-  font-weight: bold; }
-
-@media screen and (min-width: 501px) {
-  figure {
-    padding: 8px; } }
-figure img {
-  display: inline-block;
-  margin: 0 auto;
-  max-width: 100%; }
-figure figcaption {
-  font-style: italic;
-  text-align: right; }
-
-.visualwrapper {
-  width: 100%;
-  height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 36px 20px;
-  background-color: #fff;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25); }
-
-pre {
-  position: relative;
-  margin: 5px 10px 20px 10px;
-  padding: 0;
-  overflow: auto;
-  background: #fff;
-  white-space: normal;
-  font-size: 1.2rem;
-  border: 1px solid #3C4946; }
-  pre:before {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 8px 0;
-    text-indent: 15px;
-    color: #fff;
-    font-family: slabo, arial, helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 2rem;
-    content: attr(rel);
-    background-color: #f7a14d; }
-  pre[rel] {
-    padding-top: 33px; }
-
-code {
-  display: block;
-  overflow: auto;
-  margin: 0;
-  padding: 15px;
+Backtrace:
+scss/_mixins.scss:155:in `mq-min'
+scss/base.scss:72
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/script/value/number.rb:416:in `coercion_factor'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/script/value/number.rb:349:in `coerce'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/script/value/number.rb:397:in `operate'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/script/value/number.rb:86:in `plus'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/script/tree/operation.rb:82:in `_perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/script/tree/node.rb:50:in `perform'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:526:in `block in run_interp_no_strip'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:524:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:524:in `run_interp_no_strip'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:531:in `run_interp'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:499:in `visit_media'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:353:in `block (4 levels) in visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:353:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:353:in `block (3 levels) in visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:353:in `block (2 levels) in visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:84:in `perform_arguments'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:98:in `with_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
+*/
+body:before {
   white-space: pre;
-  font-family: droidsansmono, arial, helvetica, sans-serif; }
-
-.comment {
-  color: #7b7b7b; }
-
-.code-indent,
-.code-indent-2 {
-  display: inline-block; }
-
-.code-indent {
-  text-indent: 12px; }
-
-.code-indent-2 {
-  text-indent: 24px; }
-
-.boolean {
-  color: #f7a14d; }
-
-.number {
-  color: #f7a14d; }
-
-.language-css .selector {
-  color: #7a8622; }
-.language-css .property {
-  color: #4c7cc1; }
-
-.language-html .attribute {
-  color: #7a8622; }
-.language-html .tag {
-  color: #4c7cc1; }
-
-.python .number,
-.python .statement {
-  color: #7A8622; }
-.python .string {
-  color: #f7a14d; }
-.python .crispy-attribute {
-  font-style: italic;
-  color: #4976BC; }
-
-label {
-  display: inline-block;
-  width: 150px; }
-
-fieldset {
-  border: none;
-  margin-bottom: 20px; }
-
-legend {
-  color: #a7ad7e;
-  font-size: 2rem;
-  font-weight: bold; }
-
-input[type="text"] {
-  border: none;
-  width: 200px;
-  height: 25px;
-  padding: 4px 8px;
-  border-radius: 2px; }
-
-.field {
-  margin-bottom: 10px; }
-
-.messages-block {
-  position: relative;
-  margin: 0 auto;
-  width: 130px;
-  padding: 35px 0;
-  text-align: center;
-  font-family: slabo, arial, helvetica, sans-serif;
-  font-size: 5rem;
-  color: #a7ad7e;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 10px; }
-  .messages-block:before {
-    position: absolute;
-    top: -14px;
-    left: -1px;
-    display: block;
-    content: "";
-    width: 0;
-    height: 0;
-    border-width: 0 8px 18px 8px;
-    border-style: solid;
-    border-color: transparent transparent #2f3337 transparent; }
-
-.photos {
-  position: relative;
-  height: 286px; }
-
-.photo-side,
-.photo-front {
-  position: absolute;
-  max-width: 100%;
-  border: 10px solid #fff; }
-
-.photo-side {
-  top: 20px; }
-  .photo-side:nth-of-type(2) {
-    right: 0; }
-
-.photo-front {
-  top: 10px;
-  left: 50%;
-  margin-left: -139px; }
-
-@font-face {
-  font-family: arvo;
-  src: url("../fonts/Arvo-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: droidsansmono;
-  src: url("../fonts/DroidSansMono.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: slabo;
-  src: url("../fonts/Slabo27px-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: ssp;
-  src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-@font-face {
-  font-family: ssp;
-  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-@font-face {
-  font-family: ssp;
-  src: url("../fonts/SourceSansPro-SemiboldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic; }
-@font-face {
-  font-family: ssp;
-  src: url("../fonts/SourceSansPro-Italic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic; }
-
-/*# sourceMappingURL=base.css.map */
+  font-family: monospace;
+  content: "Error: Incompatible units: 'rem' and 'px'.\A         on line 155 of scss/_mixins.scss, in `mq-min'\A         from line 72 of scss/base.scss\A \A 150: //   }\A 151: // }\A 152: \A 153: // Give the blog icon a nice background color + border-radius and center it.\A 154: // .icon-blog {\A 155: //   display: block;\A 156: //   width: 121px;\A 157: //   height: 121px;\A 158: //   padding-top: 18px;\A 159: //   padding-left: 12px;\A 160: //   background-color: $c-header;"; }

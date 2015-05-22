@@ -33,11 +33,11 @@
 
 // ===========
 // Breakpoints
-@include mq-max(467) {
+@include mq-max(46.7rem) {
   .block-home { @include justify-content(center) }
 }
 
-@include mq-max(900) {
+@include mq-max(90rem) {
   .block-home {
     @include flexbox() ;
     @include flex-flow(row wrap);
@@ -53,7 +53,7 @@
   };
 }
 
-@include mq-min(900) {
+@include mq-min(90rem) {
   section {
     @include flexbox();
     padding-top: 50px;
@@ -70,8 +70,4 @@
   }
 }
 // @End breakpoints
-// ================
-
-// ----------------
-// @END HOME BLOCKS
 // ================

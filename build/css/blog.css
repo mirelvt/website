@@ -147,13 +147,13 @@ figure {
   .arrow-next:hover {
     border-color: transparent transparent transparent #828856; }
 
-@media screen and (max-width: 467px) {
+@media screen and (max-width: 46.7rem) {
   .visualwrapper {
     padding: 100px 30px 10px 30px; } }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 46.8rem) {
   .visualwrapper {
     padding: 36px 30px; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 60rem) {
   h1 {
     font-size: 3.6rem; }
 
@@ -171,7 +171,7 @@ figure {
 
   h6 {
     font-size: 1.4rem; } }
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 90.1rem) {
   body {
     font-size: 1.8rem; }
 
@@ -233,7 +233,7 @@ figure {
 [role="menuitem"] {
   text-decoration: none; }
 
-@media screen and (max-width: 467px) {
+@media screen and (max-width: 46.7rem) {
   [role="navigation"] {
     position: absolute;
     top: 0;
@@ -359,7 +359,7 @@ figure {
 
   .scroll-disabled {
     overflow: hidden; } }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 46.8rem) {
   [role="navigation"] {
     position: relative;
     margin-bottom: 50px;

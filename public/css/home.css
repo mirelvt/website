@@ -147,13 +147,13 @@ figure {
   .arrow-next:hover {
     border-color: transparent transparent transparent #828856; }
 
-@media screen and (max-width: 467px) {
+@media screen and (max-width: 46.7rem) {
   .visualwrapper {
     padding: 100px 30px 10px 30px; } }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 46.8rem) {
   .visualwrapper {
     padding: 36px 30px; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 60rem) {
   h1 {
     font-size: 3.6rem; }
 
@@ -171,7 +171,7 @@ figure {
 
   h6 {
     font-size: 1.4rem; } }
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 90.1rem) {
   body {
     font-size: 1.8rem; }
 
@@ -233,7 +233,7 @@ figure {
 [role="menuitem"] {
   text-decoration: none; }
 
-@media screen and (max-width: 467px) {
+@media screen and (max-width: 46.7rem) {
   [role="navigation"] {
     position: absolute;
     top: 0;
@@ -359,7 +359,7 @@ figure {
 
   .scroll-disabled {
     overflow: hidden; } }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 46.8rem) {
   [role="navigation"] {
     position: relative;
     margin-bottom: 50px;
@@ -428,14 +428,14 @@ figure {
   padding-left: 21px;
   background-color: #a7ad7e; }
 
-@media screen and (max-width: 467px) {
+@media screen and (max-width: 46.7rem) {
   .block-home {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; } }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 90rem) {
   .block-home {
     display: -webkit-box;
     display: -webkit-flex;
@@ -462,7 +462,7 @@ figure {
       -moz-flex: 1 0 250px;
       -ms-flex: 1 0 250px;
       flex: 1 0 250px; } }
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 90.1rem) {
   section {
     display: -webkit-box;
     display: -webkit-flex;

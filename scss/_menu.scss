@@ -8,7 +8,7 @@
 
 // Breakpoints
 // -----------
-@include mq-max(467) {
+@include mq-max(46.7rem) {
   // Position the menu outside the viewport
   [role="navigation"] {
     position: absolute;
@@ -124,7 +124,7 @@
 }
 
 // Show the main menu horizontal with the gradient border top + bottom
-@include mq-min(467) {
+@include mq-min(46.7rem) {
   [role="navigation"] {
     position:relative;
     margin-bottom: 50px;
