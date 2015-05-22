@@ -54,7 +54,10 @@
 }
 
 @include mq-min(900) {
-  section { @include flexbox() }
+  section {
+    @include flexbox();
+    padding-top: 50px;
+  }
 
   .block-home {
     @include flex-grow(1);

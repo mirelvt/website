@@ -1,0 +1,51 @@
+<div class="nav-arrows">
+    <!-- BLOG -->
+    <% if (sub_page == 'customize-django-crispy-forms') { %>
+        <a href="/blog" title="Back to Blog page" class="arrow-prev"></a>
+        <a href="customize-sublime.html" title="Next article: Customize Sublime Text Editor" class="arrow-next"></a>
+    <% } %>
+
+    <% if (sub_page == 'customize-sublime') { %>
+        <a href="customize-django-crispy-forms.html" title="Previous article: Customize Django Crispy forms" class="arrow-prev"></a>
+        <a href="cssday2013.html" title="Next article: CSSDay 2013"
+            class="arrow-next"></a>
+    <% } %>
+    <% if (sub_page == 'cssday2013') { %>
+        <a href="customize-sublime.html"
+            title="Prev article: Customize Sublime Text Editor"
+            class="arrow-prev"></a>
+    <% } %>
+    <!-- ************* -->
+
+    <!-- FRONTEERS -->
+    <% if (sub_page == 'fronteers2014') { %>
+        <a href="/fronteers" title="Back to Fronteers page" class="arrow-prev"></a>
+        <a href="oocss.html" title="Next article: There's a class for that" class="arrow-next"></a>
+    <% } %>
+    <% if (sub_page == 'oocss') { %>
+        <a href="fronteers2014.html" title="Previous article: Fronteers 2014" class="arrow-prev"></a>
+        <a href="rijksmuseum.html" title="Next article: The zoom interface of www.rijksmuseum.nl" class="arrow-next"></a>
+    <% } %>
+    <% if (sub_page == 'rijksmuseum') { %>
+        <a href="oocss.html" title="Previous article: There's a class for that" class="arrow-prev"></a>
+        <a href="accessibility-is-ux-design.html" title="Next article: Accessibility is also UX design" class="arrow-next"></a>
+    <% } %>
+    <% if (sub_page == 'accessibility-is-ux-design') { %>
+        <a href="rijksmuseum.html" title="Previous article: The zoom interface of www.rijksmuseum.nl" class="arrow-prev"></a>
+        <a href="fronteers2012" title="Next article: Fronteers 2012" class="arrow-next"></a>
+    <% } %>
+    <% if (sub_page == 'fronteers2012/index') { %>
+        <a href="../accessibility-is-ux-design.html" title="Previous article: Accessibility is also UX design" class="arrow-prev"></a>
+    <% } %>
+    <!-- ************* -->
+
+    <!-- FRONTEERS 2012-->
+    <% if (sub_page == 'responsive-design') { %>
+        <a href="index.html" title="Back to Fronteers 2012" class="arrow-prev"></a>
+        <a href="developer-toolbelt.html" title="Next article: Developer toolbelt" class="arrow-next"></a>
+    <% } %>
+    <% if (sub_page == 'developer-toolbelt') { %>
+        <a href="responsive-design.html" title="Previous article: Responsive design" class="arrow-prev"></a>
+        <a href="pixelisnotapixel.html" title="Next article: A pixel is not a pixel" class="arrow-next"></a>
+    <% } %>
+</div>

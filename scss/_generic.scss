@@ -137,6 +137,41 @@ figure {
   + p { margin-top: 2rem; }
 }
 
+// next + prev arrows
+.nav-arrows {
+  width: 100px;
+  margin: 0 auto 30px auto;
+
+  // arrow links
+  a {
+    display: inline-block;
+    border-style: solid;
+    @include transition(border-color 0.25s);
+  }
+}
+
+// Style the prev + left arrow including hover
+.arrow- {
+  &prev {
+    margin-right: 20px;
+    border-width: 15px 20px 15px 0;
+    border-color: transparent $c-main transparent transparent;
+
+    &:hover {
+      border-color: transparent $c-hover transparent transparent;
+    }
+  }
+
+  &next {
+    border-width: 15px 0 15px 20px;
+    border-color: transparent transparent transparent $c-main;
+
+    &:hover {
+      border-color: transparent transparent transparent $c-hover;
+    }
+  }
+}
+
 // Breakpoints
 // -----------
 @include mq-max(467) {
