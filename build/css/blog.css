@@ -2,7 +2,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html {
+:root {
   height: 100%;
   font-size: 62.5%;
   -ms-text-size-adjust: 100%;
@@ -14,7 +14,8 @@ html {
   font-kerning: normal;
   -webkit-font-feature-settings: "liga";
   -moz-font-feature-settings: "liga", "kern";
-  font-feature-settings: "liga", "kern"; }
+  font-feature-settings: "liga", "kern";
+  color: #3c4946; }
 
 body {
   height: 100%;
@@ -22,7 +23,6 @@ body {
   padding: 0;
   font-family: ssp, arial, helvetica, sans-serif;
   font-size: 1.8rem;
-  color: #3c4946;
   line-height: 2.2rem;
   background: url(../img/bg.png); }
 
@@ -72,26 +72,26 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 100%; }
 
 h1 {
-  font-size: 4.6rem; }
+  font-size: 5vw; }
 
 h2 {
-  font-size: 3.2rem; }
+  font-size: 4vw; }
 
 h3 {
-  font-size: 2.9rem; }
+  font-size: 3.5vw; }
 
 h4 {
-  font-size: 2.6rem; }
+  font-size: 3vw; }
 
 h5 {
-  font-size: 2.3rem; }
+  font-size: 2.5vw; }
 
 h6 {
-  font-size: 2.0rem; }
+  font-size: 2vw; }
 
 h1,
 h2 {
-  margin-bottom: 15px; }
+  margin-bottom: 1.5rem; }
 
 h3,
 h4,
@@ -128,7 +128,46 @@ figure {
     padding: 100px 30px 10px 30px; } }
 @media screen and (min-width: 468px) {
   .visualwrapper {
-    padding: 36px 20px; } }
+    padding: 36px 30px; } }
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3.6rem; }
+
+  h2 {
+    font-size: 2.6rem; }
+
+  h3 {
+    font-size: 2.3rem; }
+
+  h4 {
+    font-size: 2rem; }
+
+  h5 {
+    font-size: 1.7rem; }
+
+  h6 {
+    font-size: 1.4rem; } }
+@media screen and (min-width: 901px) {
+  body {
+    font-size: 1.8rem; }
+
+  h1 {
+    font-size: 4.6rem; }
+
+  h2 {
+    font-size: 3.2rem; }
+
+  h3 {
+    font-size: 2.9rem; }
+
+  h4 {
+    font-size: 2.6rem; }
+
+  h5 {
+    font-size: 2.3rem; }
+
+  h6 {
+    font-size: 2.0rem; } }
 @font-face {
   font-family: arvo;
   src: url("../fonts/Arvo-Regular.ttf") format("truetype");

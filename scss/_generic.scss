@@ -11,13 +11,14 @@
 // * 4: Set the kerning and ligatures for current and future browsers.
 //      Smashing Booke #4 Chapter 9.
 
-html {
+:root {
   height: 100%;
   font-size: 62.5%; // * 1 *
   @include text-adjust; // * 2 *
   @include font-smoothing; // * 3 *
   @include font-kerning; // * 4 *
   @include font-feature-settings; // * 4 *
+  color: $c-text;
 }
 
 body {
@@ -26,7 +27,6 @@ body {
   padding: 0;
   font-family: $font-main;
   font-size: 1.8rem;
-  color: $c-text;
   line-height: 2.2rem;
   background: url(../img/bg.png);
 }
@@ -84,22 +84,23 @@ cite {
   line-height: 100%;
 }
 
-// Generate headings
+// Generate headings using vw. In the breakpoint section
+// the rem units are defined.
 @for $i from 1 through 6 {
   h#{$i} {
     @extend %generic-h;
 
     @if ($i == 1) {
-      font-size: 4.6rem;
+      font-size: 5vw;
     }
     @else {
-      font-size: 3.8rem - (3 * $i / 10);
+      font-size: 5vw - ($i / 2);
     }
   }
 }
 
 h1,
-h2 { margin-bottom: 15px; }
+h2 { margin-bottom: 1.5rem; }
 
 h3,
 h4,
@@ -139,13 +140,40 @@ figure {
 // Breakpoints
 // -----------
 @include mq-max(467) {
-    .visualwrapper { padding: 100px 30px 10px 30px; }
+   .visualwrapper { padding: 100px 30px 10px 30px; }
 }
 
 @include mq-min(467) {
-  .visualwrapper { padding: 36px 20px; }
+  .visualwrapper { padding: 36px 30px; }
 }
 
+@include mq-max(600) {
+  @for $i from 1 through 6 {
+    h#{$i} {
+      @if ($i == 1) {
+        font-size: 3.6rem;
+      }
+      @else {
+        font-size: 3.2rem - (3 * $i / 10);
+      }
+    }
+  }
+}
+
+@include mq-min(900) {
+  body { font-size: 1.8rem; }
+
+  @for $i from 1 through 6 {
+    h#{$i} {
+      @if ($i == 1) {
+        font-size: 4.6rem;
+      }
+      @else {
+        font-size: 3.8rem - (3 * $i / 10);
+      }
+    }
+  }
+}
 // @End breakpoints
 // ----------------
 
