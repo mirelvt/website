@@ -1,16 +1,16 @@
 <div class="nav-arrows">
     <!-- BLOG -->
-    <% if (sub_page == 'customize-django-crispy-forms') { %>
+    <% if (current.source == 'customize-django-crispy-forms') { %>
         <a href="/blog" title="Back to Blog page" class="arrow-prev"></a>
         <a href="customize-sublime.html" title="Next article: Customize Sublime Text Editor" class="arrow-next"></a>
     <% } %>
 
-    <% if (sub_page == 'customize-sublime') { %>
-        <a href="customize-django-crispy-forms.html" title="Previous article: Customize Django Crispy forms" class="arrow-prev"></a>
+    <% if (current.source == 'customize-sublime') { %>
+        <a href="customize-django-crispy-forms.html" title="Previous article:Customize Django Crispy forms" class="arrow-prev"></a>
         <a href="cssday2013.html" title="Next article: CSSDay 2013"
             class="arrow-next"></a>
     <% } %>
-    <% if (sub_page == 'cssday2013') { %>
+    <% if (current.source == 'cssday2013') { %>
         <a href="customize-sublime.html"
             title="Prev article: Customize Sublime Text Editor"
             class="arrow-prev"></a>
@@ -18,34 +18,62 @@
     <!-- ************* -->
 
     <!-- FRONTEERS -->
-    <% if (sub_page == 'fronteers2014') { %>
-        <a href="/fronteers" title="Back to Fronteers page" class="arrow-prev"></a>
+    <% if (current.source == 'fronteers2014') { %>
+        <a href="/fronteers" title="Back to Fronteers page"
+            class="arrow-prev"></a>
         <a href="oocss.html" title="Next article: There's a class for that" class="arrow-next"></a>
     <% } %>
-    <% if (sub_page == 'oocss') { %>
+    <% if (current.source == 'oocss') { %>
         <a href="fronteers2014.html" title="Previous article: Fronteers 2014" class="arrow-prev"></a>
         <a href="rijksmuseum.html" title="Next article: The zoom interface of www.rijksmuseum.nl" class="arrow-next"></a>
     <% } %>
-    <% if (sub_page == 'rijksmuseum') { %>
+    <% if (current.source == 'rijksmuseum') { %>
         <a href="oocss.html" title="Previous article: There's a class for that" class="arrow-prev"></a>
         <a href="accessibility-is-ux-design.html" title="Next article: Accessibility is also UX design" class="arrow-next"></a>
     <% } %>
-    <% if (sub_page == 'accessibility-is-ux-design') { %>
+    <% if (current.source == 'accessibility-is-ux-design') { %>
         <a href="rijksmuseum.html" title="Previous article: The zoom interface of www.rijksmuseum.nl" class="arrow-prev"></a>
         <a href="fronteers2012" title="Next article: Fronteers 2012" class="arrow-next"></a>
     <% } %>
-    <% if (sub_page == 'fronteers2012/index') { %>
+    <% if (current.source == 'fronteers2012/index') { %>
         <a href="../accessibility-is-ux-design.html" title="Previous article: Accessibility is also UX design" class="arrow-prev"></a>
     <% } %>
     <!-- ************* -->
 
     <!-- FRONTEERS 2012-->
-    <% if (sub_page == 'responsive-design') { %>
+    <% if (current.source == 'responsive-design') { %>
         <a href="index.html" title="Back to Fronteers 2012" class="arrow-prev"></a>
         <a href="developer-toolbelt.html" title="Next article: Developer toolbelt" class="arrow-next"></a>
     <% } %>
-    <% if (sub_page == 'developer-toolbelt') { %>
+    <% if (current.source == 'developer-toolbelt') { %>
         <a href="responsive-design.html" title="Previous article: Responsive design" class="arrow-prev"></a>
         <a href="pixelisnotapixel.html" title="Next article: A pixel is not a pixel" class="arrow-next"></a>
+    <% } %>
+     <% if (current.source == 'pixelisnotapixel') { %>
+        <a href="developer-toolbelt.html" title="Previous article: Developer toolbelt" class="arrow-prev"></a>
+        <a href="styleguides.html" title="Next article: Style guides" class="arrow-next"></a>
+    <% } %>
+     <% if (current.source == 'styleguides') { %>
+        <a href="pixelisnotapixel.html" title="Previous article: A pixel is not a pixel" class="arrow-prev"></a>
+        <a href="shortnotes.html#alexgraul.html" title="Next article: Short notes" class="arrow-next"></a>
+    <% } %>
+      <% if (current.source == 'shortnotes') { %>
+        <a href="styleguides.html" title="Previous article: Style guides" class="arrow-prev"></a>
+        <a href="accessability.html" title="Next article: Accessibility" class="arrow-next"></a>
+    <% } %>
+    <% if (current.source == 'accessability') { %>
+        <a href="shortnotes.html" title="Previous article: Short notes" class="arrow-prev"></a>
+        <a href="os-aintfree.html" title="Next article: Open source ain't free" class="arrow-next"></a>
+    <% } %>
+    <% if (current.source == 'os-aintfree') { %>
+        <a href="accessability.html" title="Previous article: Accessibility" class="arrow-prev"></a>
+        <a href="statehtml5video.html" title="Next article: The state of HTML5 video" class="arrow-next"></a>
+    <% } %>
+    <% if (current.source == 'statehtml5video') { %>
+        <a href="os-aintfree.html" title="Previous article: Open source ain't free" class="arrow-prev"></a>
+        <a href="smellyourcms.html" title="Next article: I can smell your cms" class="arrow-next"></a>
+    <% } %>
+     <% if (current.source == 'smellyourcms') { %>
+        <a href="statehtml5video.html" title="Previous article: The state of HTML5 video" class="arrow-prev"></a>
     <% } %>
 </div>
