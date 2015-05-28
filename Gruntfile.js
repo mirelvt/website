@@ -5,6 +5,7 @@ module.exports = function(grunt) {
   //* compressor (minify html and js),
   // * connect (used for live reload).
   // * harp to compile static files.
+  // * concat to compile 1 file js file;
 
   grunt.loadNpmTasks('grunt-harp');
   grunt.loadNpmTasks('grunt-contrib-connect');
@@ -12,6 +13,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-compressor');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
   // Project configuration.
   grunt.initConfig({
@@ -45,7 +47,7 @@ module.exports = function(grunt) {
       },
       html: {
         files: ['public/**/*.ejs'],
-        tasks: ['harp', 'compressor']
+        tasks: ['harp', 'compressor', 'concat', 'clean:dev']
       },
       css: {
         files: ['scss/*.scss'],
@@ -53,7 +55,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['public/js/*.js'],
-        tasks: ['harp', 'compressor']
+        tasks: ['harp', 'compressor', 'concat', 'clean:dev']
         }
     },
 
@@ -108,10 +110,28 @@ module.exports = function(grunt) {
       }
     },
 
-    clean: ['build/css', 'public/css', 'build/minified', 'build/js']
+    concat: {
+      options: {
+        separator: ';\n',
+      },
+      base: {
+        src: ['build/js/fastclick.js', 'build/js/base.js'],
+        dest: 'build/js/base_compiled.js',
+      },
+      about: {
+        src: ['build/js/fastclick.js', 'build/js/base.js', 'build/js/about_me.js'],
+        dest: 'build/js/about_compiled.js',
+      }
+    },
+
+    clean: {
+      dev: ['build/js/*.js', '!build/js/*_compiled.js'],
+      deploy: ['build/css', 'public/css', 'build/js']
+    },
+
   });
 
    // Default task(s).
   grunt.registerTask('dev', ['connect', 'watch']);
-  grunt.registerTask('deploy', ['clean', 'sass:deploy', 'harp', 'compressor']);
+  grunt.registerTask('deploy', ['clean:deploy', 'sass:deploy', 'harp', 'compressor', 'concat', 'clean:dev']);
 };

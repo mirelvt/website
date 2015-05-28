@@ -17,19 +17,19 @@
         }
     } else {
         if (container.children.length === 1) {
-            createImage(img_left, 'aboutme-left.jpg');
-            createImage(img_right, 'aboutme-right.jpg');
+            setImageAttrs(img_left, 'aboutme-left.jpg');
+            setImageAttrs(img_right, 'aboutme-right.jpg');
 
             container.insertBefore(img_right, container.firstChild);
             container.insertBefore(img_left, container.firstChild);
         }
     }
 
-    // Create image element
-    function createImage(elm, src) {
-      elm.setAttribute('src', 'img/' + src);
-      elm.setAttribute('class', 'photo-side');
-      elm.setAttribute('alt','Concentrated at work');
+    // Set image attributes
+    function setImageAttrs(elm, src) {
+      elm.className = 'photo-side';
+      elm.src = 'img/' + src;
+      elm.alt = 'At work';
     }
   }
   // }}
