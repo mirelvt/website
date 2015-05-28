@@ -8,37 +8,37 @@ $fonts: (
     "type": "normal"
   ),
   "droidsansmono": (
-    "name": "droidsansmono",
+    "name": "Droid Sans Mono",
     "url":"DroidSansMono",
     "weight": "normal",
     "type": "normal"
   ),
   "slabo": (
-    "name": "slabo",
+    "name": "Slabo 27px",
     "url": "Slabo27px-Regular",
     "weight": "normal",
     "type": "normal"
   ),
   "ssp-regular": (
-    "name": "ssp",
+    "name": "Source Sans Pro",
     "url": "SourceSansPro-Regular",
     "weight": "normal",
     "type": "normal"
   ),
   "ssp-semi-bold": (
-    "name": "ssp",
+    "name": "Source Sans Pro",
     "url": "SourceSansPro-Semibold",
     "weight": "bold",
     "type": "normal"
   ),
   "ssp-semi-bold-italic": (
-    "name": "ssp",
+    "name": "Source Sans Pro",
     "url": "SourceSansPro-SemiboldItalic",
     "weight": "bold",
     "type": "italic"
   ),
   "ssp-semi-italic": (
-    "name": "ssp",
+    "name": "Source Sans Pro",
     "url": "SourceSansPro-Italic",
     "weight": "normal",
     "type": "italic"
@@ -48,7 +48,7 @@ $fonts: (
 @each $font, $props in $fonts {
   @font-face {
       font-family: #{map-get($props, name)};
-       src: url('../fonts/#{map-get($props, url)}.ttf') format('truetype');
+       src: local("#{map-get($props, name)}"), url('../fonts/#{map-get($props, url)}.ttf') format('truetype');
       font-weight: #{map-get($props, weight)};
       font-style: #{map-get($props, type)};
     }

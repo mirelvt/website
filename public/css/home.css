@@ -21,7 +21,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: ssp, arial, helvetica, sans-serif;
+  font-family: "Source Sans Pro", arial, helvetica, sans-serif;
   font-size: 1.8rem;
   line-height: 2.2rem;
   background: url(../img/bg.png); }
@@ -66,7 +66,7 @@ cite {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  font-family: slabo, arial, helvetica, sans-serif;
+  font-family: "Slabo 27px", arial, helvetica, sans-serif;
   font-weight: normal;
   color: #a7ad7e;
   line-height: 100%; }
@@ -147,13 +147,13 @@ figure {
   .arrow-next:hover {
     border-color: transparent transparent transparent #828856; }
 
-@media screen and (max-width: 46.7rem) {
+@media screen and (max-device-width: 467px) {
   .visualwrapper {
     padding: 100px 30px 10px 30px; } }
-@media screen and (min-width: 46.8rem) {
+@media screen and (min-device-width: 467px) {
   .visualwrapper {
     padding: 36px 30px; } }
-@media screen and (max-width: 60rem) {
+@media screen and (max-device-width: 600px) {
   h1 {
     font-size: 3.6rem; }
 
@@ -171,7 +171,7 @@ figure {
 
   h6 {
     font-size: 1.4rem; } }
-@media screen and (min-width: 90.1rem) {
+@media screen and (min-device-width: 900px) {
   body {
     font-size: 1.8rem; }
 
@@ -194,62 +194,66 @@ figure {
     font-size: 2.0rem; } }
 @font-face {
   font-family: arvo;
-  src: url("../fonts/Arvo-Regular.ttf") format("truetype");
+  src: local("arvo"), url("../fonts/Arvo-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: droidsansmono;
-  src: url("../fonts/DroidSansMono.ttf") format("truetype");
+  font-family: Droid Sans Mono;
+  src: local("Droid Sans Mono"), url("../fonts/DroidSansMono.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: slabo;
-  src: url("../fonts/Slabo27px-Regular.ttf") format("truetype");
+  font-family: Slabo 27px;
+  src: local("Slabo 27px"), url("../fonts/Slabo27px-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: ssp;
-  src: url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
+  font-family: Source Sans Pro;
+  src: local("Source Sans Pro"), url("../fonts/SourceSansPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: ssp;
-  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype");
+  font-family: Source Sans Pro;
+  src: local("Source Sans Pro"), url("../fonts/SourceSansPro-Semibold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 @font-face {
-  font-family: ssp;
-  src: url("../fonts/SourceSansPro-SemiboldItalic.ttf") format("truetype");
+  font-family: Source Sans Pro;
+  src: local("Source Sans Pro"), url("../fonts/SourceSansPro-SemiboldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
 @font-face {
-  font-family: ssp;
-  src: url("../fonts/SourceSansPro-Italic.ttf") format("truetype");
+  font-family: Source Sans Pro;
+  src: local("Source Sans Pro"), url("../fonts/SourceSansPro-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
 [role="navigation"] {
-  font-family: arvo, arial, helvetica, sans-serif; }
+  font-family: Arvo, arial, helvetica, sans-serif; }
 
 [role="menuitem"] {
   text-decoration: none; }
 
-@media screen and (max-width: 46.7rem) {
+@media screen and (max-device-width: 467px) {
   [role="navigation"] {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -200px;
+    -ms-transform: translateX(-230px) translateZ(0);
+    -webkit-transform: translateX(-230px) translateZ(0);
+    transform: translateX(-230px) translateZ(0);
     width: 200px;
     font-size: 1.6rem;
     background-color: #a7ad7e;
-    -webkit-transition: left 0.5s ease-in-out;
-    -moz-transition: left 0.5s ease-in-out;
-    -ms-transition: left 0.5s ease-in-out;
-    -o-transition: left 0.5s ease-in-out;
-    transition: left 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+    -ms-transition: -ms-transform 0.5s ease-in-out;
+    -o-transition: -o-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     z-index: 2; }
     [role="navigation"].active {
-      left: 0;
+      -ms-transform: translateX(-30px);
+      -webkit-transform: translateX(-30px);
+      transform: translateX(-30px);
       box-shadow: 2px 0 6px 0 rgba(0, 0, 0, 0.5); }
 
   [role="menuitem"] {
@@ -273,7 +277,9 @@ figure {
   .hamburger-wrapper {
     position: absolute;
     top: 0;
-    left: 200px;
+    -ms-transform: translateX(200px) translateZ(0);
+    -webkit-transform: translateX(200px) translateZ(0);
+    transform: translateX(200px) translateZ(0);
     width: 105px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -285,13 +291,15 @@ figure {
     color: #fff;
     background-color: #a7ad7e;
     cursor: pointer;
-    -webkit-transition: left 0.5s ease-in-out;
-    -moz-transition: left 0.5s ease-in-out;
-    -ms-transition: left 0.5s ease-in-out;
-    -o-transition: left 0.5s ease-in-out;
-    transition: left 0.5s ease-in-out; }
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+    -ms-transition: -ms-transform 0.5s ease-in-out;
+    -o-transition: -o-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out; }
     .active .hamburger-wrapper {
-      left: 0; }
+      -ms-transform: translateX(0);
+      -webkit-transform: translateX(0);
+      transform: translateX(0); }
 
   .menu-text {
     -webkit-box-flex: 1;
@@ -313,6 +321,9 @@ figure {
     -ms-flex: 0 0 21px;
     flex: 0 0 21px;
     background-color: #fff;
+    -ms-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
     -webkit-transition: -webkit-transform 0.5s, background-color 0.3s;
     -moz-transition: -moz-transform 0.5s, background-color 0.3s;
     -ms-transition: -ms-transform 0.5s, background-color 0.3s;
@@ -359,7 +370,7 @@ figure {
 
   .scroll-disabled {
     overflow: hidden; } }
-@media screen and (min-width: 46.8rem) {
+@media screen and (min-device-width: 467px) {
   [role="navigation"] {
     position: relative;
     margin-bottom: 50px;
@@ -428,14 +439,14 @@ figure {
   padding-left: 21px;
   background-color: #a7ad7e; }
 
-@media screen and (max-width: 46.7rem) {
+@media screen and (max-device-width: 46.7rem) {
   .block-home {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     -moz-justify-content: center;
     justify-content: center; } }
-@media screen and (max-width: 90rem) {
+@media screen and (max-device-width: 90rem) {
   .block-home {
     display: -webkit-box;
     display: -webkit-flex;
@@ -462,7 +473,7 @@ figure {
       -moz-flex: 1 0 250px;
       -ms-flex: 1 0 250px;
       flex: 1 0 250px; } }
-@media screen and (min-width: 90.1rem) {
+@media screen and (min-device-width: 90rem) {
   section {
     display: -webkit-box;
     display: -webkit-flex;

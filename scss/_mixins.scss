@@ -57,31 +57,6 @@
   perspective: $value;
 }
 
-// Mixins for flexbox layout
-@mixin myflexbox($extend: true) {
-  @if $extend {
-    @extend %myflexbox;
-  }
-  @else {
-    display: -ms-flex;
-    display: -webkit-flex;
-    display: flex;
-  }
-}
-
-%myflexbox {
-  @include myflexbox($extend: false);
-}
-
-@mixin myflex-justify-content($value) {
-  -ms-justify-content: $value;
-  -moz-justify-content: $value;
-  -webkit-justify-content: $value;
-  justify-content: $value;
-}
-
-// ========
-
 // Mixins for font
 @mixin font-kerning() {
   -webkit-font-kerning: normal;
@@ -152,13 +127,13 @@
 
 // Mixins for media queries
 @mixin mq-min($width) {
-  @media screen and (min-width: $width + 0.1rem) {
+  @media screen and (min-device-width: $width) {
     @content;
   }
 }
 
 @mixin mq-max($width) {
-  @media screen and (max-width: $width) {
+  @media screen and (max-device-width: $width) {
     @content;
   }
 }

@@ -174,15 +174,15 @@ figure {
 
 // Breakpoints
 // -----------
-@include mq-max(46.7rem) {
+@include mq-max(467px) {
    .visualwrapper { padding: 100px 30px 10px 30px; }
 }
 
-@include mq-min(46.7rem) {
+@include mq-min(467px) {
   .visualwrapper { padding: 36px 30px; }
 }
 
-@include mq-max(60rem) {
+@include mq-max(600px) {
   @for $i from 1 through 6 {
     h#{$i} {
       @if ($i == 1) {
@@ -195,7 +195,7 @@ figure {
   }
 }
 
-@include mq-min(90rem) {
+@include mq-min(900px) {
   body { font-size: 1.8rem; }
 
   @for $i from 1 through 6 {
