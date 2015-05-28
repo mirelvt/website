@@ -147,10 +147,10 @@ figure {
   .arrow-next:hover {
     border-color: transparent transparent transparent #828856; }
 
-@media screen and (max-device-width: 467px) {
+@media screen and (max-device-width: 517px) {
   .visualwrapper {
     padding: 100px 30px 10px 30px; } }
-@media screen and (min-device-width: 467px) {
+@media screen and (min-device-width: 517px) {
   .visualwrapper {
     padding: 36px 30px; } }
 @media screen and (max-device-width: 600px) {
@@ -233,7 +233,7 @@ figure {
 [role="menuitem"] {
   text-decoration: none; }
 
-@media screen and (max-device-width: 467px) {
+@media screen and (max-device-width: 517px) {
   [role="navigation"] {
     position: absolute;
     top: 0;
@@ -370,7 +370,7 @@ figure {
 
   .scroll-disabled {
     overflow: hidden; } }
-@media screen and (min-device-width: 467px) {
+@media screen and (min-device-width: 517px) {
   [role="navigation"] {
     position: relative;
     margin-bottom: 50px;

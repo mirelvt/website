@@ -174,11 +174,11 @@ figure {
 
 // Breakpoints
 // -----------
-@include mq-max(467px) {
+@include mq-max(517px) {
    .visualwrapper { padding: 100px 30px 10px 30px; }
 }
 
-@include mq-min(467px) {
+@include mq-min(517px) {
   .visualwrapper { padding: 36px 30px; }
 }
 
