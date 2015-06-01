@@ -11,3 +11,6 @@
 <% if (source == 'about') { %>
 <link rel="stylesheet" media="all" href="<%- css_path %>/about_me.css" />
 <% } %>
+<% if (source == '404' || source == '403' || source == '500') { %>
+<link rel="stylesheet" media="all" href="<%- css_path %>/page_errors.css" />
+<% } %>

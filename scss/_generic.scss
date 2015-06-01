@@ -172,7 +172,8 @@ figure {
   }
 }
 
-// Breakpoints
+// ===========
+// BREAKPOINTS
 // -----------
 @include mq-max(517px) {
    .visualwrapper { padding: 100px 30px 10px 30px; }
