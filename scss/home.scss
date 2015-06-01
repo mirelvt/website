@@ -32,12 +32,13 @@
 }
 
 // ===========
-// Breakpoints
-@include mq-max(46.7rem) {
+// BREAKPOINTS
+// -----------
+@include mq-max(467px) {
   .block-home { @include justify-content(center) }
 }
 
-@include mq-max(90rem) {
+@include mq-max(900px) {
   .block-home {
     @include flexbox() ;
     @include flex-flow(row wrap);
@@ -47,13 +48,12 @@
       margin-right: 20px;
       @include flex(0,0,125px);
     }
-    &-text {
-      @include flex(1,0,250px);
-    }
+    &-text { @include flex(1,0,250px); }
+
   };
 }
 
-@include mq-min(90rem) {
+@include mq-min(900px) {
   section {
     @include flexbox();
     padding-top: 50px;
@@ -64,12 +64,52 @@
     @include flex-shrink(1);
 
     &:not(:last-child) { margin-right: 30px; }
-
     &-visual { text-align: center; }
-
   }
 }
-// @End breakpoints
+
+@include mq-min(517px) {
+  [role="navigation"] { @include animation(menu-anim 1.25s ease-out) }
+
+  .block-home {
+    opacity: 0;
+    &:nth-child(1) {
+      @include animation(blocks-anim 1s ease-out 1s forwards);
+    }
+    &:nth-child(2) {
+      @include animation(blocks-anim 1s ease-out 1.5s forwards);
+    }
+    &:nth-child(3) {
+      @include animation(blocks-anim 1s ease-out 2s forwards);
+    }
+  }
+}
+
+@include keyframes(menu-anim) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(-100px))
+  }
+  50% { opacity: 0; }
+
+  100% {
+    opacity: 1;
+    @include transform(translateY(0px));
+  }
+}
+
+@include keyframes(blocks-anim) {
+  from {
+    opacity: 0;
+    @include transform(scale(0.7));
+  }
+  to {
+    opacity: 1;
+    @include transform(scale(1));
+  }
+}
+// ----------------
+// @END BREAKPOINTS
 // ================
 
 @import "_print";

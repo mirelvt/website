@@ -47,7 +47,7 @@ module.exports = function(grunt) {
       },
       html: {
         files: ['public/**/*.ejs'],
-        tasks: ['harp', 'compressor', 'concat', 'clean:dev']
+        tasks: ['harp', 'compressor', 'concat']
       },
       css: {
         files: ['scss/*.scss'],
