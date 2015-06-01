@@ -506,20 +506,20 @@ figure {
   .block-home {
     opacity: 0; }
     .block-home:nth-child(1) {
-      -webkit-animation: blocks-anim 1s ease-out 1s forwards;
-      -moz-animation: blocks-anim 1s ease-out 1s forwards;
-      -o-animation: blocks-anim 1s ease-out 1s forwards;
-      animation: blocks-anim 1s ease-out 1s forwards; }
+      -webkit-animation: blocks-anim 0.75s ease-out 1s forwards;
+      -moz-animation: blocks-anim 0.75s ease-out 1s forwards;
+      -o-animation: blocks-anim 0.75s ease-out 1s forwards;
+      animation: blocks-anim 0.75s ease-out 1s forwards; }
     .block-home:nth-child(2) {
-      -webkit-animation: blocks-anim 1s ease-out 1.5s forwards;
-      -moz-animation: blocks-anim 1s ease-out 1.5s forwards;
-      -o-animation: blocks-anim 1s ease-out 1.5s forwards;
-      animation: blocks-anim 1s ease-out 1.5s forwards; }
+      -webkit-animation: blocks-anim 0.75s ease-out 1.25s forwards;
+      -moz-animation: blocks-anim 0.75s ease-out 1.25s forwards;
+      -o-animation: blocks-anim 0.75s ease-out 1.25s forwards;
+      animation: blocks-anim 0.75s ease-out 1.25s forwards; }
     .block-home:nth-child(3) {
-      -webkit-animation: blocks-anim 1s ease-out 2s forwards;
-      -moz-animation: blocks-anim 1s ease-out 2s forwards;
-      -o-animation: blocks-anim 1s ease-out 2s forwards;
-      animation: blocks-anim 1s ease-out 2s forwards; } }
+      -webkit-animation: blocks-anim 0.75s ease-out 1.5s forwards;
+      -moz-animation: blocks-anim 0.75s ease-out 1.5s forwards;
+      -o-animation: blocks-anim 0.75s ease-out 1.5s forwards;
+      animation: blocks-anim 0.75s ease-out 1.5s forwards; } }
 @keyframes menu-anim {
   0% {
     opacity: 0;
@@ -548,7 +548,7 @@ figure {
     transform: translateY(0px); } }
 @keyframes blocks-anim {
   from {
-    opacity: 0;
+    opacity: 0.25;
     -ms-transform: scale(0.7);
     -webkit-transform: scale(0.7);
     transform: scale(0.7); }
@@ -559,7 +559,7 @@ figure {
     transform: scale(1); } }
 @-webkit-keyframes blocks-anim {
   from {
-    opacity: 0;
+    opacity: 0.25;
     -ms-transform: scale(0.7);
     -webkit-transform: scale(0.7);
     transform: scale(0.7); }

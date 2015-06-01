@@ -73,14 +73,12 @@
 
   .block-home {
     opacity: 0;
-    &:nth-child(1) {
-      @include animation(blocks-anim 1s ease-out 1s forwards);
-    }
-    &:nth-child(2) {
-      @include animation(blocks-anim 1s ease-out 1.5s forwards);
-    }
-    &:nth-child(3) {
-      @include animation(blocks-anim 1s ease-out 2s forwards);
+    @for $i from 1 through 3 {
+      &:nth-child(#{$i}) {
+        @include animation(
+          blocks-anim 0.75s ease-out (0.75s + (0.25 * $i)) forwards
+        );
+      }
     }
   }
 }
@@ -100,7 +98,7 @@
 
 @include keyframes(blocks-anim) {
   from {
-    opacity: 0;
+    opacity: 0.25;
     @include transform(scale(0.7));
   }
   to {
