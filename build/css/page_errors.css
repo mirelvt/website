@@ -24,7 +24,7 @@ body {
   font-family: "Source Sans Pro", arial, helvetica, sans-serif;
   font-size: 1.8rem;
   line-height: 2.2rem;
-  background: url(../img/bg.png); }
+  background-color: #f2f4f3; }
 
 a {
   color: #a7ad7e;
@@ -101,11 +101,10 @@ h6 {
 
 .visualwrapper {
   width: 100%;
-  max-width: 1700px;
+  max-width: 1200px;
   min-height: 100%;
   margin: 0 auto;
-  background-color: #fff;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25); }
+  background-color: #fff; }
 
 figure {
   margin: 0;
@@ -152,7 +151,8 @@ figure {
     padding: 100px 30px 10px 30px; } }
 @media screen and (min-device-width: 517px) {
   .visualwrapper {
-    padding: 36px 30px; } }
+    padding: 36px 30px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25); } }
 @media screen and (max-device-width: 600px) {
   h1 {
     font-size: 3.6rem; }
