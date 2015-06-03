@@ -474,6 +474,15 @@ code {
   font-style: italic;
   color: #4976BC; }
 
+@media screen and (min-device-width: 517px) {
+  .header-img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+    background: url(../img/paardebloemen.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 10%; } }
+
 h2 {
   margin-top: 4rem; }
 

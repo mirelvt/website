@@ -1,6 +1,17 @@
 @import "_generic";
 @import "_menu";
 
+.header-img {
+  @include mq-min(517px) {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+    background: url(../img/lucht.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 10%;
+  }
+}
+
 [role="main"],
 [role="article"] {
   max-width: 800px;
