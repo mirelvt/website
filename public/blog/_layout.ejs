@@ -10,7 +10,9 @@
   <div class="visualwrapper">
     <%- partial("../_partials/_header") %>
     <%- partial("../_partials/_articles_nav") %>
-    <div class="header-img"></div>
+    <% if (page_title == 'Blog') { %>
+        <div class="header-img"></div>
+    <% } %>
     <%- yield %>
   </div>
   <script src="../js/base_compiled.js"></script>
