@@ -1,0 +1,14 @@
+// This is NOT a Sass file. Font Custom will use this template to create a Sass
+// file in the location configured (../../sass/_font-icons.scss) each compile.
+
+<%= font_face(path: "../fonts/" + font_name) %>
+
+$font-icons: (<% @glyphs.each do |name, value| %>
+    "<%= name.to_s %>": "\<%= value[:codepoint].to_s(16) %>",<% end %>
+);
+
+@each $icon, $unicode in $font-icons {
+  .icon-#{$icon}:before {
+    content: $unicode;
+  }
+}

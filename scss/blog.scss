@@ -4,52 +4,52 @@
 @import "_code";
 
 .header-img {
-  @include mq-min(517px) {
-    width: 100%;
-    height: 300px;
-    margin-bottom: 30px;
-    background: url(../img/paardebloemen.jpg) no-repeat;
-    background-size: cover;
-    background-position: 0 10%;
-  }
+    @include mq-min(517px) {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+        background: url(../img/paardebloemen.jpg) no-repeat;
+        background-size: cover;
+        background-position: 0 10%;
+    }
 }
 
 h2 { margin-top: 4rem; }
 
 [role="main"],
 [role="article"] {
-  max-width: 800px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 [role="article"] {
-  ul {
-    margin: 0 0 15px 0;
-    padding: 0;
-    list-style-type: none;
+    ul {
+        margin: 0 0 15px;
+        padding: 0;
+        list-style-type: none;
 
-    li {
-      position: relative;
-      padding-left: 25px;
+        li {
+            position: relative;
+            padding-left: 25px;
 
-      &:before {
-        position: absolute;
-        left: 0;
-        top: 8px;
-        display: block;
-        width: 10px;
-        height: 10px;
-        content: "";
-        background-color: $c-main
-      }
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 8px;
+                display: block;
+                width: 10px;
+                height: 10px;
+                content: "";
+                background-color: $c-main;
+            }
+        }
     }
-  }
 }
 
 [role="list"] {
-  margin: 4rem 0 0 0;
-  padding: 0;
-  list-style-type: none;
+    margin: 4rem 0 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 [role="listitem"] {
@@ -59,8 +59,40 @@ h2 { margin-top: 4rem; }
 }
 
 .blog-date {
-  color: $c-text;
-  font-size: 1.8rem;
+    color: $c-text;
+    font-size: 1.8rem;
 }
+
+// =============
+// RANKING STARS
+// -------------
+[class^="icon-"]:before,
+[class*=" icon-"] {
+    font-family: mvt-icons;
+    line-height: 1px;
+}
+
+.remove-ranking-wrapper {
+    margin-bottom: 12px;
+}
+
+$stars-list: (
+    1,
+    2,
+    3,
+    4
+);
+
+.ranking {
+    @include ranking-stars($stars-list, 32px, orange, #f5d76d, 0);
+    position: relative;
+
+    [type="radio"] { display: none; }
+    label { cursor: pointer; }
+    .icon-star { font-size: 3rem; }
+}
+// ------------------
+// @END RANKING STARS
+// ==================
 
 @import "_print";

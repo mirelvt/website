@@ -63,6 +63,12 @@ code {
   .tag { color: #4c7cc1; }
 }
 
+.language-scss {
+  .selector { color: #7a8622; }
+  .property { color: #4c7cc1; }
+  .variable { color: $color-maintitle; }
+}
+
 .python {
   .number,
   .statement { color: #7A8622; }

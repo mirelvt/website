@@ -1,128 +1,82 @@
 @import "_variables";
 @import "_flexbox";
 
-// // set the prefix for transition values where applicable: transform, background-clip, etc.
-// @function prefix($property) {
-//     $vendor-prefixed-properties: transform background-clip background-size;
-//     $result: ();
-//     @if index($vendor-prefixed-properties, $property) {
-//       $property: -webkit-#{$property}
-//     }
-//     $result: append($result, $property);
-//     @return $result;
-// }
-
-// // Separate each transition value to be able to check if a prefix is needed.
-// @function trans-prefix($transition) {
-//     $prefixed: ();
-//     @each $trans in $transition {
-//         $prop-name: nth($trans, 1); // get the first elm from the list, this is the element that needs a transition;
-//         $vendor-prop-name: prefix($prop-name); // check if $prop-name list contains a value that needs a prefix
-//         $prop-vals: nth($trans, 2); // gather all other values
-//         $prefixed: append($prefixed, ($vendor-prop-name $prop-vals), comma);
-//     }
-
-//     @return $prefixed;
-// }
-
-// @mixin transition($values...) {
-//   $transitions: ();
-//     @each $declaration in $values {
-//         $prop: nth($declaration, 1); //get first elm of the list
-//         $prop-opts: ();
-//         $length: length($declaration);
-//         // get all properties counting from 2 (1 = transition property)
-//         @for $i from 2 through $length {
-//             $prop-opts: append($prop-opts, nth($declaration, $i));
-//         }
-//         $trans: ($prop, $prop-opts);
-//         $transitions: append($transitions, $trans, comma);
-//     }
-
-//     -webkit-transition: trans-prefix($transitions);
-//     transition: $values;
-// }
-
-// @mixin transform($arguments...) {
-//   -webkit-transform: $arguments;
-//   transform: $arguments;
-// }
-
 @mixin perspective($value:200px, $origin: 50% 0) {
-  -moz-perspective-origin: $origin;
-  -moz-perspective: $value;
-  -webkit-perspective-origin: $origin;
-  -webkit-perspective: $value;
-  perspective-origin: origin;
-  perspective: $value;
+    -moz-perspective-origin: $origin;
+    -moz-perspective: $value;
+    -webkit-perspective-origin: $origin;
+    -webkit-perspective: $value;
+    perspective-origin: origin;
+    perspective: $value;
 }
 
 // Mixins for font
 @mixin font-kerning() {
-  -webkit-font-kerning: normal;
-  -moz-font-kerning: normal;
-  font-kerning: normal;
+    -webkit-font-kerning: normal;
+    -moz-font-kerning: normal;
+    font-kerning: normal;
 }
 
 @mixin font-feature-settings() {
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga", "kern";
-  font-feature-settings: "liga", "kern";
+    -webkit-font-feature-settings: "liga";
+    -moz-font-feature-settings: "liga", "kern";
+    font-feature-settings: "liga", "kern";
 }
 
 @mixin font-smoothing() {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @mixin text-adjust() {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 // ========
 
 @mixin calc($property, $expression) {
-  #{$property}: -webkit-calc(#{$expression});
-  #{$property}: calc(#{$expression});
+    #{$property}: -webkit-calc(#{$expression});
+    #{$property}: calc(#{$expression});
 }
 
 @mixin gradient($deg-prefix, $deg, $arguments...) {
-  background: -webkit-linear-gradient($deg-prefix, $arguments);
-  background: -o-linear-gradient($deg-prefix, $arguments);
-  background: -ms-linear-gradient($deg-prefix, $arguments);
-  background: linear-gradient($deg, $arguments);
+    background: -webkit-linear-gradient($deg-prefix, $arguments);
+    background: -o-linear-gradient($deg-prefix, $arguments);
+    background: -ms-linear-gradient($deg-prefix, $arguments);
+    background: linear-gradient($deg, $arguments);
 }
 
 // loops through all arguments and prefixes the ones that need it (in this case only transform)
 @function vendor-args($arg, $vendor) {
     $result: ();
     @each $i in $arg {
-      @if $i == transform { $result: append($result, #{$vendor}$i); }
-      @else { $result: append($result, $i); }
+        @if $i == transform { $result: append($result, #{$vendor}$i); }
+        @else { $result: append($result, $i); }
     }
-  @return $result;
+    @return $result;
 }
 
 // general vendor mixin
-@mixin vendor($property, $args...){
-  @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
-    $type: null;
-    @each $arg in nth($args,1) {
-      $type: ($type, vendor-args($arg, $vendor));
+@mixin vendor($property, $args...) {
+    @each $vendor in ("-webkit-", "-moz-", "-ms-", "-o-", "") {
+        $type: null;
+
+        @each $arg in nth($args, 1) {
+            $type: ($type, vendor-args($arg, $vendor));
+        }
+        #{$vendor}#{$property}: $type;
     }
-    #{$vendor}#{$property}: $type;
-  }
 }
 
 // general transition mixin
 @mixin transition($args...) {
-  @include vendor(transition, $args);
+    @include vendor(transition, $args);
 }
 
 @mixin transform($values...) {
-  -ms-transform: $values;
-  -webkit-transform: $values;
-  transform: $values;
+    -ms-transform: $values;
+    -webkit-transform: $values;
+    transform: $values;
 }
 
 @mixin keyframes($anim-name) {
@@ -144,20 +98,46 @@
 
 // Mixins for media queries
 @mixin mq-min($width) {
-  @media screen and (min-device-width: $width) {
-    @content;
-  }
+    @media screen and (min-device-width: $width) {
+        @content;
+    }
 }
 
 @mixin mq-max($width) {
-  @media screen and (max-device-width: $width) {
-    @content;
-  }
+    @media screen and (max-device-width: $width) {
+        @content;
+    }
 }
 
 @mixin mq-min-max($min-width, $max-width) {
-  @media screen and (min-width: $min-width) and (max-width: $max-width) {
-    @content;
-  }
+    @media screen and (min-width: $min-width) and (max-width: $max-width) {
+        @content;
+    }
 }
 // ========
+
+// RANKING STARS MIXIN
+// ===================
+
+// Set hover + selected label for star ranking
+@mixin ranking-stars($stars, $star-width, $hover, $selected, $deselect-width) {
+  > label {
+    position: absolute;
+    top: 0;
+    &:hover { color: $hover; }
+  }
+
+  @for $i from 1 through length($stars) {
+    > label:nth-of-type(n + #{$i}):hover ~ label { color: $hover; }
+
+    // position the stars in reversed order
+    > label:nth-of-type(n+#{$i}) {
+      left: (($star-width * length($stars)) + $deselect-width) - ($star-width * $i);
+    }
+
+    // Set selected color on all label siblings based on the checked radio
+    > input[type="radio"]:nth-of-type(n + #{$i}):checked  ~ label {
+        color: $selected;
+    }
+  }
+}

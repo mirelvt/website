@@ -53,3 +53,5 @@ $fonts: (
       font-style: #{map-get($props, type)};
     }
 }
+
+@import "_icons";

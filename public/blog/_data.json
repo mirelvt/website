@@ -5,6 +5,13 @@
     "sub_page": false,
     "description": "My blog about front end development, things I come across while coding and the meetings/conferences I attended."
   },
+  "ranking-stars-sass": {
+    "page_title": "Ranking stars with sass - simplified",
+    "source": "blog",
+    "date": "02-07-2015",
+    "sub_page": "ranking-stars-sass",
+    "description": "My description"
+  },
   "customize-django-crispy-forms": {
     "page_title": "Django form customization using Crispy Forms",
     "source": "blog",
