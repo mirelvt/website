@@ -5,12 +5,12 @@
     "sub_page": false,
     "description": "My blog about front end development, things I come across while coding and the meetings/conferences I attended."
   },
-  "ranking-stars-sass": {
-    "page_title": "Ranking stars with sass - simplified",
+  "rating-stars-sass": {
+    "page_title": "Create clickable rating stars with only SASS and HTML",
     "source": "blog",
-    "date": "02-07-2015",
-    "sub_page": "ranking-stars-sass",
-    "description": "My description"
+    "date": "03-07-2015",
+    "sub_page": "rating-stars-sass",
+    "description": "In May, Roy Tomeij wrote the article 'Configurable star rating without JS'. I was thinking how to do this using a font icon instead of a background image and make the stars clickable. I believe it would take less code to write, and it is."
   },
   "customize-django-crispy-forms": {
     "page_title": "Django form customization using Crispy Forms",

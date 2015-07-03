@@ -5,47 +5,45 @@
 // ============
 pre {
     position: relative;
-    margin: 5px 10px 20px 10px;
+    margin: 5px 10px 20px;
     padding: 0;
     overflow: auto;
-    background: rgba(#C8D1CF, 0.15);
+    background: rgba(#c8d1cf, 0.15);
     white-space: normal;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border: 1px solid $c-main;
 
     &:before {
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      padding: 8px 0;
-      text-indent: 15px;
-      color: #fff;
-      font-weight: bold;
-      font-size: 2rem;
-      content: attr(rel);
-      background-color: $c-main;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding: 8px 0;
+        text-indent: 15px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 2rem;
+        content: attr(rel);
+        background-color: $c-main;
     }
 
-    &[rel] {
-      padding-top: 33px;
-    }
+    &[rel] { padding-top: 33px; }
 }
 
 code {
-  display: block;
-  overflow: auto;
-  margin: 0;
-  padding: 15px;
-  white-space: pre;
-  font-family: $font-code;
+    display: block;
+    overflow: auto;
+    margin: 0;
+    padding: 15px;
+    white-space: pre;
+    font-family: $font-code;
 }
 
 .comment { color: darken($color-subtitle, 18%); }
 
 .code-indent,
 .code-indent-2 {
-  display: inline-block;
+    display: inline-block;
 }
 
 .code-indent { text-indent: $code-indent; }
@@ -54,30 +52,30 @@ code {
 .number { color: $c-header; }
 
 .language-css {
-  .selector { color: #7a8622; }
-  .property { color: #4c7cc1; }
+    .selector { color: #7a8622; }
+    .property { color: #4c7cc1; }
 }
 
 .language-html {
-  .attribute { color: #7a8622; }
-  .tag { color: #4c7cc1; }
+    .attribute { color: #7a8622; }
+    .tag { color: #4c7cc1; }
 }
 
 .language-scss {
-  .selector { color: #7a8622; }
-  .property { color: #4c7cc1; }
-  .variable { color: $color-maintitle; }
+    .selector { color: #7a8622; }
+    .property { color: #4c7cc1; }
+    .variable { color: $color-maintitle; }
 }
 
 .python {
-  .number,
-  .statement { color: #7A8622; }
-  .string { color: $color-maintitle; }
+    .number,
+    .statement { color: #7A8622; }
+    .string { color: $color-maintitle; }
 
-  .crispy-attribute {
-    font-style: italic;
-    color: #4976BC;
-  }
+    .crispy-attribute {
+        font-style: italic;
+        color: #4976BC;
+    }
 }
 
 // @End CODE STYLING

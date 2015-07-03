@@ -1,7 +1,11 @@
 <div class="nav-arrows">
     <!-- BLOG -->
-    <% if (current.source == 'customize-django-crispy-forms') { %>
+    <% if (current.source == 'rating-stars-sass') { %>
         <a href="/blog" title="Back to Blog page" class="arrow-prev"></a>
+        <a href="customize-django-crispy-forms.html" title="Next article: Customize Django Crispy forms" class="arrow-next"></a>
+    <% } %>
+    <% if (current.source == 'customize-django-crispy-forms') { %>
+        <a href="rating-stars-sass.html" title="Previous article: Create clickable rating stars with only SASS and HTML" class="arrow-prev"></a>
         <a href="customize-sublime.html" title="Next article: Customize Sublime Text Editor" class="arrow-next"></a>
     <% } %>
 

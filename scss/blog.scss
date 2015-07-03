@@ -63,18 +63,16 @@ h2 { margin-top: 4rem; }
     font-size: 1.8rem;
 }
 
-// =============
-// RANKING STARS
-// -------------
+// ============
+// RATING STARS
+// ------------
 [class^="icon-"]:before,
 [class*=" icon-"] {
     font-family: mvt-icons;
     line-height: 1px;
 }
 
-.remove-ranking-wrapper {
-    margin-bottom: 12px;
-}
+.remove-rating-wrapper { margin-bottom: 12px; }
 
 $stars-list: (
     1,
@@ -83,12 +81,21 @@ $stars-list: (
     4
 );
 
-.ranking {
-    @include ranking-stars($stars-list, 32px, orange, #f5d76d, 0);
+.rating {
+    @include rating-stars($stars-list, 32px, orange, #f5d76d);
     position: relative;
+    overflow: hidden;
+    height: 32px;
 
-    [type="radio"] { display: none; }
-    label { cursor: pointer; }
+    // Hide radio buttons
+    input[type="radio"] {
+        margin-left: -19px;
+    }
+
+    label {
+        cursor: pointer;
+        // pointer-events: none; // Disable click event on the custom label
+    }
     .icon-star { font-size: 3rem; }
 }
 // ------------------

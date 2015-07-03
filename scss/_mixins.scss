@@ -120,24 +120,24 @@
 // ===================
 
 // Set hover + selected label for star ranking
-@mixin ranking-stars($stars, $star-width, $hover, $selected, $deselect-width) {
-  > label {
-    position: absolute;
-    top: 0;
-    &:hover { color: $hover; }
-  }
-
-  @for $i from 1 through length($stars) {
-    > label:nth-of-type(n + #{$i}):hover ~ label { color: $hover; }
-
-    // position the stars in reversed order
-    > label:nth-of-type(n+#{$i}) {
-      left: (($star-width * length($stars)) + $deselect-width) - ($star-width * $i);
+@mixin rating-stars($stars, $star-width, $c-hover, $c-selected) {
+    > label {
+        position: absolute;
+        top: 4px;
+        &:hover { color: $c-hover; }
     }
 
-    // Set selected color on all label siblings based on the checked radio
-    > input[type="radio"]:nth-of-type(n + #{$i}):checked  ~ label {
-        color: $selected;
+    @for $i from 1 through length($stars) {
+        > label:nth-of-type(n + #{$i}):hover ~ label { color: $c-hover; }
+
+        // position the stars in reversed order
+        > label:nth-of-type(n+#{$i}) {
+            left: ($star-width * length($stars)) - ($star-width * $i);
+        }
+
+        // Set selected color on all label siblings based on the checked radio
+        > input[type="radio"]:nth-of-type(n + #{$i}):checked  ~ label {
+            color: $c-selected;
+        }
     }
-  }
 }
