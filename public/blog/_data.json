@@ -10,7 +10,7 @@
     "source": "blog",
     "date": "05-08-2015",
     "sub_page": "sass-fontcustom",
-    "description": "Here the description"
+    "description": "In 2013 and 2014 I used Icomoon to create font icons. It is a nice library and tool. You can choose icons from their library and they have the feature to upload your own svgs to create the font icon set. It is a great tool if you only need to generate the font icon once. But not when you have add new ones to the set."
   },
   "rating-stars-sass": {
     "page_title": "Create clickable rating stars with only SASS and HTML",
