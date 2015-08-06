@@ -5,6 +5,13 @@
     "sub_page": false,
     "description": "My blog about front end development, things I come across while coding and the meetings/conferences I attended."
   },
+  "sass-fontcustom": {
+    "page_title": "Font icons with Fontcustom and SASS",
+    "source": "blog",
+    "date": "05-08-2015",
+    "sub_page": "sass-fontcustom",
+    "description": "Here the description"
+  },
   "rating-stars-sass": {
     "page_title": "Create clickable rating stars with only SASS and HTML",
     "source": "blog",
