@@ -5,7 +5,7 @@
 // ============
 pre {
     position: relative;
-    margin: 5px 10px 20px;
+    margin: 0.5rem 1rem 2rem;
     padding: 0;
     overflow: auto;
     background: rgba(#c8d1cf, 0.15);
@@ -18,11 +18,11 @@ pre {
         left: 0;
         top: 0;
         width: 100%;
-        padding: 8px 0;
-        text-indent: 15px;
+        padding: 0.8rem 0;
+        text-indent: 1.5rem;
         color: #fff;
         font-weight: bold;
-        font-size: 2rem;
+        font-size: 133%;
         content: attr(rel);
         background-color: $c-main;
     }
@@ -34,7 +34,7 @@ code {
     display: block;
     overflow: auto;
     margin: 0;
-    padding: 15px;
+    padding: 1.5rem;
     white-space: pre;
     font-family: $font-code;
 }

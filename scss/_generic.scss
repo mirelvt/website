@@ -45,17 +45,17 @@ a {
 
 p {
   margin-top: 0;
-  margin-bottom: 18px;
+  margin-bottom: 1.8rem;
 }
 
 blockquote {
   position: relative;
   margin-left: 0;
-  padding-left: 35px;
+  padding-left: 3.5rem;
   font: {
     weight: normal;
     style: italic;
-    size: 2rem;
+    size: 111%;
     weight: bold;
   }
 
@@ -63,15 +63,15 @@ blockquote {
     position: absolute;
     top: 12px;
     left: 0;
-    font-size: 6rem;
-    content: open-quote;
+    font-size: 333.33%;
+    content: "\2018";
     color: $c-main;
   }
 }
 
 cite {
   display:block;
-  font-size: 1.8rem;
+  font-size: 90%;
   font-style: normal;
   font-weight: normal;
 }
@@ -127,9 +127,9 @@ figure {
   }
 
   figcaption {
-    margin-top: 5px;
+    margin-top: 0.5rem;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 83.33%;
     color: lighten($c-text, 30%);
   }
 
@@ -199,8 +199,6 @@ figure {
 }
 
 @include mq-min(900px) {
-  body { font-size: 1.8rem; }
-
   @for $i from 1 through 6 {
     h#{$i} {
       @if ($i == 1) {

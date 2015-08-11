@@ -41,27 +41,27 @@ a {
 
 p {
   margin-top: 0;
-  margin-bottom: 18px; }
+  margin-bottom: 1.8rem; }
 
 blockquote {
   position: relative;
   margin-left: 0;
-  padding-left: 35px;
+  padding-left: 3.5rem;
   font-weight: normal;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 111%;
   font-weight: bold; }
   blockquote:before {
     position: absolute;
     top: 12px;
     left: 0;
-    font-size: 6rem;
-    content: open-quote;
+    font-size: 333.33%;
+    content: "\2018";
     color: #a7ad7e; }
 
 cite {
   display: block;
-  font-size: 1.8rem;
+  font-size: 90%;
   font-style: normal;
   font-weight: normal; }
 
@@ -116,9 +116,9 @@ figure {
     box-shadow: 0 0 8px 0 rgba(60, 73, 70, 0.6);
     max-width: 100%; }
   figure figcaption {
-    margin-top: 5px;
+    margin-top: 0.5rem;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 83.33%;
     color: #849a95; }
   figure + p {
     margin-top: 2rem; }
@@ -173,9 +173,6 @@ figure {
   h6 {
     font-size: 1.4rem; } }
 @media screen and (min-device-width: 900px) {
-  body {
-    font-size: 1.8rem; }
-
   h1 {
     font-size: 4.6rem; }
 
@@ -273,19 +270,19 @@ figure {
   [role="menuitem"] {
     display: block;
     color: #fff;
-    padding: 4px 8px 4px 12px;
+    padding: 0.4rem 0.8rem 0.4rem 1.2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.25);
-    border-bottom: 1px solid #919860; }
+    border-bottom: 1px solid rgba(77, 77, 77, 0.25); }
     [role="menuitem"]:first-of-type {
       margin-top: 40px; }
     [role="menuitem"].selected {
       background-color: #919860;
-      border-bottom: 1px solid #828856; }
+      border-bottom: 1px solid rgba(64, 64, 64, 0.25); }
     [role="menuitem"]:hover {
       color: #fff; }
 
   .mobile-wrapper {
-    border-top: 1px solid #919860;
+    border-top: 1px solid rgba(64, 64, 64, 0.25);
     border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
 
   .hamburger-wrapper {
@@ -398,10 +395,10 @@ figure {
       display: block;
       height: 1px;
       content: "";
-      background: -webkit-linear-gradient(left, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
-      background: -o-linear-gradient(left, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
-      background: -ms-linear-gradient(left, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
-      background: linear-gradient(to right, rgba(167, 173, 126, 0) 0%, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%); }
+      background: -webkit-linear-gradient(left, rgba(167, 173, 126, 0) 0, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
+      background: -o-linear-gradient(left, rgba(167, 173, 126, 0) 0, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
+      background: -ms-linear-gradient(left, rgba(167, 173, 126, 0) 0, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%);
+      background: linear-gradient(to right, rgba(167, 173, 126, 0) 0, #a7ad7e 25%, #a7ad7e 75%, rgba(167, 173, 126, 0) 100%); }
     [role="navigation"]:before {
       top: 0; }
     [role="navigation"]:after {
@@ -420,7 +417,7 @@ figure {
     display: none; } }
 pre {
   position: relative;
-  margin: 5px 10px 20px;
+  margin: 0.5rem 1rem 2rem;
   padding: 0;
   overflow: auto;
   background: rgba(200, 209, 207, 0.15);
@@ -432,11 +429,11 @@ pre {
     left: 0;
     top: 0;
     width: 100%;
-    padding: 8px 0;
-    text-indent: 15px;
+    padding: 0.8rem 0;
+    text-indent: 1.5rem;
     color: #fff;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 133%;
     content: attr(rel);
     background-color: #a7ad7e; }
   pre[rel] {
@@ -446,7 +443,7 @@ code {
   display: block;
   overflow: auto;
   margin: 0;
-  padding: 15px;
+  padding: 1.5rem;
   white-space: pre;
   font-family: "Droid Sans Mono", arial, helvetica, sans-serif; }
 
@@ -545,8 +542,7 @@ h2 {
     margin-bottom: 0.5rem; }
 
 .blog-date {
-  color: #3c4946;
-  font-size: 1.8rem; }
+  font-size: 88.88%; }
 
 [class^="icon-"]:before,
 [class*=" icon-"] {
@@ -554,7 +550,7 @@ h2 {
   line-height: 1px; }
 
 .remove-rating-wrapper {
-  margin-bottom: 12px; }
+  margin-bottom: 1.2rem; }
 
 .rating {
   position: relative;

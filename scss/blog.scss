@@ -58,10 +58,7 @@ h2 { margin-top: 4rem; }
     h2 { margin-bottom: 0.5rem; }
 }
 
-.blog-date {
-    color: $c-text;
-    font-size: 1.8rem;
-}
+.blog-date { font-size: 88.88%; }
 
 // ============
 // RATING STARS
@@ -72,7 +69,7 @@ h2 { margin-top: 4rem; }
     line-height: 1px;
 }
 
-.remove-rating-wrapper { margin-bottom: 12px; }
+.remove-rating-wrapper { margin-bottom: 1.2rem; }
 
 $stars-list: (
     1,
